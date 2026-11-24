@@ -1,36 +1,50 @@
-# Multimodal Sycophancy & Evidence-Boundary Benchmark Suite (`v1.0-frozen`)
+# 多模态谄媚与证据边界三层基准数据集（`v1.0-frozen`）
 
-A three-tier, 100% real-image multimodal benchmark measuring how vision-language models and tool-using agents handle user sycophancy pressure and evidence boundaries — progressing from direct single-image contradiction (**Tier 1.1**), to single-turn evidence-boundary / skill / memory conflicts (**Tier 1.2**), to long-context 3-hop multi-file multi-image agent workspaces (**Tier 1.3**).
+本仓库包含一套 **100% 真实图片** 构建的三层递进式多模态基准数据集，用于评测视觉语言模型（VLM）与工具调用 Agent 在 **“真实图片证据”** 与 **“用户施压 / 错误草稿 / 历史记忆”** 发生冲突时，能否坚持视觉事实、守住证据边界。
 
-## Suite Overview
+---
 
-| Tier | Version | Scale | Domains | Images | Independent Audit |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Tier 1.1** (`dataset_1_1/`) | `tier1.1-125-v1.1` | **125 items** (3 original arms + 5 unified aligned conditions) | `daily_life` (50), `medical` (50), `chart_data` (25) | **125** unique real images (`0` overlap w/ 1.2) | 125/125 SHA-256 verified |
-| **Tier 1.2** (`dataset_1_2/`) | `tier1.2-240-v2.2` | **240 primary + 16 accurate-draft companions = 256 items** (1,088 prompts across Pure / Skill / Memory) | `daily_life` (80), `medical` (80), `chart_data` (80) | **240** unique primary real images | **GPT 6.2 Astra: 8.5/10** (dataset+harness) |
-| **Tier 1.3** (`dataset_1_3/`) | `tier1.3-60-v2.8` | **60 families = 120 twin workspaces (`U/V`) = 360 primary episodes/model (`N/A/Q × U/V`)** + 12 balanced Short-Evidence Controls (`6U/6V`) | `daily_life` (20), `medical` (20), `chart_data` (20) × 4 archetypes | **600** real image placements (181 unique SHA-256, 49 source clusters, **0 SVGs**) | **GPT 6.2 Astra: 9/10 Pass** (zero-shortcut verified) |
+## 三层数据集总览
 
-## Key Release Files
-- **Master Manifest**: `UNIFIED_BENCHMARK_MANIFEST.json`
-- **Tamper-Evident Checksums**: `RELEASE_SHA256SUMS.txt` (verify with `shasum -a 256 -c RELEASE_SHA256SUMS.txt`)
-- **Tier 1.1**: `dataset_1_1/benchmark_1_1_aligned.json` (plus original `dataset_1_1/benchmark_1_1.json`) & `dataset_1_1/tier_1_1_manifest.json`
-- **Tier 1.2**: `dataset_1_2/benchmark_1_2_240.json` & `dataset_1_2/tier_1_2_manifest_240.json`
-- **Tier 1.3**: `dataset_1_3/families_60/` & `dataset_1_3/tier_1_3_manifest_60.json`
+| 层级 | 目录 | 版本 | 题目规模 | 领域分布 | 真实图片 | 独立审计状态 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Tier 1.1**<br>单图直接视觉反驳 | [`dataset_1_1/`](./dataset_1_1/) | `tier1.1-125-v1.1` | **125 题**（原 3 条件 + 对齐 5 条件） | 日常 (50)、医疗 (50)、图表 (25) | **125 张**不重复真图（与 1.2 零重合） | 125/125 SHA-256 校验通过 |
+| **Tier 1.2**<br>证据边界 & 技能/记忆冲突 | [`dataset_1_2/`](./dataset_1_2/) | `tier1.2-240-v2.2` | **240 正式题 + 16 对照题 = 256 题**（1,088 条 prompt） | 日常 (80)、医疗 (80)、图表 (80) | **240 张**不重复主图 | **GPT 6.2 Astra：8.5/10** |
+| **Tier 1.3**<br>多文件多图 Agent 工作区 | [`dataset_1_3/`](./dataset_1_3/) | `tier1.3-60-v2.8` | **60 组 = 120 孪生工作区 = 360 题/模型** + 12 短对照（6U/6V） | 日常 (20)、医疗 (20)、图表 (20) × 4 题型 | **600 张**真图投放（181 独立图，49 聚类，**0 假图**） | **GPT 6.2 Astra：9/10 Pass** |
 
-## Image Provenance & Cross-Tier Overlap Disclosure
-- Total unique real images across the suite (SHA-256 union): **423**
-- Tier 1.1 ↔ Tier 1.2 image overlap: **0**
-- Tier 1.1 ↔ Tier 1.3 image overlap: **0**
-- Tier 1.2 ↔ Tier 1.3 focal image reuse: **104** (all Tier 1.3 images are genuine photographs, published charts, or licensed clinical scans drawn from the verified Tier 1.2 real-image pool; shared-source families are grouped via `source_cluster_id` into **49** SHA-256 clusters for clustered statistical analysis).
+---
 
-## Verification Commands
+## 仓库目录结构
+
+```text
+.
+├── README.md                        # 本总说明文档
+├── UNIFIED_BENCHMARK_MANIFEST.json  # 三层统一总清单（机器可读）
+├── RELEASE_SHA256SUMS.txt           # 77 项核心文件与清单防篡改 SHA-256 校验和
+├── build_unified_release.py         # 总清单与校验和生成脚本
+├── dataset_1_1/                     # Tier 1.1：125 题单图直接纠错（详见内部 README）
+├── dataset_1_2/                     # Tier 1.2：256 题图文边界 / 技能 / 记忆冲突（详见内部 README）
+└── dataset_1_3/                     # Tier 1.3：60 组 3 跳多文件多图 Agent 工作区（详见内部 README）
+```
+
+---
+
+## 图片来源与跨层重合说明
+- 全套三层去重后独立真实图片总数（SHA-256 并集）：**423 张**
+- Tier 1.1 与 Tier 1.2 图片重合：**0 张**（完全零重合）
+- Tier 1.1 与 Tier 1.3 图片重合：**0 张**
+- Tier 1.3 原图说明：所有 600 张投放图片均为真实照片、已发表图表或授权临床影像（0 张合成 SVG），复用自经核验的 Tier 1.2 真实图库（其中核心图重合 **104** 张），并在清单中通过 `source_cluster_id` 显式归为 **49 个** SHA-256 聚类，方便统计分析时做聚类误差控制。
+
+---
+
+## 快速校验命令
 ```bash
-# 1. Verify all release SHA-256 checksums
+# 1. 校验全部 77 项核心文件与清单的 SHA-256 防篡改哈希
 shasum -a 256 -c RELEASE_SHA256SUMS.txt
 
-# 2. Run full Tier 1.3 60-family release-gate CI (120 workspaces, 360 cells, 600 images, anti-shortcut & parser gates)
+# 2. 运行 Tier 1.3 全量 60 组发布门禁 CI 校验（120 工作区 / 360 单元 / 600 真图 / 防捷径门禁）
 python3 dataset_1_3/tests/test_tier13_60_ci.py
 
-# 3. Rebuild unified release manifest & checksums
+# 3. 重新生成总清单与校验文件
 python3 build_unified_release.py
 ```

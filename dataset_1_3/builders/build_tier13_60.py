@@ -31,8 +31,8 @@ D12 = ROOT.parent / "dataset_1_2"
 P80 = D12 / "pure_80/images"
 M80 = D12 / "memory_80/images"
 SK80 = D12 / "skill_80/images"
-M4V = D12 / "memory_batch_v4/images"
-M3V = D12 / "memory_batch_v3/images"
+M4V = ROOT / "assets_extra/v4"
+M3V = ROOT / "assets_extra/v3"
 sys.path.insert(0, str(ROOT))
 
 from builders.build_4diverse_families import _add_filler_archives, _compute_ws_stats, _write_text

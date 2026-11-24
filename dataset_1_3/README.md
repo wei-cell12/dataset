@@ -1,26 +1,44 @@
-# Tier 1.3 Multimodal Multi-File Workspace Benchmark (`tier1.3-60-v2.8`)
+# Tier 1.3 — 长上下文多文件多图 Agent 工作区数据集（`tier1.3-60-v2.8`）
 
-## Overview
-- **Confirmatory Set (`families_60/`)**: **60 scenario families** = **120 workspaces (`U/V` twins)** = **360 primary episodes per model (`N / A / Q × U / V`)**, plus **12 preselected balanced Short-Evidence Control families** (72 additional episodes/model).
-- **Balanced 3 × 4 Matrix**: `3 domains` (`daily_life`, `chart_data`, `medical`) × `4 archetypes` (`visual_record_reconciliation`, `effective_state`, `procedure_applicability`, `entity_scope_linkage`) × `5 families per cell = 60`.
-- **100% Real Images & Provenance Disclosure**:
-  - All **600 images** (`60 × 2 branches × 5 unique images`) are real photographs, real published charts/tables (Pew / OWID / OECD / Finance), or real licensed clinical scans — **0 synthetic SVGs**, 100% PNG/JPEG magic-byte verified.
-  - Focal and distractor images are drawn from the verified Tier 1.2 real-image pool (`dataset_1_2/`). Families sharing any focal image filename or SHA-256 hash are grouped into connected **`source_cluster_id`** clusters (recorded in `tier_1_3_manifest_60.json` and every `manifest.json`) so downstream statistical analyses can cluster standard errors / treat shared-source families as related.
-- **Anti-Shortcut 3-Hop Cross-Modal Chain**:
-  1. **Independent Random Opaque IDs**: `ticket_id` sampled without replacement from `TK-3100..TK-8899` (zero relation to family index, target, or filename).
-  2. **Hop 1 (`records/intake_queue.csv`, 145 rows, randomized decisive line ≥ 125)**: maps `ticket_id -> (track_code, asset_file)`.
-  3. **Hop 2 (`operations/track_charter.csv`, 140 rows, randomized decisive line ≥ 122)**: **6 competing rows sharing identical decision labels**, with the real row placed at a balanced random slot (`0..5`, 10 each) AND its `track_code` sampled from the same unified numerical pool (`100..889`) with balanced numerical rank (`0..5`, 10 each) so neither row position nor min/max code heuristics can bypass Hop 1; paired with `procedures/review_protocol.md`.
-  4. **Hop 3 (5 unique real images, 3 same-date `20261118` candidates)**: assigned image placed at a balanced random slot (`a`/`b`/`c`, 20 each); reconcile pixels of `asset_file` against `required_target`.
-- **Counterbalanced Memory Prior**: Exactly **30 U-prior / 30 V-prior** (`10 U / 10 V` in every domain).
+## 简介
+本层模拟真实的 **Agent 多文件办公环境**，测试模型在必须跨文件、跨模态完成 **3 跳查证** 后，面对用户错误草稿引导时，会不会出现“**明明查到了真证据、甚至看懂了真相，最后还是顺着用户交错答案（RRSW / Dual Compliance）**”的深层谄媚行为。
 
-## Quick Commands
+- **独立审计**：已通过 GPT 6.2 Astra 多轮红队防捷径复审，最终签字 **9/10 Pass**。
+
+## 数据规模与核心设计
+- **正式题库（`families_60/`）**：**60 组场景 = 120 个孪生工作区（U / V）= 360 题/模型（N / A / Q × U / V）**，另含 **12 组均衡短证据对照**（6 U / 6 V 先验）。
+- **均衡 3 × 4 矩阵**：3 领域（`daily_life`、`chart_data`、`medical`）× 4 题型（`visual_record_reconciliation`、`effective_state`、`procedure_applicability`、`entity_scope_linkage`）× 每格 5 组 = 60 组。
+- **100% 真实图片（0 张假图）**：共投放 **600 张**真实照片、已发表图表与授权临床影像（全部通过 PNG/JPEG 魔数与 SHA-256 校验）；共享原图的题目已按哈希归为 **49 个 `source_cluster_id` 聚类**。
+- **零捷径 3 跳查证链**：
+  1. **Hop 1（`records/intake_queue.csv`）**：根据随机工单号查出对应的 `track_code` 和图片路径；
+  2. **Hop 2（`operations/track_charter.csv` + `procedures/review_protocol.md`）**：在 6 条同领域真实规则（行号、编号排名、内容分布完全随机且不可区分）中查出对应核验标准；
+  3. **Hop 3（3 张同日候选真图）**：打开指定真图核对像素事实，向 `deliverables/` 提交标准 JSON 报告。
+- **记忆先验均衡**：每个领域严格 **10 U / 10 V**，每种题型严格 **7/8**，12 组短对照严格 **6 U / 6 V**。
+
+## 目录结构
+```text
+dataset_1_3/
+├── README.md                    # 本说明文档
+├── tier_1_3_manifest_60.json    # 60 组正式题库总清单
+├── families_60/                 # 【核心】60 组 × (workspace_U + workspace_V + manifest.json)
+├── broker/                      # 只读沙盒工具与六宫格 Prompt 渲染器
+├── scoring/                     # 确定性证据覆盖（FDG）与结果评分器
+├── eval/                        # 多模型评测脚本（支持断点续跑）
+├── schema/                      # Manifest 严格校验器
+├── builders/                    # 60 组正式题库构建脚本（build_tier13_60.py）
+├── tests/                       # 全量 CI 发布门禁测试（test_tier13_60_ci.py）
+├── assets_extra/                # 构建复现所需的补充原图素材
+└── eval_results/                # 历史 pilot 测评结果
+```
+
+## 常用命令
 ```bash
-# Rebuild all 60 families + top-level manifest
-python3 builders/build_tier13_60.py
+# 1. 运行全量 60 组发布门禁 CI 校验（120 工作区 / 360 单元 / 600 真图 / 防捷径门禁）
+python3 dataset_1_3/tests/test_tier13_60_ci.py
 
-# Run full 60-family release-gate CI verification
-python3 tests/test_tier13_60_ci.py
+# 2. 重新生成全部 60 组正式题库
+python3 dataset_1_3/builders/build_tier13_60.py
 
-# Evaluate a model on all 60 families (360 episodes)
-python3 eval/eval_tier13.py --model gpt-5.6-luna --runner codex --families-dir families_60 --tag conf60_v22 --workers 5
+# 3. 评测模型（支持 --runner codex 或 --runner agy，自带断点续跑）
+python3 dataset_1_3/eval/eval_tier13.py --model gpt-5.6-luna --runner codex --families-dir families_60 --tag conf60_v28 --workers 5
 ```
