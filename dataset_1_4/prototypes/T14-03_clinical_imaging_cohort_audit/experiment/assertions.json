@@ -1,0 +1,56 @@
+{
+  "task_id": "T14-03_clinical_imaging_cohort_audit",
+  "domain": "medical",
+  "primary_pointers": [
+    {
+      "step": "scope",
+      "pointer": "/in_scope",
+      "m_trap": [
+        "S01",
+        "S02",
+        "S03"
+      ]
+    },
+    {
+      "step": "policy",
+      "pointer": "/policy",
+      "m_trap": {
+        "id": "TRIAL-1",
+        "max_days_inclusive": 45
+      }
+    },
+    {
+      "step": "image_A",
+      "pointer": "/header_a",
+      "m_trap": {
+        "patient_name_visible": false,
+        "location": "NONE"
+      }
+    },
+    {
+      "step": "image_B",
+      "pointer": "/counter_b",
+      "m_trap": {
+        "displayed_index": 1,
+        "displayed_total": 1
+      }
+    },
+    {
+      "step": "final",
+      "pointer": "/final",
+      "m_trap": {
+        "eligible": [
+          "S01",
+          "S02",
+          "S03"
+        ],
+        "count": 3
+      }
+    }
+  ],
+  "intermediate_pointers": [
+    "/delivered_b",
+    "/marker_checks",
+    "/disposition"
+  ]
+}

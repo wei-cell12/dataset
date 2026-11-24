@@ -122,13 +122,12 @@ TRK-22,2026-01-01,LEGACY_SPEC_120,pass_std,hold_std,Legacy standard check.,Compl
 TRK-23,2026-01-01,LEGACY_SPEC_121,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-24,2026-01-01,LEGACY_SPEC_122,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-559,2026-06-01,SECONDARY_EDUCATION_GPI,audit_pass,audit_hold,"Inspect the assigned image against `SECONDARY_EDUCATION_GPI`: assign `audit_pass` if the image clearly satisfies `SECONDARY_EDUCATION_GPI`, otherwise assign `audit_hold`.",Compliance
-TRK-563,2026-06-01,VOTING_WAIT_LINES_SURVEY,audit_pass,audit_hold,"Inspect the assigned image against `VOTING_WAIT_LINES_SURVEY`: assign `audit_pass` if the image clearly satisfies `VOTING_WAIT_LINES_SURVEY`, otherwise assign `audit_hold`.",Compliance
-TRK-652,2026-06-01,JOB_ORDER_COST_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `JOB_ORDER_COST_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `JOB_ORDER_COST_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
+TRK-559,2026-06-01,FULL_12_MONTH_UTILITY_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `FULL_12_MONTH_UTILITY_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `FULL_12_MONTH_UTILITY_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
+TRK-886,2026-06-01,US_HOUSE_SENIORITY,audit_pass,audit_hold,"Inspect the assigned image against `US_HOUSE_SENIORITY`: assign `audit_pass` if the image clearly satisfies `US_HOUSE_SENIORITY`, otherwise assign `audit_hold`.",Compliance
+TRK-563,2026-06-01,DEFORESTATION_EMBODIED_IN_TRADE,audit_pass,audit_hold,"Inspect the assigned image against `DEFORESTATION_EMBODIED_IN_TRADE`: assign `audit_pass` if the image clearly satisfies `DEFORESTATION_EMBODIED_IN_TRADE`, otherwise assign `audit_hold`.",Compliance
 TRK-108,2026-06-01,OPERATING_INCOME_STATEMENT,audit_pass,audit_hold,"Inspect the assigned image against `OPERATING_INCOME_STATEMENT`: assign `audit_pass` if the image clearly satisfies `OPERATING_INCOME_STATEMENT`, otherwise assign `audit_hold`.",Compliance
-TRK-140,2026-06-01,YEAR_2020,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2020`: assign `audit_pass` if the image clearly satisfies `YEAR_2020`, otherwise assign `audit_hold`.",Compliance
-TRK-886,2026-06-01,FULL_12_MONTH_UTILITY_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `FULL_12_MONTH_UTILITY_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `FULL_12_MONTH_UTILITY_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
+TRK-140,2026-06-01,JOB_ORDER_COST_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `JOB_ORDER_COST_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `JOB_ORDER_COST_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
+TRK-652,2026-06-01,DIRECT_CASH_FLOW_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `DIRECT_CASH_FLOW_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `DIRECT_CASH_FLOW_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
@@ -138,3 +137,4 @@ TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,C
 TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-908,2026-06-01,ARCHIVED_SPEC_08,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-909,2026-06-01,ARCHIVED_SPEC_09,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-910,2026-06-01,ARCHIVED_SPEC_10,pass_arch,hold_arch,Archived legacy check.,Compliance

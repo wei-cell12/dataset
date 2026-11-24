@@ -1,0 +1,1 @@
+Reconcile the economic-sentiment packet for publication. Resolve the current card roster, check each filed metric against its figure, apply the proofing rule in force, and issue the packet decision. Return one JSON object matching output.schema.json with the source readings, calculated card values, and correction list.

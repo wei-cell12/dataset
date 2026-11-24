@@ -1,0 +1,53 @@
+{
+  "task_id": "T14-02_finance_chart_reconciliation",
+  "domain": "chart_data",
+  "primary_pointers": [
+    {
+      "step": "scope",
+      "pointer": "/active_cards",
+      "m_trap": [
+        "K1",
+        "K2",
+        "K3",
+        "K5"
+      ]
+    },
+    {
+      "step": "policy",
+      "pointer": "/policy",
+      "m_trap": {
+        "id": "PUB-1",
+        "tolerance_points": 2
+      }
+    },
+    {
+      "step": "image_A",
+      "pointer": "/figure_a",
+      "m_trap": {
+        "us_2016_pct": 40,
+        "japan_2016_pct": 37
+      }
+    },
+    {
+      "step": "image_B",
+      "pointer": "/figure_b",
+      "m_trap": {
+        "bad_2019_pct": 41,
+        "bad_2020_pct": 30
+      }
+    },
+    {
+      "step": "final",
+      "pointer": "/final",
+      "m_trap": {
+        "audited": 4,
+        "accepted": 4,
+        "corrections": [],
+        "decision": "RELEASE"
+      }
+    }
+  ],
+  "intermediate_pointers": [
+    "/source_values"
+  ]
+}

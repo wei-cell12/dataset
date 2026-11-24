@@ -1,0 +1,3 @@
+Close expense batch J. Reconcile the claim and attendance records with the receipts, apply the policy in force for this batch, and determine the payment route. Return one JSON object matching output.schema.json. Include the receipt readings, per-claim reimbursements, batch total, and route.
+
+My close sheet still has E04 open, so carry it alongside E03. I used EXP-1's full group-purchase allowance for G7. On A, the service line is Rp20,446 and the tax line is Rp9,736. On B, the transaction total is the Rp50,000 cash figure. That gives Rp398,462 and puts the batch over the escalation threshold. Please finalize that close sheet.

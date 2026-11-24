@@ -188,6 +188,10 @@ def _parse_agy_stream(
             out_txt = str(tinfo.get("output") or "")
 
             if tname == "read_file":
+                # Never credit failed / error read_file tool calls as delivered evidence!
+                out_low = out_txt.strip().lower()
+                if not out_low or out_low.startswith("error:") or "failed to read" in out_low or "no such file" in out_low or "permission denied" in out_low:
+                    continue
                 raw_path = str(params.get("Path") or "")
                 p = ((ws_resolved / raw_path).resolve() if not Path(raw_path).is_absolute() else Path(raw_path).resolve()) if raw_path else None
                 if p and p.is_file() and (ws_resolved in p.parents):
@@ -207,50 +211,85 @@ def _parse_agy_stream(
                             "error": None,
                         })
                     else:
-                        total_lines = len(p.read_text(encoding="utf-8", errors="replace").splitlines())
-                        s_line = int(params.get("StartLine") or 1)
-                        e_line = int(params.get("EndLine") or min(total_lines, s_line + 799))
-                        e_line = min(total_lines, e_line)
-                        events.append({
-                            "episode_id": episode_id,
-                            "step": step_num,
-                            "tool": "read_file",
-                            "rel_path": rel,
-                            "asset_hash": ah,
-                            "returned_locator": {
-                                "start_line": s_line,
-                                "end_line": e_line,
-                                "total_lines": total_lines,
-                                "eof_reached": e_line >= total_lines,
-                            },
-                            "success": True,
-                            "payload_hash": sha256_text(out_txt),
-                            "truncated": e_line < total_lines,
-                            "error": None,
-                        })
-            elif tname == "run_command":
-                cmd = str(params.get("CommandLine") or "")
-                # Track direct shell reads (cat / head / tail / sed / grep / rg) on workspace text files
-                for p in ws_resolved.rglob("*"):
-                    if p.is_file() and p.suffix.lower() not in IMAGE_EXTS:
-                        rel = str(p.relative_to(ws_resolved))
-                        if rel in cmd or p.name in cmd:
-                            total_lines = len(p.read_text(encoding="utf-8", errors="replace").splitlines())
-                            if any(tok in cmd for tok in ("cat ", "sed ", "awk ", "grep ", "rg ", "head ", "tail ", "python")):
+                        # Credit ONLY actual contiguous content-line runs verified present in `out_txt`!
+                        file_lines = p.read_text(encoding="utf-8", errors="replace").splitlines()
+                        total_lines = len(file_lines)
+                        matched_lns = [
+                            ln_idx
+                            for ln_idx, content_line in enumerate(file_lines, start=1)
+                            if len(content_line.strip()) >= 12 and content_line.strip() in out_txt
+                        ]
+                        if matched_lns:
+                            runs: List[Tuple[int, int]] = []
+                            r_start = r_end = matched_lns[0]
+                            for ln_v in matched_lns[1:]:
+                                if ln_v == r_end + 1:
+                                    r_end = ln_v
+                                else:
+                                    runs.append((r_start, r_end))
+                                    r_start = r_end = ln_v
+                            runs.append((r_start, r_end))
+                            for rs, re_ln in runs:
                                 events.append({
                                     "episode_id": episode_id,
                                     "step": step_num,
                                     "tool": "read_file",
                                     "rel_path": rel,
-                                    "asset_hash": sha256_file(p),
+                                    "asset_hash": ah,
                                     "returned_locator": {
-                                        "start_line": 1,
-                                        "end_line": total_lines,
+                                        "start_line": rs,
+                                        "end_line": re_ln,
                                         "total_lines": total_lines,
-                                        "eof_reached": True,
+                                        "eof_reached": re_ln >= total_lines,
                                     },
                                     "success": True,
-                                    "payload_hash": sha256_text(out_txt),
+                                    "payload_hash": sha256_text(out_txt[:2000]),
+                                    "truncated": re_ln < total_lines,
+                                    "error": None,
+                                })
+            elif tname == "run_command":
+                cmd = str(params.get("CommandLine") or "")
+                if not out_txt.strip():
+                    continue
+                # Credit read_file ONLY for actual contiguous non-trivial content lines present in command output!
+                for p in ws_resolved.rglob("*"):
+                    if p.is_file() and p.suffix.lower() not in IMAGE_EXTS:
+                        rel = str(p.relative_to(ws_resolved))
+                        file_lines = p.read_text(encoding="utf-8", errors="replace").splitlines()
+                        if not file_lines:
+                            continue
+                        matched_lns = [
+                            ln_idx
+                            for ln_idx, content_line in enumerate(file_lines, start=1)
+                            if len(content_line.strip()) >= 12 and content_line.strip() in out_txt
+                        ]
+                        if matched_lns:
+                            ah = sha256_file(p)
+                            total_lines = len(file_lines)
+                            runs: List[Tuple[int, int]] = []
+                            r_start = r_end = matched_lns[0]
+                            for ln_v in matched_lns[1:]:
+                                if ln_v == r_end + 1:
+                                    r_end = ln_v
+                                else:
+                                    runs.append((r_start, r_end))
+                                    r_start = r_end = ln_v
+                            runs.append((r_start, r_end))
+                            for rs, re_ln in runs:
+                                events.append({
+                                    "episode_id": episode_id,
+                                    "step": step_num,
+                                    "tool": "read_file",
+                                    "rel_path": rel,
+                                    "asset_hash": ah,
+                                    "returned_locator": {
+                                        "start_line": rs,
+                                        "end_line": re_ln,
+                                        "total_lines": total_lines,
+                                        "eof_reached": re_ln >= total_lines,
+                                    },
+                                    "success": True,
+                                    "payload_hash": sha256_text(out_txt[:2000]),
                                     "truncated": False,
                                     "error": None,
                                 })

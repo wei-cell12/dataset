@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "in_scope",
+    "policy",
+    "header_a",
+    "counter_b",
+    "delivered_b",
+    "marker_checks",
+    "disposition",
+    "final"
+  ],
+  "properties": {
+    "in_scope": {
+      "type": "array",
+      "description": "Unique in-scope subject IDs (ACTIVE or RECONSENTED) sorted in ascending order.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "max_days_inclusive"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "TRIAL-1",
+            "TRIAL-2"
+          ]
+        },
+        "max_days_inclusive": {
+          "type": "integer"
+        }
+      }
+    },
+    "header_a": {
+      "type": "object",
+      "description": "Presence and viewer-coordinate location of burned-in patient-name header on images/A.jpg (do NOT transcribe text).",
+      "additionalProperties": false,
+      "required": [
+        "patient_name_visible",
+        "location"
+      ],
+      "properties": {
+        "patient_name_visible": {
+          "type": "boolean"
+        },
+        "location": {
+          "type": "string",
+          "enum": [
+            "UPPER_LEFT",
+            "UPPER_RIGHT",
+            "LOWER_LEFT",
+            "LOWER_RIGHT",
+            "NONE"
+          ]
+        }
+      }
+    },
+    "counter_b": {
+      "type": "object",
+      "description": "Printed integers from `Im: k/n` on images/B.jpg.",
+      "additionalProperties": false,
+      "required": [
+        "displayed_index",
+        "displayed_total"
+      ],
+      "properties": {
+        "displayed_index": {
+          "type": "integer"
+        },
+        "displayed_total": {
+          "type": "integer"
+        }
+      }
+    },
+    "delivered_b": {
+      "type": "integer",
+      "description": "Count of delivered files for S02 in records/export_inventory.csv."
+    },
+    "marker_checks": {
+      "type": "object",
+      "description": "Visible marker letter and viewer-coordinate location for each RIGHT_MARKER-assigned in-scope subject (even if time window fails).",
+      "additionalProperties": false,
+      "properties": {
+        "S03": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "letter",
+            "location"
+          ],
+          "properties": {
+            "letter": {
+              "type": "string",
+              "enum": [
+                "R",
+                "L",
+                "NONE"
+              ]
+            },
+            "location": {
+              "type": "string",
+              "enum": [
+                "UPPER_LEFT",
+                "UPPER_RIGHT",
+                "LOWER_LEFT",
+                "LOWER_RIGHT",
+                "NONE"
+              ]
+            }
+          }
+        },
+        "S04": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "letter",
+            "location"
+          ],
+          "properties": {
+            "letter": {
+              "type": "string",
+              "enum": [
+                "R",
+                "L",
+                "NONE"
+              ]
+            },
+            "location": {
+              "type": "string",
+              "enum": [
+                "UPPER_LEFT",
+                "UPPER_RIGHT",
+                "LOWER_LEFT",
+                "LOWER_RIGHT",
+                "NONE"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "disposition": {
+      "type": "object",
+      "description": "In-scope subject map of disposition codes.",
+      "additionalProperties": false,
+      "properties": {
+        "S01": {
+          "type": "string",
+          "enum": [
+            "ELIGIBLE",
+            "HOLD_REDACTION",
+            "HOLD_INCOMPLETE_SERIES",
+            "OUTSIDE_WINDOW",
+            "HOLD_MARKER",
+            "PRESCREEN_FAIL"
+          ]
+        },
+        "S02": {
+          "type": "string",
+          "enum": [
+            "ELIGIBLE",
+            "HOLD_REDACTION",
+            "HOLD_INCOMPLETE_SERIES",
+            "OUTSIDE_WINDOW",
+            "HOLD_MARKER",
+            "PRESCREEN_FAIL"
+          ]
+        },
+        "S03": {
+          "type": "string",
+          "enum": [
+            "ELIGIBLE",
+            "HOLD_REDACTION",
+            "HOLD_INCOMPLETE_SERIES",
+            "OUTSIDE_WINDOW",
+            "HOLD_MARKER",
+            "PRESCREEN_FAIL"
+          ]
+        },
+        "S04": {
+          "type": "string",
+          "enum": [
+            "ELIGIBLE",
+            "HOLD_REDACTION",
+            "HOLD_INCOMPLETE_SERIES",
+            "OUTSIDE_WINDOW",
+            "HOLD_MARKER",
+            "PRESCREEN_FAIL"
+          ]
+        }
+      }
+    },
+    "final": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "eligible",
+        "count"
+      ],
+      "properties": {
+        "eligible": {
+          "type": "array",
+          "description": "ELIGIBLE subject IDs sorted in ascending order.",
+          "items": {
+            "type": "string",
+            "enum": [
+              "S01",
+              "S02",
+              "S03",
+              "S04"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

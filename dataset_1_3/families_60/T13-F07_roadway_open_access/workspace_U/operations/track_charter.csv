@@ -121,21 +121,20 @@ TRK-21,2026-01-01,LEGACY_SPEC_119,pass_std,hold_std,Legacy standard check.,Compl
 TRK-22,2026-01-01,LEGACY_SPEC_120,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-23,2026-01-01,LEGACY_SPEC_121,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-24,2026-01-01,LEGACY_SPEC_122,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-11,2026-01-01,LEGACY_SPEC_127,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-12,2026-01-01,LEGACY_SPEC_128,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-847,2026-06-01,SAFEWAY_30TH_AVE,audit_pass,audit_hold,"Inspect the assigned image against `SAFEWAY_30TH_AVE`: assign `audit_pass` if the image clearly satisfies `SAFEWAY_30TH_AVE`, otherwise assign `audit_hold`.",Compliance
-TRK-841,2026-06-01,UNBLURRED_SIGNAGE_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `UNBLURRED_SIGNAGE_VISIBLE`: assign `audit_pass` if the image clearly satisfies `UNBLURRED_SIGNAGE_VISIBLE`, otherwise assign `audit_hold`.",Compliance
-TRK-690,2026-06-01,NO_CAUTION_TAPE_ACTIVE,audit_pass,audit_hold,"Inspect the assigned image against `NO_CAUTION_TAPE_ACTIVE`: assign `audit_pass` if the image clearly satisfies `NO_CAUTION_TAPE_ACTIVE`, otherwise assign `audit_hold`.",Compliance
-TRK-176,2026-06-01,UNBOXED_UNITS_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `UNBOXED_UNITS_VISIBLE`: assign `audit_pass` if the image clearly satisfies `UNBOXED_UNITS_VISIBLE`, otherwise assign `audit_hold`.",Compliance
+TRK-176,2026-06-01,PRINTED_BRAND_LABEL_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `PRINTED_BRAND_LABEL_VISIBLE`: assign `audit_pass` if the image clearly satisfies `PRINTED_BRAND_LABEL_VISIBLE`, otherwise assign `audit_hold`.",Compliance
+TRK-690,2026-06-01,RESTROOM_ENMOTION_DISPENSER,audit_pass,audit_hold,"Inspect the assigned image against `RESTROOM_ENMOTION_DISPENSER`: assign `audit_pass` if the image clearly satisfies `RESTROOM_ENMOTION_DISPENSER`, otherwise assign `audit_hold`.",Compliance
+TRK-847,2026-06-01,NO_CAUTION_TAPE_ACTIVE,audit_pass,audit_hold,"Inspect the assigned image against `NO_CAUTION_TAPE_ACTIVE`: assign `audit_pass` if the image clearly satisfies `NO_CAUTION_TAPE_ACTIVE`, otherwise assign `audit_hold`.",Compliance
+TRK-306,2026-06-01,ITEMIZED_TAX_LINE_REQUIRED,audit_pass,audit_hold,"Inspect the assigned image against `ITEMIZED_TAX_LINE_REQUIRED`: assign `audit_pass` if the image clearly satisfies `ITEMIZED_TAX_LINE_REQUIRED`, otherwise assign `audit_hold`.",Compliance
 TRK-252,2026-06-01,OPEN_THROUGH_TRAFFIC,audit_pass,audit_hold,"Inspect the assigned image against `OPEN_THROUGH_TRAFFIC`: assign `audit_pass` if the image clearly satisfies `OPEN_THROUGH_TRAFFIC`, otherwise assign `audit_hold`.",Compliance
-TRK-306,2026-06-01,EXPLICIT_TAX_LINE_REQUIRED,audit_pass,audit_hold,"Inspect the assigned image against `EXPLICIT_TAX_LINE_REQUIRED`: assign `audit_pass` if the image clearly satisfies `EXPLICIT_TAX_LINE_REQUIRED`, otherwise assign `audit_hold`.",Compliance
+TRK-841,2026-06-01,EXCLUDE_HAZELNUT_NUTELLA,audit_pass,audit_hold,"Inspect the assigned image against `EXCLUDE_HAZELNUT_NUTELLA`: assign `audit_pass` if the image clearly satisfies `EXCLUDE_HAZELNUT_NUTELLA`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-904,2026-06-01,ARCHIVED_SPEC_04,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-905,2026-06-01,ARCHIVED_SPEC_05,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-908,2026-06-01,ARCHIVED_SPEC_08,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-909,2026-06-01,ARCHIVED_SPEC_09,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-910,2026-06-01,ARCHIVED_SPEC_10,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-911,2026-06-01,ARCHIVED_SPEC_11,pass_arch,hold_arch,Archived legacy check.,Compliance

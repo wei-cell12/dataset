@@ -1,0 +1,6 @@
+seq,claim,status
+1,E01,OPEN
+2,E02,OPEN
+3,E03,OPEN
+4,E04,OPEN
+5,E04,PAID

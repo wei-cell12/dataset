@@ -124,17 +124,19 @@ TRK-24,2026-01-01,LEGACY_SPEC_122,pass_std,hold_std,Legacy standard check.,Compl
 TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-480,2026-06-01,US_HOUSE_SENIORITY,audit_pass,audit_hold,"Inspect the assigned image against `US_HOUSE_SENIORITY`: assign `audit_pass` if the image clearly satisfies `US_HOUSE_SENIORITY`, otherwise assign `audit_hold`.",Compliance
-TRK-509,2026-06-01,YEAR_2020,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2020`: assign `audit_pass` if the image clearly satisfies `YEAR_2020`, otherwise assign `audit_hold`.",Compliance
-TRK-168,2026-06-01,VOTING_WAIT_LINES_SURVEY,audit_pass,audit_hold,"Inspect the assigned image against `VOTING_WAIT_LINES_SURVEY`: assign `audit_pass` if the image clearly satisfies `VOTING_WAIT_LINES_SURVEY`, otherwise assign `audit_hold`.",Compliance
-TRK-833,2026-06-01,FULL_12_MONTH_UTILITY_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `FULL_12_MONTH_UTILITY_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `FULL_12_MONTH_UTILITY_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
-TRK-252,2026-06-01,YEAR_2014_BENCHMARK,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2014_BENCHMARK`: assign `audit_pass` if the image clearly satisfies `YEAR_2014_BENCHMARK`, otherwise assign `audit_hold`.",Compliance
+TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-11,2026-01-01,LEGACY_SPEC_127,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-12,2026-01-01,LEGACY_SPEC_128,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-13,2026-01-01,LEGACY_SPEC_129,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-833,2026-06-01,COLLEGE_ADMISSIONS_FACTORS,audit_pass,audit_hold,"Inspect the assigned image against `COLLEGE_ADMISSIONS_FACTORS`: assign `audit_pass` if the image clearly satisfies `COLLEGE_ADMISSIONS_FACTORS`, otherwise assign `audit_hold`.",Compliance
+TRK-168,2026-06-01,YEAR_2020_RELEASE,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2020_RELEASE`: assign `audit_pass` if the image clearly satisfies `YEAR_2020_RELEASE`, otherwise assign `audit_hold`.",Compliance
+TRK-480,2026-06-01,COVID_2020_WAVE,audit_pass,audit_hold,"Inspect the assigned image against `COVID_2020_WAVE`: assign `audit_pass` if the image clearly satisfies `COVID_2020_WAVE`, otherwise assign `audit_hold`.",Compliance
 TRK-340,2026-06-01,REVENUE_EXPENSE_OPERATING_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `REVENUE_EXPENSE_OPERATING_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `REVENUE_EXPENSE_OPERATING_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
+TRK-252,2026-06-01,YEAR_2014_BENCHMARK,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2014_BENCHMARK`: assign `audit_pass` if the image clearly satisfies `YEAR_2014_BENCHMARK`, otherwise assign `audit_hold`.",Compliance
+TRK-509,2026-06-01,DEFORESTATION_EMBODIED_IN_TRADE,audit_pass,audit_hold,"Inspect the assigned image against `DEFORESTATION_EMBODIED_IN_TRADE`: assign `audit_pass` if the image clearly satisfies `DEFORESTATION_EMBODIED_IN_TRADE`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-904,2026-06-01,ARCHIVED_SPEC_04,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-905,2026-06-01,ARCHIVED_SPEC_05,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-908,2026-06-01,ARCHIVED_SPEC_08,pass_arch,hold_arch,Archived legacy check.,Compliance

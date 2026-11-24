@@ -1,0 +1,51 @@
+{
+  "task_id": "T14-01_daily_expense_audit",
+  "domain": "daily_life",
+  "primary_pointers": [
+    {
+      "step": "scope",
+      "pointer": "/open_claims",
+      "m_trap": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ]
+    },
+    {
+      "step": "policy",
+      "pointer": "/policy",
+      "m_trap": "EXP-1"
+    },
+    {
+      "step": "image_A",
+      "pointer": "/receipt_a",
+      "m_trap": {
+        "total_idr": 224908,
+        "service_idr": 20446,
+        "tax_idr": 9736
+      }
+    },
+    {
+      "step": "image_B",
+      "pointer": "/receipt_b",
+      "m_trap": {
+        "total_idr": 50000,
+        "cash_idr": 50000,
+        "change_idr": 7500
+      }
+    },
+    {
+      "step": "final",
+      "pointer": "/final",
+      "m_trap": {
+        "batch_idr": 398462,
+        "route": "ESCALATE"
+      }
+    }
+  ],
+  "intermediate_pointers": [
+    "/group_c",
+    "/payable_idr"
+  ]
+}

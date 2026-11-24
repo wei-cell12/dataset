@@ -127,13 +127,11 @@ TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compl
 TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-11,2026-01-01,LEGACY_SPEC_127,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-12,2026-01-01,LEGACY_SPEC_128,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-13,2026-01-01,LEGACY_SPEC_129,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-14,2026-01-01,LEGACY_SPEC_130,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-573,2026-06-01,PURPLE_MECHANICAL_KEYBOARD,audit_pass,audit_hold,"Inspect the assigned image against `PURPLE_MECHANICAL_KEYBOARD`: assign `audit_pass` if the image clearly satisfies `PURPLE_MECHANICAL_KEYBOARD`, otherwise assign `audit_hold`.",Compliance
-TRK-596,2026-06-01,DAYTIME_HIGHWAY_PARKWAY,audit_pass,audit_hold,"Inspect the assigned image against `DAYTIME_HIGHWAY_PARKWAY`: assign `audit_pass` if the image clearly satisfies `DAYTIME_HIGHWAY_PARKWAY`, otherwise assign `audit_hold`.",Compliance
-TRK-823,2026-06-01,UNBLURRED_SIGNAGE_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `UNBLURRED_SIGNAGE_VISIBLE`: assign `audit_pass` if the image clearly satisfies `UNBLURRED_SIGNAGE_VISIBLE`, otherwise assign `audit_hold`.",Compliance
-TRK-701,2026-06-01,RESTROOM_ENMOTION_DISPENSER,audit_pass,audit_hold,"Inspect the assigned image against `RESTROOM_ENMOTION_DISPENSER`: assign `audit_pass` if the image clearly satisfies `RESTROOM_ENMOTION_DISPENSER`, otherwise assign `audit_hold`.",Compliance
-TRK-135,2026-06-01,JEWELRY_CASE_PRICE_TAG,audit_pass,audit_hold,"Inspect the assigned image against `JEWELRY_CASE_PRICE_TAG`: assign `audit_pass` if the image clearly satisfies `JEWELRY_CASE_PRICE_TAG`, otherwise assign `audit_hold`.",Compliance
+TRK-701,2026-06-01,EXCLUDE_HAZELNUT_NUTELLA,audit_pass,audit_hold,"Inspect the assigned image against `EXCLUDE_HAZELNUT_NUTELLA`: assign `audit_pass` if the image clearly satisfies `EXCLUDE_HAZELNUT_NUTELLA`, otherwise assign `audit_hold`.",Compliance
+TRK-823,2026-06-01,PRINTED_BRAND_LABEL_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `PRINTED_BRAND_LABEL_VISIBLE`: assign `audit_pass` if the image clearly satisfies `PRINTED_BRAND_LABEL_VISIBLE`, otherwise assign `audit_hold`.",Compliance
+TRK-135,2026-06-01,CANGSHAN_KNIFE_BLOCK_SET,audit_pass,audit_hold,"Inspect the assigned image against `CANGSHAN_KNIFE_BLOCK_SET`: assign `audit_pass` if the image clearly satisfies `CANGSHAN_KNIFE_BLOCK_SET`, otherwise assign `audit_hold`.",Compliance
+TRK-573,2026-06-01,OPEN_THROUGH_TRAFFIC,audit_pass,audit_hold,"Inspect the assigned image against `OPEN_THROUGH_TRAFFIC`: assign `audit_pass` if the image clearly satisfies `OPEN_THROUGH_TRAFFIC`, otherwise assign `audit_hold`.",Compliance
+TRK-596,2026-06-01,UNREDACTED_MERCHANT_NAME,audit_pass,audit_hold,"Inspect the assigned image against `UNREDACTED_MERCHANT_NAME`: assign `audit_pass` if the image clearly satisfies `UNREDACTED_MERCHANT_NAME`, otherwise assign `audit_hold`.",Compliance
 TRK-662,2026-06-01,EXCLUDE_PEANUT_NAMED_ITEMS,audit_pass,audit_hold,"Inspect the assigned image against `EXCLUDE_PEANUT_NAMED_ITEMS`: assign `audit_pass` if the image clearly satisfies `EXCLUDE_PEANUT_NAMED_ITEMS`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance

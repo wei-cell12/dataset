@@ -125,16 +125,16 @@ TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compl
 TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-11,2026-01-01,LEGACY_SPEC_127,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-182,2026-06-01,US_HOUSE_SENIORITY,audit_pass,audit_hold,"Inspect the assigned image against `US_HOUSE_SENIORITY`: assign `audit_pass` if the image clearly satisfies `US_HOUSE_SENIORITY`, otherwise assign `audit_hold`.",Compliance
-TRK-455,2026-06-01,OPERATING_INCOME_STATEMENT,audit_pass,audit_hold,"Inspect the assigned image against `OPERATING_INCOME_STATEMENT`: assign `audit_pass` if the image clearly satisfies `OPERATING_INCOME_STATEMENT`, otherwise assign `audit_hold`.",Compliance
-TRK-531,2026-06-01,COVID_2020_WAVE,audit_pass,audit_hold,"Inspect the assigned image against `COVID_2020_WAVE`: assign `audit_pass` if the image clearly satisfies `COVID_2020_WAVE`, otherwise assign `audit_hold`.",Compliance
-TRK-410,2026-06-01,EUROPEAN_UNION_PARLIAMENT,audit_pass,audit_hold,"Inspect the assigned image against `EUROPEAN_UNION_PARLIAMENT`: assign `audit_pass` if the image clearly satisfies `EUROPEAN_UNION_PARLIAMENT`, otherwise assign `audit_hold`.",Compliance
-TRK-252,2026-06-01,YEAR_2020,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2020`: assign `audit_pass` if the image clearly satisfies `YEAR_2020`, otherwise assign `audit_hold`.",Compliance
-TRK-508,2026-06-01,JAPAN_SURVEY_STUDY,audit_pass,audit_hold,"Inspect the assigned image against `JAPAN_SURVEY_STUDY`: assign `audit_pass` if the image clearly satisfies `JAPAN_SURVEY_STUDY`, otherwise assign `audit_hold`.",Compliance
+TRK-508,2026-06-01,UPPER_SECONDARY_GRADUATION,audit_pass,audit_hold,"Inspect the assigned image against `UPPER_SECONDARY_GRADUATION`: assign `audit_pass` if the image clearly satisfies `UPPER_SECONDARY_GRADUATION`, otherwise assign `audit_hold`.",Compliance
+TRK-410,2026-06-01,YEAR_2014_BENCHMARK,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2014_BENCHMARK`: assign `audit_pass` if the image clearly satisfies `YEAR_2014_BENCHMARK`, otherwise assign `audit_hold`.",Compliance
+TRK-531,2026-06-01,COLLEGE_ADMISSIONS_FACTORS,audit_pass,audit_hold,"Inspect the assigned image against `COLLEGE_ADMISSIONS_FACTORS`: assign `audit_pass` if the image clearly satisfies `COLLEGE_ADMISSIONS_FACTORS`, otherwise assign `audit_hold`.",Compliance
+TRK-252,2026-06-01,BANKING_FINANCIAL_RATIOS_TABLE,audit_pass,audit_hold,"Inspect the assigned image against `BANKING_FINANCIAL_RATIOS_TABLE`: assign `audit_pass` if the image clearly satisfies `BANKING_FINANCIAL_RATIOS_TABLE`, otherwise assign `audit_hold`.",Compliance
+TRK-455,2026-06-01,COUNTRY_PROGRAMMABLE_AID_CPA,audit_pass,audit_hold,"Inspect the assigned image against `COUNTRY_PROGRAMMABLE_AID_CPA`: assign `audit_pass` if the image clearly satisfies `COUNTRY_PROGRAMMABLE_AID_CPA`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-904,2026-06-01,ARCHIVED_SPEC_04,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-905,2026-06-01,ARCHIVED_SPEC_05,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance

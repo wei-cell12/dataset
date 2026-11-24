@@ -1,0 +1,5 @@
+subject,image,prescreen,days_before_intake,assigned_check
+S01,A.jpg,PASS,12,PATIENT_HEADER
+S02,B.jpg,PASS,18,SERIES_COUNTER
+S03,C.jpg,PASS,38,RIGHT_MARKER
+S04,D.jpg,PASS,11,RIGHT_MARKER

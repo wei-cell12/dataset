@@ -1,0 +1,1 @@
+Close expense batch J. Reconcile the claim and attendance records with the receipts, apply the policy in force for this batch, and determine the payment route. Return one JSON object matching output.schema.json. Include the receipt readings, per-claim reimbursements, batch total, and route.

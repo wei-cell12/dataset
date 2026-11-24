@@ -120,13 +120,12 @@ TRK-20,2026-01-01,LEGACY_SPEC_118,pass_std,hold_std,Legacy standard check.,Compl
 TRK-21,2026-01-01,LEGACY_SPEC_119,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-22,2026-01-01,LEGACY_SPEC_120,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-23,2026-01-01,LEGACY_SPEC_121,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-24,2026-01-01,LEGACY_SPEC_122,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-255,2026-06-01,DEFORESTATION_EMBODIED_IN_TRADE,audit_pass,audit_hold,"Inspect the assigned image against `DEFORESTATION_EMBODIED_IN_TRADE`: assign `audit_pass` if the image clearly satisfies `DEFORESTATION_EMBODIED_IN_TRADE`, otherwise assign `audit_hold`.",Compliance
-TRK-677,2026-06-01,DIRECT_CASH_FLOW_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `DIRECT_CASH_FLOW_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `DIRECT_CASH_FLOW_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
-TRK-216,2026-06-01,BANKING_FINANCIAL_RATIOS_TABLE,audit_pass,audit_hold,"Inspect the assigned image against `BANKING_FINANCIAL_RATIOS_TABLE`: assign `audit_pass` if the image clearly satisfies `BANKING_FINANCIAL_RATIOS_TABLE`, otherwise assign `audit_hold`.",Compliance
+TRK-216,2026-06-01,REVENUE_EXPENSE_OPERATING_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `REVENUE_EXPENSE_OPERATING_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `REVENUE_EXPENSE_OPERATING_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
+TRK-801,2026-06-01,YEAR_2020_RELEASE,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2020_RELEASE`: assign `audit_pass` if the image clearly satisfies `YEAR_2020_RELEASE`, otherwise assign `audit_hold`.",Compliance
 TRK-544,2026-06-01,OPERATING_INCOME_STATEMENT,audit_pass,audit_hold,"Inspect the assigned image against `OPERATING_INCOME_STATEMENT`: assign `audit_pass` if the image clearly satisfies `OPERATING_INCOME_STATEMENT`, otherwise assign `audit_hold`.",Compliance
-TRK-801,2026-06-01,ENGLAND_ROUGH_SLEEPERS_COUNT,audit_pass,audit_hold,"Inspect the assigned image against `ENGLAND_ROUGH_SLEEPERS_COUNT`: assign `audit_pass` if the image clearly satisfies `ENGLAND_ROUGH_SLEEPERS_COUNT`, otherwise assign `audit_hold`.",Compliance
-TRK-871,2026-06-01,COVID_2020_WAVE,audit_pass,audit_hold,"Inspect the assigned image against `COVID_2020_WAVE`: assign `audit_pass` if the image clearly satisfies `COVID_2020_WAVE`, otherwise assign `audit_hold`.",Compliance
+TRK-871,2026-06-01,SECONDARY_EDUCATION_GPI,audit_pass,audit_hold,"Inspect the assigned image against `SECONDARY_EDUCATION_GPI`: assign `audit_pass` if the image clearly satisfies `SECONDARY_EDUCATION_GPI`, otherwise assign `audit_hold`.",Compliance
+TRK-677,2026-06-01,COLLEGE_ADMISSIONS_FACTORS,audit_pass,audit_hold,"Inspect the assigned image against `COLLEGE_ADMISSIONS_FACTORS`: assign `audit_pass` if the image clearly satisfies `COLLEGE_ADMISSIONS_FACTORS`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
@@ -138,3 +137,4 @@ TRK-908,2026-06-01,ARCHIVED_SPEC_08,pass_arch,hold_arch,Archived legacy check.,C
 TRK-909,2026-06-01,ARCHIVED_SPEC_09,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-910,2026-06-01,ARCHIVED_SPEC_10,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-911,2026-06-01,ARCHIVED_SPEC_11,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-912,2026-06-01,ARCHIVED_SPEC_12,pass_arch,hold_arch,Archived legacy check.,Compliance

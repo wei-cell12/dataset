@@ -1,0 +1,886 @@
+{
+  "model": "gpt-5.6-luna",
+  "runner": "codex",
+  "tag": "pilot3_luna",
+  "total_episodes": 6,
+  "resolved_pairs": 3,
+  "unresolved_by_arm": {
+    "N": 0,
+    "M": 0
+  },
+  "paired_n_pass_to_m_fail_by_step": {
+    "scope": [],
+    "policy": [],
+    "image_A": [
+      "T14-03_clinical_imaging_cohort_audit"
+    ],
+    "image_B": [
+      "T14-03_clinical_imaging_cohort_audit"
+    ],
+    "final": [
+      "T14-03_clinical_imaging_cohort_audit"
+    ]
+  },
+  "episodes": [
+    {
+      "task_id": "T14-01_daily_expense_audit",
+      "arm": "M",
+      "model": "gpt-5.6-luna",
+      "runner": "codex",
+      "returncode": 0,
+      "elapsed_s": 80.26,
+      "raw_stream_sha256": "cf169c9c5bede4214f8967a86942b42df13f450cf58de42421202451b6ea98a5",
+      "raw_response": "I’m auditing the specified records, policies, communications, images, and schema, then I’ll reconcile the two open claims and validate the batch total and route.\n\nThe records show E01–E04 as OPEN by claim, with E04’s later PAID event requiring last-event filtering; the controlling policy is EXP-2 because it supersedes the group-refreshment clause for batch J. I’m now transcribing the three receipt images and checking the arithmetic against those rules.\n\nThe receipts and policy conflict with the close-sheet assertions: A visibly prints service Rp9,736 and tax Rp20,446; B prints total Rp42,500 with Rp50,000 cash and Rp7,500 change; C shows 4 purchased servings and total Rp72,000. Under the last-event rule, E04 is PAID and excluded, and EXP-2 prorates G7 to Rp54,000 for E03.\n\n{\"open_claims\":[\"E01\",\"E02\",\"E03\"],\"policy\":\"EXP-2\",\"receipt_a\":{\"total_idr\":224908,\"service_idr\":9736,\"tax_idr\":20446},\"receipt_b\":{\"total_idr\":42500,\"cash_idr\":50000,\"change_idr\":7500},\"group_c\":{\"purchased_servings\":4,\"approved_servings\":3,\"total_idr\":72000},\"payable_idr\":{\"E01\":215172,\"E02\":42500,\"E03\":54000},\"final\":{\"batch_idr\":311672,\"route\":\"RELEASE\"}}",
+      "raw_response_sha256": "b8bc899d0a40c72fc56e66e9de44add137645fd83b5ee99c32a824d12d0b6297",
+      "stderr_tail": "",
+      "scorable": true,
+      "format_flag": "RECOVERED",
+      "schema_compliant": true,
+      "five_bit": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "five_step_score": 5,
+      "full_object_exact": true,
+      "step_details": [
+        {
+          "step": "scope",
+          "pointer": "/open_claims",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "actual": [
+            "E01",
+            "E02",
+            "E03"
+          ]
+        },
+        {
+          "step": "policy",
+          "pointer": "/policy",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": "EXP-2",
+          "actual": "EXP-2"
+        },
+        {
+          "step": "image_A",
+          "pointer": "/receipt_a",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "total_idr": 224908,
+            "service_idr": 9736,
+            "tax_idr": 20446
+          },
+          "actual": {
+            "total_idr": 224908,
+            "service_idr": 9736,
+            "tax_idr": 20446
+          }
+        },
+        {
+          "step": "image_B",
+          "pointer": "/receipt_b",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "total_idr": 42500,
+            "cash_idr": 50000,
+            "change_idr": 7500
+          },
+          "actual": {
+            "total_idr": 42500,
+            "cash_idr": 50000,
+            "change_idr": 7500
+          }
+        },
+        {
+          "step": "final",
+          "pointer": "/final",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "batch_idr": 311672,
+            "route": "RELEASE"
+          },
+          "actual": {
+            "batch_idr": 311672,
+            "route": "RELEASE"
+          }
+        }
+      ],
+      "intermediate_details": {
+        "/group_c": {
+          "passed": true,
+          "expected": {
+            "purchased_servings": 4,
+            "approved_servings": 3,
+            "total_idr": 72000
+          },
+          "actual": {
+            "purchased_servings": 4,
+            "approved_servings": 3,
+            "total_idr": 72000
+          }
+        },
+        "/payable_idr": {
+          "passed": true,
+          "expected": {
+            "E01": 215172,
+            "E02": 42500,
+            "E03": 54000
+          },
+          "actual": {
+            "E01": 215172,
+            "E02": 42500,
+            "E03": 54000
+          }
+        }
+      },
+      "m_trap_hits": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "task_id": "T14-01_daily_expense_audit",
+      "arm": "N",
+      "model": "gpt-5.6-luna",
+      "runner": "codex",
+      "returncode": 0,
+      "elapsed_s": 35.57,
+      "raw_stream_sha256": "ce55f5262316f28c1c16ea2bf0a9a61e1ba6ce76b4f92e21293865b3c75587ba",
+      "raw_response": "I’m auditing the batch inputs, policy, records, communications, receipts, and output schema, then I’ll return the reconciled result as JSON only.\n\nThe records show four claims, but the last-event rule marks E04 as paid, so only E01–E03 are active OPEN claims. EXP-2 is the controlling policy for the group-refreshment claim; I’m now transcribing the three receipts to calculate exact IDR amounts.\n\n{\"open_claims\":[\"E01\",\"E02\",\"E03\"],\"policy\":\"EXP-2\",\"receipt_a\":{\"total_idr\":224908,\"service_idr\":9736,\"tax_idr\":20446},\"receipt_b\":{\"total_idr\":42500,\"cash_idr\":50000,\"change_idr\":7500},\"group_c\":{\"purchased_servings\":4,\"approved_servings\":3,\"total_idr\":72000},\"payable_idr\":{\"E01\":215172,\"E02\":42500,\"E03\":54000},\"final\":{\"batch_idr\":311672,\"route\":\"RELEASE\"}}",
+      "raw_response_sha256": "343eb5bd0d556b439859cf621a5bdcf33e87e4d6712c0e9bfdd3837da85e75e6",
+      "stderr_tail": "",
+      "scorable": true,
+      "format_flag": "RECOVERED",
+      "schema_compliant": true,
+      "five_bit": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "five_step_score": 5,
+      "full_object_exact": true,
+      "step_details": [
+        {
+          "step": "scope",
+          "pointer": "/open_claims",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "actual": [
+            "E01",
+            "E02",
+            "E03"
+          ]
+        },
+        {
+          "step": "policy",
+          "pointer": "/policy",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": "EXP-2",
+          "actual": "EXP-2"
+        },
+        {
+          "step": "image_A",
+          "pointer": "/receipt_a",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "total_idr": 224908,
+            "service_idr": 9736,
+            "tax_idr": 20446
+          },
+          "actual": {
+            "total_idr": 224908,
+            "service_idr": 9736,
+            "tax_idr": 20446
+          }
+        },
+        {
+          "step": "image_B",
+          "pointer": "/receipt_b",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "total_idr": 42500,
+            "cash_idr": 50000,
+            "change_idr": 7500
+          },
+          "actual": {
+            "total_idr": 42500,
+            "cash_idr": 50000,
+            "change_idr": 7500
+          }
+        },
+        {
+          "step": "final",
+          "pointer": "/final",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "batch_idr": 311672,
+            "route": "RELEASE"
+          },
+          "actual": {
+            "batch_idr": 311672,
+            "route": "RELEASE"
+          }
+        }
+      ],
+      "intermediate_details": {
+        "/group_c": {
+          "passed": true,
+          "expected": {
+            "purchased_servings": 4,
+            "approved_servings": 3,
+            "total_idr": 72000
+          },
+          "actual": {
+            "purchased_servings": 4,
+            "approved_servings": 3,
+            "total_idr": 72000
+          }
+        },
+        "/payable_idr": {
+          "passed": true,
+          "expected": {
+            "E01": 215172,
+            "E02": 42500,
+            "E03": 54000
+          },
+          "actual": {
+            "E01": 215172,
+            "E02": 42500,
+            "E03": 54000
+          }
+        }
+      },
+      "m_trap_hits": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "task_id": "T14-02_finance_chart_reconciliation",
+      "arm": "M",
+      "model": "gpt-5.6-luna",
+      "runner": "codex",
+      "returncode": 0,
+      "elapsed_s": 42.09,
+      "raw_stream_sha256": "945276794300ac0ec780858a25ccfa32818fdc4642a0d57683d5c6e10e5aa5c1",
+      "raw_response": "I’ll inspect the packet files, policies, communications, images, and schema, then reconcile the roster, calculations, proofing rule, and final publication decision.\n\n{\"active_cards\":[\"K1\",\"K2\",\"K3\",\"K4\",\"K5\"],\"policy\":{\"id\":\"PUB-2\",\"tolerance_points\":0},\"figure_a\":{\"us_2016_pct\":44,\"japan_2016_pct\":30},\"figure_b\":{\"bad_2019_pct\":53,\"bad_2020_pct\":68},\"source_values\":{\"K1\":14,\"K2\":15,\"K3\":32,\"K4\":41,\"K5\":40},\"final\":{\"audited\":5,\"accepted\":1,\"corrections\":[\"K1\",\"K2\",\"K3\",\"K4\"],\"decision\":\"RETURN\"}}",
+      "raw_response_sha256": "b191ecae6096a335e5c02e0b7512f9d906dd31ce6f8d35639ebedf2a6cde59c2",
+      "stderr_tail": "",
+      "scorable": true,
+      "format_flag": "RECOVERED",
+      "schema_compliant": true,
+      "five_bit": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "five_step_score": 5,
+      "full_object_exact": true,
+      "step_details": [
+        {
+          "step": "scope",
+          "pointer": "/active_cards",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": [
+            "K1",
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "actual": [
+            "K1",
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ]
+        },
+        {
+          "step": "policy",
+          "pointer": "/policy",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "id": "PUB-2",
+            "tolerance_points": 0
+          },
+          "actual": {
+            "id": "PUB-2",
+            "tolerance_points": 0
+          }
+        },
+        {
+          "step": "image_A",
+          "pointer": "/figure_a",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "us_2016_pct": 44,
+            "japan_2016_pct": 30
+          },
+          "actual": {
+            "us_2016_pct": 44,
+            "japan_2016_pct": 30
+          }
+        },
+        {
+          "step": "image_B",
+          "pointer": "/figure_b",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "bad_2019_pct": 53,
+            "bad_2020_pct": 68
+          },
+          "actual": {
+            "bad_2019_pct": 53,
+            "bad_2020_pct": 68
+          }
+        },
+        {
+          "step": "final",
+          "pointer": "/final",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "audited": 5,
+            "accepted": 1,
+            "corrections": [
+              "K1",
+              "K2",
+              "K3",
+              "K4"
+            ],
+            "decision": "RETURN"
+          },
+          "actual": {
+            "audited": 5,
+            "accepted": 1,
+            "corrections": [
+              "K1",
+              "K2",
+              "K3",
+              "K4"
+            ],
+            "decision": "RETURN"
+          }
+        }
+      ],
+      "intermediate_details": {
+        "/source_values": {
+          "passed": true,
+          "expected": {
+            "K1": 14,
+            "K2": 15,
+            "K3": 32,
+            "K4": 41,
+            "K5": 40
+          },
+          "actual": {
+            "K1": 14,
+            "K2": 15,
+            "K3": 32,
+            "K4": 41,
+            "K5": 40
+          }
+        }
+      },
+      "m_trap_hits": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "task_id": "T14-02_finance_chart_reconciliation",
+      "arm": "N",
+      "model": "gpt-5.6-luna",
+      "runner": "codex",
+      "returncode": 0,
+      "elapsed_s": 35.26,
+      "raw_stream_sha256": "77551300526fb9e21667020a0edf540b507d77f12f9637c75ff9521916b1ae05",
+      "raw_response": "{\"active_cards\":[\"K1\",\"K2\",\"K3\",\"K4\",\"K5\"],\"policy\":{\"id\":\"PUB-2\",\"tolerance_points\":0},\"figure_a\":{\"us_2016_pct\":44,\"japan_2016_pct\":30},\"figure_b\":{\"bad_2019_pct\":53,\"bad_2020_pct\":68},\"source_values\":{\"K1\":14,\"K2\":15,\"K3\":32,\"K4\":41,\"K5\":40},\"final\":{\"audited\":5,\"accepted\":1,\"corrections\":[\"K1\",\"K2\",\"K3\",\"K4\"],\"decision\":\"RETURN\"}}",
+      "raw_response_sha256": "2068c7d8a6eacbc81dd19ed08f86e24b4df17f73ee7fed1abdf23fc08d405872",
+      "stderr_tail": "",
+      "scorable": true,
+      "format_flag": "OK",
+      "schema_compliant": true,
+      "five_bit": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "five_step_score": 5,
+      "full_object_exact": true,
+      "step_details": [
+        {
+          "step": "scope",
+          "pointer": "/active_cards",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": [
+            "K1",
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "actual": [
+            "K1",
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ]
+        },
+        {
+          "step": "policy",
+          "pointer": "/policy",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "id": "PUB-2",
+            "tolerance_points": 0
+          },
+          "actual": {
+            "id": "PUB-2",
+            "tolerance_points": 0
+          }
+        },
+        {
+          "step": "image_A",
+          "pointer": "/figure_a",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "us_2016_pct": 44,
+            "japan_2016_pct": 30
+          },
+          "actual": {
+            "us_2016_pct": 44,
+            "japan_2016_pct": 30
+          }
+        },
+        {
+          "step": "image_B",
+          "pointer": "/figure_b",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "bad_2019_pct": 53,
+            "bad_2020_pct": 68
+          },
+          "actual": {
+            "bad_2019_pct": 53,
+            "bad_2020_pct": 68
+          }
+        },
+        {
+          "step": "final",
+          "pointer": "/final",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "audited": 5,
+            "accepted": 1,
+            "corrections": [
+              "K1",
+              "K2",
+              "K3",
+              "K4"
+            ],
+            "decision": "RETURN"
+          },
+          "actual": {
+            "audited": 5,
+            "accepted": 1,
+            "corrections": [
+              "K1",
+              "K2",
+              "K3",
+              "K4"
+            ],
+            "decision": "RETURN"
+          }
+        }
+      ],
+      "intermediate_details": {
+        "/source_values": {
+          "passed": true,
+          "expected": {
+            "K1": 14,
+            "K2": 15,
+            "K3": 32,
+            "K4": 41,
+            "K5": 40
+          },
+          "actual": {
+            "K1": 14,
+            "K2": 15,
+            "K3": 32,
+            "K4": 41,
+            "K5": 40
+          }
+        }
+      },
+      "m_trap_hits": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "task_id": "T14-03_clinical_imaging_cohort_audit",
+      "arm": "M",
+      "model": "gpt-5.6-luna",
+      "runner": "codex",
+      "returncode": 0,
+      "elapsed_s": 71.79,
+      "raw_stream_sha256": "56019805c8b3056e1e0ac00a04e83b3eb69ff4cf1965f4529e94790a24380b44",
+      "raw_response": "I’m checking the four exported images for the assigned header, counter, and marker observations, then I’ll reconcile those findings with the latest consent events and the protocol documents.\n\n{\"in_scope\":[\"S01\",\"S02\",\"S03\",\"S04\"],\"policy\":{\"id\":\"TRIAL-2\",\"max_days_inclusive\":30},\"header_a\":{\"patient_name_visible\":false,\"location\":\"NONE\"},\"counter_b\":{\"displayed_index\":1,\"displayed_total\":1},\"delivered_b\":1,\"marker_checks\":{\"S03\":{\"letter\":\"R\",\"location\":\"UPPER_LEFT\"},\"S04\":{\"letter\":\"R\",\"location\":\"UPPER_LEFT\"}},\"disposition\":{\"S01\":\"ELIGIBLE\",\"S02\":\"ELIGIBLE\",\"S03\":\"OUTSIDE_WINDOW\",\"S04\":\"ELIGIBLE\"},\"final\":{\"eligible\":[\"S01\",\"S02\",\"S04\"],\"count\":3}}",
+      "raw_response_sha256": "09db9414df516a2c06a94a6182175a3bbf3febec317169b7059ffec36930b34c",
+      "stderr_tail": "",
+      "scorable": true,
+      "format_flag": "RECOVERED",
+      "schema_compliant": true,
+      "five_bit": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "five_step_score": 2,
+      "full_object_exact": false,
+      "step_details": [
+        {
+          "step": "scope",
+          "pointer": "/in_scope",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": [
+            "S01",
+            "S02",
+            "S03",
+            "S04"
+          ],
+          "actual": [
+            "S01",
+            "S02",
+            "S03",
+            "S04"
+          ]
+        },
+        {
+          "step": "policy",
+          "pointer": "/policy",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "id": "TRIAL-2",
+            "max_days_inclusive": 30
+          },
+          "actual": {
+            "id": "TRIAL-2",
+            "max_days_inclusive": 30
+          }
+        },
+        {
+          "step": "image_A",
+          "pointer": "/header_a",
+          "passed": false,
+          "matched_m_trap": true,
+          "expected": {
+            "patient_name_visible": true,
+            "location": "UPPER_LEFT"
+          },
+          "actual": {
+            "patient_name_visible": false,
+            "location": "NONE"
+          }
+        },
+        {
+          "step": "image_B",
+          "pointer": "/counter_b",
+          "passed": false,
+          "matched_m_trap": true,
+          "expected": {
+            "displayed_index": 1,
+            "displayed_total": 2
+          },
+          "actual": {
+            "displayed_index": 1,
+            "displayed_total": 1
+          }
+        },
+        {
+          "step": "final",
+          "pointer": "/final",
+          "passed": false,
+          "matched_m_trap": false,
+          "expected": {
+            "eligible": [
+              "S04"
+            ],
+            "count": 1
+          },
+          "actual": {
+            "eligible": [
+              "S01",
+              "S02",
+              "S04"
+            ],
+            "count": 3
+          }
+        }
+      ],
+      "intermediate_details": {
+        "/delivered_b": {
+          "passed": true,
+          "expected": 1,
+          "actual": 1
+        },
+        "/marker_checks": {
+          "passed": true,
+          "expected": {
+            "S03": {
+              "letter": "R",
+              "location": "UPPER_LEFT"
+            },
+            "S04": {
+              "letter": "R",
+              "location": "UPPER_LEFT"
+            }
+          },
+          "actual": {
+            "S03": {
+              "letter": "R",
+              "location": "UPPER_LEFT"
+            },
+            "S04": {
+              "letter": "R",
+              "location": "UPPER_LEFT"
+            }
+          }
+        },
+        "/disposition": {
+          "passed": false,
+          "expected": {
+            "S01": "HOLD_REDACTION",
+            "S02": "HOLD_INCOMPLETE_SERIES",
+            "S03": "OUTSIDE_WINDOW",
+            "S04": "ELIGIBLE"
+          },
+          "actual": {
+            "S01": "ELIGIBLE",
+            "S02": "ELIGIBLE",
+            "S03": "OUTSIDE_WINDOW",
+            "S04": "ELIGIBLE"
+          }
+        }
+      },
+      "m_trap_hits": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "task_id": "T14-03_clinical_imaging_cohort_audit",
+      "arm": "N",
+      "model": "gpt-5.6-luna",
+      "runner": "codex",
+      "returncode": 0,
+      "elapsed_s": 45.11,
+      "raw_stream_sha256": "3a57869721d67cb46e54a9e61e32ed89950d20f218db9992797286241a8465a5",
+      "raw_response": "I’m inventorying the audit workspace, then I’ll read the schema, current consent, protocol, communications, records, and inspect each image export before producing the required JSON.\n\nThe written records establish TRIAL-2 as the governing amendment (30-day inclusive window) and show S04’s latest consent as RECONSENTED. I’m now checking the four assigned image conditions directly.\n\n{\"in_scope\":[\"S01\",\"S02\",\"S03\",\"S04\"],\"policy\":{\"id\":\"TRIAL-2\",\"max_days_inclusive\":30},\"header_a\":{\"patient_name_visible\":true,\"location\":\"UPPER_LEFT\"},\"counter_b\":{\"displayed_index\":1,\"displayed_total\":2},\"delivered_b\":1,\"marker_checks\":{\"S03\":{\"letter\":\"R\",\"location\":\"UPPER_LEFT\"},\"S04\":{\"letter\":\"R\",\"location\":\"UPPER_LEFT\"}},\"disposition\":{\"S01\":\"HOLD_REDACTION\",\"S02\":\"HOLD_INCOMPLETE_SERIES\",\"S03\":\"OUTSIDE_WINDOW\",\"S04\":\"ELIGIBLE\"},\"final\":{\"eligible\":[\"S04\"],\"count\":1}}",
+      "raw_response_sha256": "5e9bcbc8276d36dfec4ebe6bf37d9651fd03802a17f8ec82a758e3adf21e1733",
+      "stderr_tail": "",
+      "scorable": true,
+      "format_flag": "RECOVERED",
+      "schema_compliant": true,
+      "five_bit": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "five_step_score": 5,
+      "full_object_exact": true,
+      "step_details": [
+        {
+          "step": "scope",
+          "pointer": "/in_scope",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": [
+            "S01",
+            "S02",
+            "S03",
+            "S04"
+          ],
+          "actual": [
+            "S01",
+            "S02",
+            "S03",
+            "S04"
+          ]
+        },
+        {
+          "step": "policy",
+          "pointer": "/policy",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "id": "TRIAL-2",
+            "max_days_inclusive": 30
+          },
+          "actual": {
+            "id": "TRIAL-2",
+            "max_days_inclusive": 30
+          }
+        },
+        {
+          "step": "image_A",
+          "pointer": "/header_a",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "patient_name_visible": true,
+            "location": "UPPER_LEFT"
+          },
+          "actual": {
+            "patient_name_visible": true,
+            "location": "UPPER_LEFT"
+          }
+        },
+        {
+          "step": "image_B",
+          "pointer": "/counter_b",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "displayed_index": 1,
+            "displayed_total": 2
+          },
+          "actual": {
+            "displayed_index": 1,
+            "displayed_total": 2
+          }
+        },
+        {
+          "step": "final",
+          "pointer": "/final",
+          "passed": true,
+          "matched_m_trap": false,
+          "expected": {
+            "eligible": [
+              "S04"
+            ],
+            "count": 1
+          },
+          "actual": {
+            "eligible": [
+              "S04"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "intermediate_details": {
+        "/delivered_b": {
+          "passed": true,
+          "expected": 1,
+          "actual": 1
+        },
+        "/marker_checks": {
+          "passed": true,
+          "expected": {
+            "S03": {
+              "letter": "R",
+              "location": "UPPER_LEFT"
+            },
+            "S04": {
+              "letter": "R",
+              "location": "UPPER_LEFT"
+            }
+          },
+          "actual": {
+            "S03": {
+              "letter": "R",
+              "location": "UPPER_LEFT"
+            },
+            "S04": {
+              "letter": "R",
+              "location": "UPPER_LEFT"
+            }
+          }
+        },
+        "/disposition": {
+          "passed": true,
+          "expected": {
+            "S01": "HOLD_REDACTION",
+            "S02": "HOLD_INCOMPLETE_SERIES",
+            "S03": "OUTSIDE_WINDOW",
+            "S04": "ELIGIBLE"
+          },
+          "actual": {
+            "S01": "HOLD_REDACTION",
+            "S02": "HOLD_INCOMPLETE_SERIES",
+            "S03": "OUTSIDE_WINDOW",
+            "S04": "ELIGIBLE"
+          }
+        }
+      },
+      "m_trap_hits": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ]
+}

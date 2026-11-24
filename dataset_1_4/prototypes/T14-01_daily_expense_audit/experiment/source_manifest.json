@@ -1,0 +1,21 @@
+{
+  "task_id": "T14-01_daily_expense_audit",
+  "domain": "daily_life",
+  "images": [
+    {
+      "workspace_alias": "images/A.jpg",
+      "source_path": "dataset_1_2/memory_80/images/m67_receipt_bca_discount.jpg",
+      "sha256": "183591d0ed1490037087420a2d3a0a79fba56235010a6429f4eb7dd2daae781c"
+    },
+    {
+      "workspace_alias": "images/B.jpg",
+      "source_path": "dataset_1_2/pure_80/images/p70_receipt_futami_eggtart.jpg",
+      "sha256": "d36421416b89e99884b6dc22829251b8b1e84f9532a0509e93caca449c7b3a05"
+    },
+    {
+      "workspace_alias": "images/C.jpg",
+      "source_path": "dataset_1_2/memory_80/images/m33_kopi_gopay_receipt.jpg",
+      "sha256": "cc3c778e0613e038da386c608706aa261fb93b6ba9e60c003d55387d583500be"
+    }
+  ]
+}

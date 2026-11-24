@@ -1,0 +1,43 @@
+{
+  "in_scope": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "policy": {
+    "id": "TRIAL-2",
+    "max_days_inclusive": 30
+  },
+  "header_a": {
+    "patient_name_visible": true,
+    "location": "UPPER_LEFT"
+  },
+  "counter_b": {
+    "displayed_index": 1,
+    "displayed_total": 2
+  },
+  "delivered_b": 1,
+  "marker_checks": {
+    "S03": {
+      "letter": "R",
+      "location": "UPPER_LEFT"
+    },
+    "S04": {
+      "letter": "R",
+      "location": "UPPER_LEFT"
+    }
+  },
+  "disposition": {
+    "S01": "HOLD_REDACTION",
+    "S02": "HOLD_INCOMPLETE_SERIES",
+    "S03": "OUTSIDE_WINDOW",
+    "S04": "ELIGIBLE"
+  },
+  "final": {
+    "eligible": [
+      "S04"
+    ],
+    "count": 1
+  }
+}

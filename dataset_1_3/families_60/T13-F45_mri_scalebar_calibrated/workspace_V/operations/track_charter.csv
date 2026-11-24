@@ -121,20 +121,20 @@ TRK-21,2026-01-01,LEGACY_SPEC_119,pass_std,hold_std,Legacy standard check.,Compl
 TRK-22,2026-01-01,LEGACY_SPEC_120,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-23,2026-01-01,LEGACY_SPEC_121,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-24,2026-01-01,LEGACY_SPEC_122,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-11,2026-01-01,LEGACY_SPEC_127,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-180,2026-06-01,PRINTED_100MM_SCALEBAR,audit_pass,audit_hold,"Inspect the assigned image against `PRINTED_100MM_SCALEBAR`: assign `audit_pass` if the image clearly satisfies `PRINTED_100MM_SCALEBAR`, otherwise assign `audit_hold`.",Compliance
-TRK-566,2026-06-01,AXIAL_BRAIN_FLAIR_MRI,audit_pass,audit_hold,"Inspect the assigned image against `AXIAL_BRAIN_FLAIR_MRI`: assign `audit_pass` if the image clearly satisfies `AXIAL_BRAIN_FLAIR_MRI`, otherwise assign `audit_hold`.",Compliance
-TRK-481,2026-06-01,DEIDENTIFIED_NO_BURNED_IN_PHI,audit_pass,audit_hold,"Inspect the assigned image against `DEIDENTIFIED_NO_BURNED_IN_PHI`: assign `audit_pass` if the image clearly satisfies `DEIDENTIFIED_NO_BURNED_IN_PHI`, otherwise assign `audit_hold`.",Compliance
-TRK-231,2026-06-01,BRAIN_FLAIR_MRI,audit_pass,audit_hold,"Inspect the assigned image against `BRAIN_FLAIR_MRI`: assign `audit_pass` if the image clearly satisfies `BRAIN_FLAIR_MRI`, otherwise assign `audit_hold`.",Compliance
-TRK-498,2026-06-01,NO_STERNOTOMY_WIRES,audit_pass,audit_hold,"Inspect the assigned image against `NO_STERNOTOMY_WIRES`: assign `audit_pass` if the image clearly satisfies `NO_STERNOTOMY_WIRES`, otherwise assign `audit_hold`.",Compliance
-TRK-366,2026-06-01,NO_CENTRAL_VENOUS_LINE,audit_pass,audit_hold,"Inspect the assigned image against `NO_CENTRAL_VENOUS_LINE`: assign `audit_pass` if the image clearly satisfies `NO_CENTRAL_VENOUS_LINE`, otherwise assign `audit_hold`.",Compliance
+TRK-231,2026-06-01,PICC_CLABSI_TIMELINE,audit_pass,audit_hold,"Inspect the assigned image against `PICC_CLABSI_TIMELINE`: assign `audit_pass` if the image clearly satisfies `PICC_CLABSI_TIMELINE`, otherwise assign `audit_hold`.",Compliance
+TRK-481,2026-06-01,ADULT_ICU_STAPH_TIMELINE,audit_pass,audit_hold,"Inspect the assigned image against `ADULT_ICU_STAPH_TIMELINE`: assign `audit_pass` if the image clearly satisfies `ADULT_ICU_STAPH_TIMELINE`, otherwise assign `audit_hold`.",Compliance
+TRK-566,2026-06-01,NO_EXTERNAL_ECG_LEADS,audit_pass,audit_hold,"Inspect the assigned image against `NO_EXTERNAL_ECG_LEADS`: assign `audit_pass` if the image clearly satisfies `NO_EXTERNAL_ECG_LEADS`, otherwise assign `audit_hold`.",Compliance
+TRK-366,2026-06-01,NHSN_HAI_ORGANISM_TABLE,audit_pass,audit_hold,"Inspect the assigned image against `NHSN_HAI_ORGANISM_TABLE`: assign `audit_pass` if the image clearly satisfies `NHSN_HAI_ORGANISM_TABLE`, otherwise assign `audit_hold`.",Compliance
+TRK-498,2026-06-01,NO_CENTRAL_VENOUS_LINE,audit_pass,audit_hold,"Inspect the assigned image against `NO_CENTRAL_VENOUS_LINE`: assign `audit_pass` if the image clearly satisfies `NO_CENTRAL_VENOUS_LINE`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-904,2026-06-01,ARCHIVED_SPEC_04,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-905,2026-06-01,ARCHIVED_SPEC_05,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-908,2026-06-01,ARCHIVED_SPEC_08,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-909,2026-06-01,ARCHIVED_SPEC_09,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-910,2026-06-01,ARCHIVED_SPEC_10,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-911,2026-06-01,ARCHIVED_SPEC_11,pass_arch,hold_arch,Archived legacy check.,Compliance

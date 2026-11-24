@@ -122,22 +122,19 @@ TRK-22,2026-01-01,LEGACY_SPEC_120,pass_std,hold_std,Legacy standard check.,Compl
 TRK-23,2026-01-01,LEGACY_SPEC_121,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-24,2026-01-01,LEGACY_SPEC_122,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-11,2026-01-01,LEGACY_SPEC_127,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-12,2026-01-01,LEGACY_SPEC_128,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-13,2026-01-01,LEGACY_SPEC_129,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-14,2026-01-01,LEGACY_SPEC_130,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-786,2026-06-01,OPERATING_INCOME_STATEMENT,audit_pass,audit_hold,"Inspect the assigned image against `OPERATING_INCOME_STATEMENT`: assign `audit_pass` if the image clearly satisfies `OPERATING_INCOME_STATEMENT`, otherwise assign `audit_hold`.",Compliance
-TRK-580,2026-06-01,JOB_ORDER_COST_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `JOB_ORDER_COST_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `JOB_ORDER_COST_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
+TRK-742,2026-06-01,BANKING_FINANCIAL_RATIOS_TABLE,audit_pass,audit_hold,"Inspect the assigned image against `BANKING_FINANCIAL_RATIOS_TABLE`: assign `audit_pass` if the image clearly satisfies `BANKING_FINANCIAL_RATIOS_TABLE`, otherwise assign `audit_hold`.",Compliance
+TRK-297,2026-06-01,YEAR_2020_RELEASE,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2020_RELEASE`: assign `audit_pass` if the image clearly satisfies `YEAR_2020_RELEASE`, otherwise assign `audit_hold`.",Compliance
 TRK-146,2026-06-01,EUROPEAN_UNION_PARLIAMENT,audit_pass,audit_hold,"Inspect the assigned image against `EUROPEAN_UNION_PARLIAMENT`: assign `audit_pass` if the image clearly satisfies `EUROPEAN_UNION_PARLIAMENT`, otherwise assign `audit_hold`.",Compliance
-TRK-833,2026-06-01,DIRECT_CASH_FLOW_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `DIRECT_CASH_FLOW_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `DIRECT_CASH_FLOW_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
-TRK-742,2026-06-01,YEAR_2020,audit_pass,audit_hold,"Inspect the assigned image against `YEAR_2020`: assign `audit_pass` if the image clearly satisfies `YEAR_2020`, otherwise assign `audit_hold`.",Compliance
-TRK-297,2026-06-01,FULL_12_MONTH_UTILITY_SCHEDULE,audit_pass,audit_hold,"Inspect the assigned image against `FULL_12_MONTH_UTILITY_SCHEDULE`: assign `audit_pass` if the image clearly satisfies `FULL_12_MONTH_UTILITY_SCHEDULE`, otherwise assign `audit_hold`.",Compliance
+TRK-786,2026-06-01,COUNTRY_PROGRAMMABLE_AID_CPA,audit_pass,audit_hold,"Inspect the assigned image against `COUNTRY_PROGRAMMABLE_AID_CPA`: assign `audit_pass` if the image clearly satisfies `COUNTRY_PROGRAMMABLE_AID_CPA`, otherwise assign `audit_hold`.",Compliance
+TRK-580,2026-06-01,DEFORESTATION_EMBODIED_IN_TRADE,audit_pass,audit_hold,"Inspect the assigned image against `DEFORESTATION_EMBODIED_IN_TRADE`: assign `audit_pass` if the image clearly satisfies `DEFORESTATION_EMBODIED_IN_TRADE`, otherwise assign `audit_hold`.",Compliance
+TRK-833,2026-06-01,COVID_2020_WAVE,audit_pass,audit_hold,"Inspect the assigned image against `COVID_2020_WAVE`: assign `audit_pass` if the image clearly satisfies `COVID_2020_WAVE`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-904,2026-06-01,ARCHIVED_SPEC_04,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-905,2026-06-01,ARCHIVED_SPEC_05,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-908,2026-06-01,ARCHIVED_SPEC_08,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-909,2026-06-01,ARCHIVED_SPEC_09,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-910,2026-06-01,ARCHIVED_SPEC_10,pass_arch,hold_arch,Archived legacy check.,Compliance

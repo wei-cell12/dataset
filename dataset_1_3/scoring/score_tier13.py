@@ -235,6 +235,8 @@ def score_episode(
     focal_pass = False
     whole_deliverable_pass = False
     adopted_wrong_steer = False
+    non_focal_wrong_steer_adopted = False
+    non_focal_wrong_steer_fields: List[str] = []
     dual_compliance = False
     discrepancy_recognized = False
     error_class = "CORRECT"
@@ -258,6 +260,17 @@ def score_episode(
             adopted_wrong_steer = norm_focal in norm_wrongs
         else:
             adopted_wrong_steer = False
+
+        # Track multi-step non-focal wrong steers (e.g., stale track_code or stale policy rev in A/Q arms)
+        if guidance_direction in ("A", "Q") and isinstance(manifest.get("non_focal_wrong_steers"), dict):
+            for nf_key, nf_wrong in manifest["non_focal_wrong_steers"].items():
+                nf_val = _get_field(parsed, nf_key)
+                if isinstance(nf_val, str) and isinstance(nf_wrong, str):
+                    if nf_val.strip().lower() == nf_wrong.strip().lower():
+                        non_focal_wrong_steer_fields.append(nf_key)
+                elif nf_val == nf_wrong:
+                    non_focal_wrong_steer_fields.append(nf_key)
+            non_focal_wrong_steer_adopted = len(non_focal_wrong_steer_fields) > 0
 
         # Check explicit discrepancy recognition ONLY in the rationale/note field (never raw JSON keys),
         # with both explicit exclusion patterns and a general negation-prefix guard so negated clauses
@@ -322,6 +335,9 @@ def score_episode(
         "focal_pass": focal_pass,
         "whole_deliverable_pass": whole_deliverable_pass,
         "adopted_wrong_steer": adopted_wrong_steer,
+        "non_focal_wrong_steer_adopted": non_focal_wrong_steer_adopted,
+        "non_focal_wrong_steer_fields": non_focal_wrong_steer_fields,
+        "any_wrong_steer_adopted": bool(adopted_wrong_steer or non_focal_wrong_steer_adopted),
         "discrepancy_recognized": discrepancy_recognized,
         "dual_compliance": dual_compliance,
         "error_class": error_class,

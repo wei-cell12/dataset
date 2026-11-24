@@ -1,18 +1,19 @@
-# Tier 1.3 — 长上下文多文件多图 Agent 工作区数据集（`tier1.3-60-v2.8`）
+# Tier 1.3 — 长上下文多文件多图 Agent 工作区数据集（`tier1.3-60-v3.2`）
 
 ## 简介
-本层模拟真实的 **Agent 多文件办公环境**，测试模型在必须跨文件、跨模态完成 **3 跳查证** 后，面对用户错误草稿引导时，会不会出现“**明明查到了真证据、甚至看懂了真相，最后还是顺着用户交错答案（RRSW / Dual Compliance）**”的深层谄媚行为。
-
-- **独立审计**：已通过 GPT 6.2 Astra 多轮红队防捷径复审，最终签字 **9/10 Pass**。
+本层模拟真实的 **Agent 多文件办公环境**，测试模型在必须跨文件、跨模态完成 **5 步（5-Hop）多跳查证与政策/改派覆盖** 后，面对用户多步连环错误草稿引导时，会不会出现“**明明查到了真证据、甚至看懂了真相，最后还是顺着用户交错答案（RRSW / Dual Compliance）**”的深层谄媚行为。
 
 ## 数据规模与核心设计
 - **正式题库（`families_60/`）**：**60 组场景 = 120 个孪生工作区（U / V）= 360 题/模型（N / A / Q × U / V）**，另含 **12 组均衡短证据对照**（6 U / 6 V 先验）。
 - **均衡 3 × 4 矩阵**：3 领域（`daily_life`、`chart_data`、`medical`）× 4 题型（`visual_record_reconciliation`、`effective_state`、`procedure_applicability`、`entity_scope_linkage`）× 每格 5 组 = 60 组。
 - **100% 真实图片（0 张假图）**：共投放 **600 张**真实照片、已发表图表与授权临床影像（全部通过 PNG/JPEG 魔数与 SHA-256 校验）；共享原图的题目已按哈希归为 **49 个 `source_cluster_id` 聚类**。
-- **零捷径 3 跳查证链**：
-  1. **Hop 1（`records/intake_queue.csv`）**：根据随机工单号查出对应的 `track_code` 和图片路径；
-  2. **Hop 2（`operations/track_charter.csv` + `procedures/review_protocol.md`）**：在 6 条同领域真实规则（行号、编号排名、内容分布完全随机且不可区分）中查出对应核验标准；
-  3. **Hop 3（3 张同日候选真图）**：打开指定真图核对像素事实，向 `deliverables/` 提交标准 JSON 报告。
+- **零捷径 5 跳多步查证链（`v3.0` 升级）**：
+  1. **Hop 1（`records/intake_queue.csv`）**：根据随机工单号查出 `batch_id` 与初始分配（注意：初始规则号与初始图片均已过时）；
+  2. **Hop 2（`records/batch_amendments.csv`）**：核查最新 `REASSIGNED` 改派记录，获取真正生效的 `effective_track_code` 与 `effective_asset_file`；
+  3. **Hop 3（`operations/track_charter.csv`）**：在 6 条同领域真实竞争规则（行号、编号排名、内容分布完全随机且不可区分）中查出对应 `required_criterion` 与核验规则；
+  4. **Hop 4（`procedures/review_protocol.md` + `communications/policy_addendum.md`）**：发现最新政策修订（`REV-2026.4` 覆盖旧版 `REV-2026.2`）；
+  5. **Hop 5（3 张同日候选真图）**：打开真正生效的真图核对像素事实，向 `deliverables/` 提交包含 `batch_id`、`track_code`、`effective_policy_rev`、`required_criterion`、`audit_status`、`audit_note` 的多字段 JSON 报告。
+- **多步复合错误引导（A / Q 臂）**：用户草稿同时给出**过时的旧规则号**、**过时的旧政策版本 `REV-2026.2`** 以及**错误/正确的最终视觉结论**，模型必须 5 步全部独立查证纠偏。
 - **记忆先验均衡**：每个领域严格 **10 U / 10 V**，每种题型严格 **7/8**，12 组短对照严格 **6 U / 6 V**。
 
 ## 目录结构

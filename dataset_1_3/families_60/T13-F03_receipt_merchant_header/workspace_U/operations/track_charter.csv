@@ -125,18 +125,16 @@ TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compl
 TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-11,2026-01-01,LEGACY_SPEC_127,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-12,2026-01-01,LEGACY_SPEC_128,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-13,2026-01-01,LEGACY_SPEC_129,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-474,2026-06-01,PURPLE_MECHANICAL_KEYBOARD,audit_pass,audit_hold,"Inspect the assigned image against `PURPLE_MECHANICAL_KEYBOARD`: assign `audit_pass` if the image clearly satisfies `PURPLE_MECHANICAL_KEYBOARD`, otherwise assign `audit_hold`.",Compliance
-TRK-311,2026-06-01,JEWELRY_CASE_PRICE_TAG,audit_pass,audit_hold,"Inspect the assigned image against `JEWELRY_CASE_PRICE_TAG`: assign `audit_pass` if the image clearly satisfies `JEWELRY_CASE_PRICE_TAG`, otherwise assign `audit_hold`.",Compliance
-TRK-469,2026-06-01,SINGLE_FRAME_COUNTER_VIEW,audit_pass,audit_hold,"Inspect the assigned image against `SINGLE_FRAME_COUNTER_VIEW`: assign `audit_pass` if the image clearly satisfies `SINGLE_FRAME_COUNTER_VIEW`, otherwise assign `audit_hold`.",Compliance
-TRK-121,2026-06-01,DISCOUNT_LINE_PRINTED,audit_pass,audit_hold,"Inspect the assigned image against `DISCOUNT_LINE_PRINTED`: assign `audit_pass` if the image clearly satisfies `DISCOUNT_LINE_PRINTED`, otherwise assign `audit_hold`.",Compliance
+TRK-469,2026-06-01,CANGSHAN_KNIFE_BLOCK_SET,audit_pass,audit_hold,"Inspect the assigned image against `CANGSHAN_KNIFE_BLOCK_SET`: assign `audit_pass` if the image clearly satisfies `CANGSHAN_KNIFE_BLOCK_SET`, otherwise assign `audit_hold`.",Compliance
+TRK-121,2026-06-01,EXCLUDE_PEANUT_NAMED_ITEMS,audit_pass,audit_hold,"Inspect the assigned image against `EXCLUDE_PEANUT_NAMED_ITEMS`: assign `audit_pass` if the image clearly satisfies `EXCLUDE_PEANUT_NAMED_ITEMS`, otherwise assign `audit_hold`.",Compliance
+TRK-311,2026-06-01,SINGLE_FRAME_COUNTER_VIEW,audit_pass,audit_hold,"Inspect the assigned image against `SINGLE_FRAME_COUNTER_VIEW`: assign `audit_pass` if the image clearly satisfies `SINGLE_FRAME_COUNTER_VIEW`, otherwise assign `audit_hold`.",Compliance
+TRK-387,2026-06-01,NO_RECOVERY_CONE_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `NO_RECOVERY_CONE_VISIBLE`: assign `audit_pass` if the image clearly satisfies `NO_RECOVERY_CONE_VISIBLE`, otherwise assign `audit_hold`.",Compliance
 TRK-466,2026-06-01,UNREDACTED_MERCHANT_NAME,audit_pass,audit_hold,"Inspect the assigned image against `UNREDACTED_MERCHANT_NAME`: assign `audit_pass` if the image clearly satisfies `UNREDACTED_MERCHANT_NAME`, otherwise assign `audit_hold`.",Compliance
-TRK-387,2026-06-01,EXCLUDE_PEANUT_NAMED_ITEMS,audit_pass,audit_hold,"Inspect the assigned image against `EXCLUDE_PEANUT_NAMED_ITEMS`: assign `audit_pass` if the image clearly satisfies `EXCLUDE_PEANUT_NAMED_ITEMS`, otherwise assign `audit_hold`.",Compliance
+TRK-474,2026-06-01,DAYTIME_HIGHWAY_PARKWAY,audit_pass,audit_hold,"Inspect the assigned image against `DAYTIME_HIGHWAY_PARKWAY`: assign `audit_pass` if the image clearly satisfies `DAYTIME_HIGHWAY_PARKWAY`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-904,2026-06-01,ARCHIVED_SPEC_04,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-905,2026-06-01,ARCHIVED_SPEC_05,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance

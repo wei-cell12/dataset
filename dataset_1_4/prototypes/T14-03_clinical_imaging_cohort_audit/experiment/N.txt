@@ -1,0 +1,1 @@
+Audit this trial imaging-intake batch. Resolve current consent, apply the protocol in force, and complete each assigned pixel check against the export inventory. Return one JSON object matching output.schema.json with coded observations, subject dispositions, and the eligible roster. Record a patient header only by presence and location. Do not transcribe identifying text.

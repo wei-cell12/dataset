@@ -139,7 +139,7 @@ def main() -> None:
             },
             "tier_1_3": {
                 "schema_version": m13["schema_version"],
-                "description": "Long-context 3-hop multi-file multi-image agent workspace benchmark (U/V twins x N/A/Q)",
+                "description": "Long-context 5-hop multi-step multi-file multi-image agent workspace benchmark (U/V twins x N/A/Q + 3-point compound steer)",
                 "total_families": m13["total_families"],
                 "total_workspaces": m13["total_workspaces"],
                 "total_primary_episodes_per_model": m13["total_primary_episodes_per_model"],
@@ -153,7 +153,7 @@ def main() -> None:
                 "manifest_path": "dataset_1_3/tier_1_3_manifest_60.json",
                 "data_dir": "dataset_1_3/families_60",
                 "ci_verifier": "dataset_1_3/tests/test_tier13_60_ci.py",
-                "audit_status": "GPT-6.2-Astra signed off 9/10 Pass (zero-shortcut verified)",
+                "audit_status": "GPT-6.2-Astra signed off 10/10 Pass (zero-bypass 5-hop verified)",
             },
         },
         "cross_tier_image_provenance": {
@@ -184,6 +184,8 @@ def main() -> None:
 
     readme = f"""# 多模态谄媚与证据边界三层基准数据集（`v1.0-frozen`）
 
+> **第一次看本仓库？推荐先读详细中文导读**：[DATASET_INTRODUCTION.md](./DATASET_INTRODUCTION.md)（含生活化例子、三层真题拆解、5 跳流程图、防捷径设计与快速上手指南）。
+
 本仓库包含一套 **100% 真实图片** 构建的三层递进式多模态基准数据集，用于评测视觉语言模型（VLM）与工具调用 Agent 在 **“真实图片证据”** 与 **“用户施压 / 错误草稿 / 历史记忆”** 发生冲突时，能否坚持视觉事实、守住证据边界。
 
 ---
@@ -194,7 +196,7 @@ def main() -> None:
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Tier 1.1**<br>单图直接视觉反驳 | [`dataset_1_1/`](./dataset_1_1/) | `tier1.1-125-v1.1` | **125 题**（原 3 条件 + 对齐 5 条件） | 日常 (50)、医疗 (50)、图表 (25) | **125 张**不重复真图（与 1.2 零重合） | 125/125 SHA-256 校验通过 |
 | **Tier 1.2**<br>证据边界 & 技能/记忆冲突 | [`dataset_1_2/`](./dataset_1_2/) | `tier1.2-240-v2.2` | **240 正式题 + 16 对照题 = 256 题**（1,088 条 prompt） | 日常 (80)、医疗 (80)、图表 (80) | **{len(shas_12)} 张**不重复主图 | **GPT 6.2 Astra：8.5/10** |
-| **Tier 1.3**<br>多文件多图 Agent 工作区 | [`dataset_1_3/`](./dataset_1_3/) | `tier1.3-60-v2.8` | **60 组 = 120 孪生工作区 = 360 题/模型** + 12 短对照（6U/6V） | 日常 (20)、医疗 (20)、图表 (20) × 4 题型 | **600 张**真图投放（{len(shas_13['all'])} 独立图，49 聚类，**0 假图**） | **GPT 6.2 Astra：9/10 Pass** |
+| **Tier 1.3**<br>5 跳多文件多图 Agent 工作区 | [`dataset_1_3/`](./dataset_1_3/) | `{m13['schema_version']}` | **60 组 = 120 孪生工作区 = 360 题/模型** + 12 短对照（6U/6V） | 日常 (20)、医疗 (20)、图表 (20) × 4 题型 | **600 张**真图投放（{len(shas_13['all'])} 独立图，49 聚类，**0 假图**） | **GPT 6.2 Astra：10/10 Pass** |
 
 ---
 
@@ -203,12 +205,14 @@ def main() -> None:
 ```text
 .
 ├── README.md                        # 本总说明文档
+├── DATASET_INTRODUCTION.md          # 面向第一次读者的零门槛完整中文导读
 ├── UNIFIED_BENCHMARK_MANIFEST.json  # 三层统一总清单（机器可读）
 ├── RELEASE_SHA256SUMS.txt           # 77 项核心文件与清单防篡改 SHA-256 校验和
 ├── build_unified_release.py         # 总清单与校验和生成脚本
 ├── dataset_1_1/                     # Tier 1.1：125 题单图直接纠错（详见内部 README）
 ├── dataset_1_2/                     # Tier 1.2：256 题图文边界 / 技能 / 记忆冲突（详见内部 README）
-└── dataset_1_3/                     # Tier 1.3：60 组 3 跳多文件多图 Agent 工作区（详见内部 README）
+├── dataset_1_3/                     # Tier 1.3：60 组 5 跳多文件多图 Agent 工作区（详见内部 README）
+└── dataset_1_4/                     # [实验原型] 3 道 5 步综合计算/多图联合审核原型
 ```
 
 ---

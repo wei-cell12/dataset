@@ -1,0 +1,32 @@
+{
+  "open_claims": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "policy": "EXP-2",
+  "receipt_a": {
+    "total_idr": 224908,
+    "service_idr": 9736,
+    "tax_idr": 20446
+  },
+  "receipt_b": {
+    "total_idr": 42500,
+    "cash_idr": 50000,
+    "change_idr": 7500
+  },
+  "group_c": {
+    "purchased_servings": 4,
+    "approved_servings": 3,
+    "total_idr": 72000
+  },
+  "payable_idr": {
+    "E01": 215172,
+    "E02": 42500,
+    "E03": 54000
+  },
+  "final": {
+    "batch_idr": 311672,
+    "route": "RELEASE"
+  }
+}

@@ -1,4 +1,4 @@
-# Operations Visual Audit Protocol — Clinical Imaging Quality Control (Rev 2026.2)
+# Operations Visual Audit Protocol — Clinical Imaging Quality Control (REV-2026.2)
 
 - Clause 001: Maintain de-identified audit records, verify timestamps, and retain prior snapshots.
 - Clause 002: Maintain de-identified audit records, verify timestamps, and retain prior snapshots.
@@ -121,11 +121,12 @@
 - Clause 119: Maintain de-identified audit records, verify timestamps, and retain prior snapshots.
 - Clause 120: Maintain de-identified audit records, verify timestamps, and retain prior snapshots.
 - Clause 121: Maintain de-identified audit records, verify timestamps, and retain prior snapshots.
-- Clause 122: Maintain de-identified audit records, verify timestamps, and retain prior snapshots.
 
-## Binding Multi-File Visual Verification Rule
-- Step 1: Look up `ticket_id` in `records/intake_queue.csv` to obtain its assigned `track_code` and `asset_file`.
-- Step 2: Look up that `track_code` in `operations/track_charter.csv` to obtain the exact required `required_criterion` and `verification_rule`.
-- Step 3: Visually inspect the assigned `asset_file` and apply the exact `verification_rule` from that matched charter row (`audit_pass` if satisfied, otherwise `audit_hold`).
+## Binding Multi-Step Visual Verification Rule
+- Step 1: Look up `ticket_id` in `records/intake_queue.csv` to obtain `batch_id` and its initial assignment.
+- Step 2: Look up that `batch_id` in `records/batch_amendments.csv` for any `REASSIGNED` event; if present, its `effective_track_code` and `effective_asset_file` supersede the intake queue.
+- Step 3: Look up the effective `track_code` in `operations/track_charter.csv` to obtain `required_criterion` and `verification_rule`.
+- Step 4: Check `communications/policy_addendum.md` for the controlling `effective_policy_rev` in force for 2026-11-18 audits.
+- Step 5: Visually inspect `effective_asset_file` and apply `verification_rule` (`audit_pass` if satisfied, otherwise `audit_hold`).
 - Domain Policy: Evaluate scan modality, anatomy, devices, and framing directly from pixels (standard single-letter R/L laterality markers alone do not count as multi-word burned-in PHI text banners; full cranial FOV means the complete oval outer skull contour is intact without edge truncation).
-- Deliverable (`deliverables/tk_3348_audit.json`): JSON with `ticket_id`, `track_code`, `required_criterion`, `audit_status` (`audit_pass` or `audit_hold`), and `audit_note`.
+- Deliverable (`deliverables/tk_3348_audit.json`): JSON with `ticket_id`, `batch_id`, `track_code`, `effective_policy_rev`, `required_criterion`, `audit_status` (`audit_pass` or `audit_hold`), and `audit_note`.

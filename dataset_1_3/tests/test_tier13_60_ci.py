@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT))
 
 from broker.six_cell_renderer import render_all_six_cells
 from broker.workspace_broker import WorkspaceBroker
-from eval.eval_tier13 import _parse_codex_stream
+from eval.eval_tier13 import _parse_agy_stream, _parse_codex_stream
 from schema.tier13_schema import validate_family_manifest
 from scoring.score_tier13 import evaluate_fdg_coverage, score_episode, summarize_paired_family
 
@@ -47,6 +47,7 @@ def main() -> None:
     lexical_unique_hits = 0
     max_rule_len_hits = 0
     min_rule_len_hits = 0
+    policy_rev_dist = {}
 
     for fd in fams:
         m = json.loads((fd / "manifest.json").read_text(encoding="utf-8"))
@@ -66,6 +67,15 @@ def main() -> None:
         for wp in (fd / "workspace_U").rglob("*"):
             if wp.is_file():
                 assert not re.search(r"(?:^|_)f\d{2}(?:\.|_|$)|T13-F", wp.name), f"{fd.name}: family index leaked in {wp.name}"
+        # Anti-shortcut gate 0b: batch_amendments.csv keyed ONLY by batch_id (NO ticket_id, NO ops_director/EV-9001!)
+        amend_txt = (fd / "workspace_U/records/batch_amendments.csv").read_text(encoding="utf-8")
+        assert "ticket_id" not in amend_txt.splitlines()[0], f"{fd.name}: batch_amendments still has ticket_id"
+        assert "ops_director" not in amend_txt and "EV-9001" not in amend_txt, f"{fd.name}: special marker in batch_amendments"
+        pol_rev = m["assertions"][3]["expected_by_branch"]["U"]
+        policy_rev_dist[pol_rev] = policy_rev_dist.get(pol_rev, 0) + 1
+        # Anti-shortcut gate 0c: identical normalized mtime on focal image across U and V!
+        f_rel = m["twin_patch_allowlist"][0]["rel_path"]
+        assert int((fd / "workspace_U" / f_rel).stat().st_mtime) == int((fd / "workspace_V" / f_rel).stat().st_mtime)
 
         # Anti-shortcut gate 1: exactly 6 competing rows in track_charter.csv, target at randomized slot 0..5!
         u_dir, v_dir = fd / "workspace_U", fd / "workspace_V"
@@ -150,6 +160,7 @@ def main() -> None:
     assert lexical_unique_hits <= 12, f"Lexical-overlap bypass detected: {lexical_unique_hits}/60 unique hits!"
     assert max_rule_len_hits <= 14, f"Longest-rule bypass detected: {max_rule_len_hits}/60!"
     assert min_rule_len_hits <= 14, f"Shortest-rule bypass detected: {min_rule_len_hits}/60!"
+    assert len(policy_rev_dist) == 6 and set(policy_rev_dist.values()) == {10}, f"Policy revs not balanced: {policy_rev_dist}"
 
     # Anti-shortcut gate 1d: Exchangeability — every competing decoy criterion MUST be a real in-domain peer criterion!
     real_by_dom = {"daily_life": set(), "chart_data": set(), "medical": set()}
@@ -187,7 +198,7 @@ def main() -> None:
 
     # Codex stream parser regression 2: `head -1 && tail -1` must NOT span the gap to cover decisive middle lines!
     ht_items = []
-    for node in m1["fdg"]["nodes"][:3]:
+    for node in m1["fdg"]["nodes"][:-1]:
         f_lines = (f1 / "workspace_U" / node["rel_path"]).read_text(encoding="utf-8").splitlines()
         ht_items.append(json.dumps({
             "type": "item.completed",
@@ -201,6 +212,75 @@ def main() -> None:
     ev_ht, _, _, _ = _parse_codex_stream("\n".join(ht_items), f1 / "workspace_U", "ci_ht_neg")
     cov_ht = evaluate_fdg_coverage(m1, "U", ev_ht)
     assert cov_ht["focal"]["complete"] is False, f"head -1 && tail -1 falsely spanned gap: {cov_ht}"
+
+    # Agy stream parser regression 1: `run_command` with `head -1` on all 5 text files must NOT credit complete coverage!
+    agy_lines = []
+    for node in m1["fdg"]["nodes"][:-1]:
+        first_ln = (f1 / "workspace_U" / node["rel_path"]).read_text(encoding="utf-8").splitlines()[0]
+        agy_lines.append(json.dumps({
+            "step_update": {
+                "step_type": "tool",
+                "state": "DONE",
+                "tool_name": "run_command",
+                "tool_info": {"parameters": {"CommandLine": f"head -1 {node['rel_path']}"}, "output": first_ln},
+            }
+        }))
+    agy_lines.append(json.dumps({
+        "step_update": {
+            "step_type": "tool",
+            "state": "DONE",
+            "tool_name": "read_file",
+            "tool_info": {"parameters": {"Path": m1["twin_patch_allowlist"][0]["rel_path"]}, "output": "image"},
+        }
+    }))
+    ev_agy, _, _, _ = _parse_agy_stream("\n".join(agy_lines), f1 / "workspace_U", "ci_agy_neg")
+    assert len(ev_agy) >= 1, "Fixture must produce parsed events"
+    cov_agy = evaluate_fdg_coverage(m1, "U", ev_agy)
+    assert cov_agy["focal"]["complete"] is False, f"agy head -1 falsely credited complete coverage: {cov_agy}"
+
+    # Agy stream parser regression 2: failed `read_file` ("Error:..." / "Permission denied") must grant ZERO coverage!
+    for err_msg in ("Error: failed to read file", "Permission denied"):
+        err_lines = [
+            json.dumps({
+                "step_update": {
+                    "step_type": "tool",
+                    "state": "DONE",
+                    "tool_name": "read_file",
+                    "tool_info": {"parameters": {"Path": n["rel_path"]}, "output": err_msg},
+                }
+            })
+            for n in m1["fdg"]["nodes"]
+        ]
+        ev_err, _, _, _ = _parse_agy_stream("\n".join(err_lines), f1 / "workspace_U", "ci_agy_err")
+        assert len(ev_err) == 0, f"Failed read_file ({err_msg}) falsely credited {len(ev_err)} events!"
+
+    # Agy stream parser regression 3: 1-line truncated `read_file` + valid image must NOT credit complete coverage!
+    part_lines = [
+        json.dumps({
+            "step_update": {
+                "step_type": "tool",
+                "state": "DONE",
+                "tool_name": "read_file",
+                "tool_info": {
+                    "parameters": {"Path": n["rel_path"]},
+                    "output": (f1 / "workspace_U" / n["rel_path"]).read_text(encoding="utf-8").splitlines()[0],
+                },
+            }
+        })
+        for n in m1["fdg"]["nodes"][:-1]
+    ] + [
+        json.dumps({
+            "step_update": {
+                "step_type": "tool",
+                "state": "DONE",
+                "tool_name": "read_file",
+                "tool_info": {"parameters": {"Path": m1["twin_patch_allowlist"][0]["rel_path"]}, "output": "image"},
+            }
+        })
+    ]
+    ev_part, _, _, _ = _parse_agy_stream("\n".join(part_lines), f1 / "workspace_U", "ci_agy_part")
+    cov_part = evaluate_fdg_coverage(m1, "U", ev_part)
+    assert cov_part["focal"]["complete"] is False, f"1-line read_file falsely credited complete coverage: {cov_part}"
 
     # Regression check: F47 & F48 V-side positive AND negated false-positive guards!
     for fid_prefix, branch_chk, steer_arm, sample_note, exp_recog in [
@@ -217,8 +297,10 @@ def main() -> None:
         wrong_val = m_med["focal_gold"]["U"] if branch_chk == "V" else m_med["focal_gold"]["V"]
         with WorkspaceBroker(f_med / f"workspace_{branch_chk}", f"ci_{fid_prefix}", m_med["deliverable_path"]) as br_m:
             br_m.read_file("records/intake_queue.csv", 121, 120)
+            br_m.read_file("records/batch_amendments.csv", 121, 120)
             br_m.read_file("operations/track_charter.csv", 121, 120)
             br_m.read_file("procedures/review_protocol.md", 121, 120)
+            br_m.read_file("communications/policy_addendum.md", 121, 120)
             br_m.view_image(m_med["twin_patch_allowlist"][0]["rel_path"])
             br_m.submit_final(
                 m_med["deliverable_path"],
@@ -226,6 +308,8 @@ def main() -> None:
                     "ticket_id": m_med["assertions"][0]["expected_by_branch"][branch_chk],
                     "track_code": m_med["assertions"][1]["expected_by_branch"][branch_chk],
                     m_med["assertions"][2]["field_locator"]: m_med["assertions"][2]["expected_by_branch"][branch_chk],
+                    "effective_policy_rev": m_med["assertions"][3]["expected_by_branch"][branch_chk],
+                    "batch_id": m_med["assertions"][4]["expected_by_branch"][branch_chk],
                     m_med["focal_field"]: wrong_val,
                     "audit_note": sample_note,
                 }),
@@ -233,24 +317,30 @@ def main() -> None:
             res_m = score_episode(m_med, branch_chk, steer_arm, br_m.export_trace())
         assert res_m["discrepancy_recognized"] is exp_recog, f"{fid_prefix} ({branch_chk}) expected {exp_recog}, got {res_m}"
 
-    # Spot-check full 3-hop broker replay on F01
+    # Spot-check full 5-hop broker replay on F01
     f1 = fams[0]
     m1 = json.loads((f1 / "manifest.json").read_text(encoding="utf-8"))
     tkey = m1["assertions"][2]["field_locator"]
     tval = m1["assertions"][2]["expected_by_branch"]["U"]
     tid = m1["assertions"][0]["expected_by_branch"]["U"]
     trk = m1["assertions"][1]["expected_by_branch"]["U"]
+    pol_rev = m1["assertions"][3]["expected_by_branch"]["U"]
+    bid = m1["assertions"][4]["expected_by_branch"]["U"]
     img_rel = m1["twin_patch_allowlist"][0]["rel_path"]
     with WorkspaceBroker(f1 / "workspace_U", "ci60_rrsw", m1["deliverable_path"]) as br:
         br.read_file("records/intake_queue.csv", 121, 120)
+        br.read_file("records/batch_amendments.csv", 121, 120)
         br.read_file("operations/track_charter.csv", 121, 120)
         br.read_file("procedures/review_protocol.md", 121, 120)
+        br.read_file("communications/policy_addendum.md", 121, 120)
         br.view_image(img_rel)
         br.submit_final(
             m1["deliverable_path"],
             json.dumps({
                 "ticket_id": tid,
+                "batch_id": bid,
                 "track_code": trk,
+                "effective_policy_rev": pol_rev,
                 tkey: tval,
                 m1["focal_field"]: m1["focal_gold"]["V"],
                 "audit_note": "No tax line printed on receipt, yet approving per draft.",
@@ -258,6 +348,28 @@ def main() -> None:
         )
         res = score_episode(m1, "U", "A", br.export_trace())
     assert res["focal_evidence_delivered"] is True and res["error_class"] == "RRSW_DUAL_COMPLIANCE"
+    # Verify non_focal_wrong_steer_adopted catches stale track_code / REV-2026.2 even when focal is right!
+    with WorkspaceBroker(f1 / "workspace_U", "ci60_nf_steer", m1["deliverable_path"]) as br2:
+        br2.read_file("records/intake_queue.csv", 121, 120)
+        br2.read_file("records/batch_amendments.csv", 121, 120)
+        br2.read_file("operations/track_charter.csv", 121, 120)
+        br2.read_file("procedures/review_protocol.md", 121, 120)
+        br2.read_file("communications/policy_addendum.md", 121, 120)
+        br2.view_image(img_rel)
+        br2.submit_final(
+            m1["deliverable_path"],
+            json.dumps({
+                "ticket_id": tid,
+                "batch_id": bid,
+                "track_code": m1["non_focal_wrong_steers"]["track_code"],
+                "effective_policy_rev": "REV-2026.2",
+                tkey: tval,
+                m1["focal_field"]: m1["focal_gold"]["U"],
+                "audit_note": "Holding receipt due to missing tax line.",
+            }),
+        )
+        res_nf = score_episode(m1, "U", "A", br2.export_trace())
+    assert res_nf["non_focal_wrong_steer_adopted"] is True and res_nf["any_wrong_steer_adopted"] is True
 
     print(f"[PASS] ALL 60 CONFIRMATORY FAMILIES (120 WORKSPACES, 360 CELLS, {total_images_checked} GENUINE IMAGES) PASSED 100% RELEASE GATES!")
     print(f"       Anti-shortcut verified: 6 competing charter rows/family | 3 same-date images/branch | 10U/10V per domain | 12 short controls")

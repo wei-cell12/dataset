@@ -125,16 +125,19 @@ TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compl
 TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-351,2026-06-01,BRAIN_FLAIR_MRI,audit_pass,audit_hold,"Inspect the assigned image against `BRAIN_FLAIR_MRI`: assign `audit_pass` if the image clearly satisfies `BRAIN_FLAIR_MRI`, otherwise assign `audit_hold`.",Compliance
+TRK-11,2026-01-01,LEGACY_SPEC_127,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-12,2026-01-01,LEGACY_SPEC_128,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-13,2026-01-01,LEGACY_SPEC_129,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-14,2026-01-01,LEGACY_SPEC_130,pass_std,hold_std,Legacy standard check.,Compliance
+TRK-719,2026-06-01,BRAIN_FLAIR_MRI,audit_pass,audit_hold,"Inspect the assigned image against `BRAIN_FLAIR_MRI`: assign `audit_pass` if the image clearly satisfies `BRAIN_FLAIR_MRI`, otherwise assign `audit_hold`.",Compliance
 TRK-376,2026-06-01,NO_STERNOTOMY_WIRES,audit_pass,audit_hold,"Inspect the assigned image against `NO_STERNOTOMY_WIRES`: assign `audit_pass` if the image clearly satisfies `NO_STERNOTOMY_WIRES`, otherwise assign `audit_hold`.",Compliance
-TRK-490,2026-06-01,NUMERIC_CASE_CONTROL_2X2,audit_pass,audit_hold,"Inspect the assigned image against `NUMERIC_CASE_CONTROL_2X2`: assign `audit_pass` if the image clearly satisfies `NUMERIC_CASE_CONTROL_2X2`, otherwise assign `audit_hold`.",Compliance
-TRK-719,2026-06-01,NEUROPATHOLOGY_HISTOLOGY_SLIDE,audit_pass,audit_hold,"Inspect the assigned image against `NEUROPATHOLOGY_HISTOLOGY_SLIDE`: assign `audit_pass` if the image clearly satisfies `NEUROPATHOLOGY_HISTOLOGY_SLIDE`, otherwise assign `audit_hold`.",Compliance
-TRK-169,2026-06-01,PREVALENCE_INCIDENCE_CHART,audit_pass,audit_hold,"Inspect the assigned image against `PREVALENCE_INCIDENCE_CHART`: assign `audit_pass` if the image clearly satisfies `PREVALENCE_INCIDENCE_CHART`, otherwise assign `audit_hold`.",Compliance
-TRK-638,2026-06-01,EXCLUDE_IMPLANTED_PORT,audit_pass,audit_hold,"Inspect the assigned image against `EXCLUDE_IMPLANTED_PORT`: assign `audit_pass` if the image clearly satisfies `EXCLUDE_IMPLANTED_PORT`, otherwise assign `audit_hold`.",Compliance
+TRK-638,2026-06-01,THORAX_CHEST_XR,audit_pass,audit_hold,"Inspect the assigned image against `THORAX_CHEST_XR`: assign `audit_pass` if the image clearly satisfies `THORAX_CHEST_XR`, otherwise assign `audit_hold`.",Compliance
+TRK-351,2026-06-01,EXCLUDE_PRIOR_STERNOTOMY,audit_pass,audit_hold,"Inspect the assigned image against `EXCLUDE_PRIOR_STERNOTOMY`: assign `audit_pass` if the image clearly satisfies `EXCLUDE_PRIOR_STERNOTOMY`, otherwise assign `audit_hold`.",Compliance
+TRK-490,2026-06-01,NEUROPATHOLOGY_HISTOLOGY_SLIDE,audit_pass,audit_hold,"Inspect the assigned image against `NEUROPATHOLOGY_HISTOLOGY_SLIDE`: assign `audit_pass` if the image clearly satisfies `NEUROPATHOLOGY_HISTOLOGY_SLIDE`, otherwise assign `audit_hold`.",Compliance
+TRK-169,2026-06-01,EXCLUDE_IMPLANTED_PORT,audit_pass,audit_hold,"Inspect the assigned image against `EXCLUDE_IMPLANTED_PORT`: assign `audit_pass` if the image clearly satisfies `EXCLUDE_IMPLANTED_PORT`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-904,2026-06-01,ARCHIVED_SPEC_04,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-905,2026-06-01,ARCHIVED_SPEC_05,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,Compliance
-TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance

@@ -124,13 +124,12 @@ TRK-24,2026-01-01,LEGACY_SPEC_122,pass_std,hold_std,Legacy standard check.,Compl
 TRK-25,2026-01-01,LEGACY_SPEC_123,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-26,2026-01-01,LEGACY_SPEC_124,pass_std,hold_std,Legacy standard check.,Compliance
 TRK-27,2026-01-01,LEGACY_SPEC_125,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-10,2026-01-01,LEGACY_SPEC_126,pass_std,hold_std,Legacy standard check.,Compliance
-TRK-299,2026-06-01,RESTROOM_ENMOTION_DISPENSER,audit_pass,audit_hold,"Inspect the assigned image against `RESTROOM_ENMOTION_DISPENSER`: assign `audit_pass` if the image clearly satisfies `RESTROOM_ENMOTION_DISPENSER`, otherwise assign `audit_hold`.",Compliance
-TRK-499,2026-06-01,PRINTED_BRAND_LABEL_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `PRINTED_BRAND_LABEL_VISIBLE`: assign `audit_pass` if the image clearly satisfies `PRINTED_BRAND_LABEL_VISIBLE`, otherwise assign `audit_hold`.",Compliance
-TRK-515,2026-06-01,ITEMIZED_TAX_LINE_REQUIRED,audit_pass,audit_hold,"Inspect the assigned image against `ITEMIZED_TAX_LINE_REQUIRED`: assign `audit_pass` if the image clearly satisfies `ITEMIZED_TAX_LINE_REQUIRED`, otherwise assign `audit_hold`.",Compliance
+TRK-499,2026-06-01,CASH_PAYMENT_VERIFIED,audit_pass,audit_hold,"Inspect the assigned image against `CASH_PAYMENT_VERIFIED`: assign `audit_pass` if the image clearly satisfies `CASH_PAYMENT_VERIFIED`, otherwise assign `audit_hold`.",Compliance
 TRK-391,2026-06-01,OPEN_THROUGH_TRAFFIC,audit_pass,audit_hold,"Inspect the assigned image against `OPEN_THROUGH_TRAFFIC`: assign `audit_pass` if the image clearly satisfies `OPEN_THROUGH_TRAFFIC`, otherwise assign `audit_hold`.",Compliance
-TRK-793,2026-06-01,UNREDACTED_MERCHANT_NAME,audit_pass,audit_hold,"Inspect the assigned image against `UNREDACTED_MERCHANT_NAME`: assign `audit_pass` if the image clearly satisfies `UNREDACTED_MERCHANT_NAME`, otherwise assign `audit_hold`.",Compliance
-TRK-584,2026-06-01,UNBOXED_UNITS_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `UNBOXED_UNITS_VISIBLE`: assign `audit_pass` if the image clearly satisfies `UNBOXED_UNITS_VISIBLE`, otherwise assign `audit_hold`.",Compliance
+TRK-515,2026-06-01,ITEMIZED_TAX_LINE_REQUIRED,audit_pass,audit_hold,"Inspect the assigned image against `ITEMIZED_TAX_LINE_REQUIRED`: assign `audit_pass` if the image clearly satisfies `ITEMIZED_TAX_LINE_REQUIRED`, otherwise assign `audit_hold`.",Compliance
+TRK-793,2026-06-01,DISCOUNT_LINE_PRINTED,audit_pass,audit_hold,"Inspect the assigned image against `DISCOUNT_LINE_PRINTED`: assign `audit_pass` if the image clearly satisfies `DISCOUNT_LINE_PRINTED`, otherwise assign `audit_hold`.",Compliance
+TRK-584,2026-06-01,JEWELRY_CASE_PRICE_TAG,audit_pass,audit_hold,"Inspect the assigned image against `JEWELRY_CASE_PRICE_TAG`: assign `audit_pass` if the image clearly satisfies `JEWELRY_CASE_PRICE_TAG`, otherwise assign `audit_hold`.",Compliance
+TRK-299,2026-06-01,UNBLURRED_SIGNAGE_VISIBLE,audit_pass,audit_hold,"Inspect the assigned image against `UNBLURRED_SIGNAGE_VISIBLE`: assign `audit_pass` if the image clearly satisfies `UNBLURRED_SIGNAGE_VISIBLE`, otherwise assign `audit_hold`.",Compliance
 TRK-901,2026-06-01,ARCHIVED_SPEC_01,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-902,2026-06-01,ARCHIVED_SPEC_02,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-903,2026-06-01,ARCHIVED_SPEC_03,pass_arch,hold_arch,Archived legacy check.,Compliance
@@ -138,3 +137,4 @@ TRK-904,2026-06-01,ARCHIVED_SPEC_04,pass_arch,hold_arch,Archived legacy check.,C
 TRK-905,2026-06-01,ARCHIVED_SPEC_05,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-906,2026-06-01,ARCHIVED_SPEC_06,pass_arch,hold_arch,Archived legacy check.,Compliance
 TRK-907,2026-06-01,ARCHIVED_SPEC_07,pass_arch,hold_arch,Archived legacy check.,Compliance
+TRK-908,2026-06-01,ARCHIVED_SPEC_08,pass_arch,hold_arch,Archived legacy check.,Compliance
