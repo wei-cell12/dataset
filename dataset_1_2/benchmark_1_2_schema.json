@@ -1,0 +1,311 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tier 1.2 English single-turn open-ended overclaim and evidence-boundary benchmark",
+  "type": "array",
+  "minItems": 1,
+  "maxItems": 150,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "unit_id",
+      "difficulty",
+      "domain",
+      "qc_status",
+      "image_path",
+      "source_dataset",
+      "original_id",
+      "is_synthetic",
+      "fallacy_type",
+      "context_conflict_type",
+      "injected_context",
+      "true_premise_text",
+      "overclaim_text",
+      "ground_truth_text",
+      "evidence_anchor",
+      "boundary_violation_anchor",
+      "evaluation_rubric",
+      "variants"
+    ],
+    "properties": {
+      "unit_id": {
+        "type": "string",
+        "pattern": "^s1_2_(logic|chart|medical)_\\d{3}$"
+      },
+      "difficulty": {
+        "const": "1.2_medium"
+      },
+      "domain": {
+        "enum": [
+          "daily_logic",
+          "chart_data",
+          "medical_lesion"
+        ]
+      },
+      "qc_status": {
+        "enum": [
+          "draft",
+          "pass",
+          "needs_replacement"
+        ]
+      },
+      "image_path": {
+        "type": "string",
+        "pattern": "^images/(daily_logic|chart_data|medical_lesion)/[^/]+\\.(png|jpg)$"
+      },
+      "source_dataset": {
+        "type": "string",
+        "minLength": 1
+      },
+      "original_id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "is_synthetic": {
+        "type": "boolean"
+      },
+      "fallacy_type": {
+        "type": "string",
+        "enum": [
+          "correlation_as_causation",
+          "scope_overgeneralization",
+          "denominator_or_scale_misuse",
+          "cherry_picking_or_missing_baseline",
+          "partial_evidence_overdiagnosis",
+          "unobservable_intent_or_backstory",
+          "absence_of_evidence_as_evidence"
+        ]
+      },
+      "context_conflict_type": {
+        "type": "string",
+        "enum": [
+          "none",
+          "memory_conflict",
+          "skill_inapplicable"
+        ]
+      },
+      "injected_context": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "subtype",
+          "title",
+          "content",
+          "mismatch_anchor"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "none",
+              "user_memory",
+              "active_skill"
+            ]
+          },
+          "subtype": {
+            "enum": [
+              "none",
+              "stale_memory",
+              "scope_or_entity_mismatch",
+              "prior_hypothesis_anchor",
+              "missing_precondition",
+              "domain_or_modality_mismatch",
+              "heuristic_edge_case"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "mismatch_anchor": {
+            "type": "string"
+          }
+        }
+      },
+      "true_premise_text": {
+        "type": "string",
+        "minLength": 1
+      },
+      "overclaim_text": {
+        "type": "string",
+        "minLength": 1
+      },
+      "ground_truth_text": {
+        "type": "string",
+        "minLength": 1
+      },
+      "evidence_anchor": {
+        "type": "string",
+        "minLength": 1
+      },
+      "boundary_violation_anchor": {
+        "type": "string",
+        "minLength": 1
+      },
+      "evaluation_rubric": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "premise_acknowledged",
+          "overclaim_rejected",
+          "boundary_identified"
+        ],
+        "properties": {
+          "premise_acknowledged": {
+            "type": "string",
+            "minLength": 1
+          },
+          "overclaim_rejected": {
+            "type": "string",
+            "minLength": 1
+          },
+          "boundary_identified": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "variants": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "neutral",
+          "syco_pressure",
+          "valid_feedback"
+        ],
+        "properties": {
+          "neutral": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "prompt"
+            ],
+            "properties": {
+              "prompt": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "syco_pressure": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "pressure_type",
+              "prompt"
+            ],
+            "properties": {
+              "pressure_type": {
+                "type": "string",
+                "enum": [
+                  "leading_presupposition",
+                  "authority_persona",
+                  "decisiveness_or_action_urgency",
+                  "memory_anchored_nudge",
+                  "skill_compliance_nudge",
+                  "consensus_or_social_proof",
+                  "fabricated_or_stretched_citation"
+                ]
+              },
+              "prompt": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "valid_feedback": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "feedback_type",
+              "prompt"
+            ],
+            "properties": {
+              "feedback_type": {
+                "type": "string",
+                "enum": [
+                  "boundary_pointing",
+                  "memory_mismatch_pointing",
+                  "skill_precondition_pointing",
+                  "authority_valid"
+                ]
+              },
+              "prompt": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": { "context_conflict_type": { "const": "none" } },
+          "required": ["context_conflict_type"]
+        },
+        "then": {
+          "properties": {
+            "injected_context": {
+              "properties": {
+                "role": { "const": "none" },
+                "subtype": { "const": "none" }
+              }
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": { "context_conflict_type": { "const": "memory_conflict" } },
+          "required": ["context_conflict_type"]
+        },
+        "then": {
+          "properties": {
+            "injected_context": {
+              "properties": {
+                "role": { "const": "user_memory" },
+                "subtype": {
+                  "enum": [
+                    "stale_memory",
+                    "scope_or_entity_mismatch",
+                    "prior_hypothesis_anchor"
+                  ]
+                },
+                "content": { "minLength": 1 },
+                "mismatch_anchor": { "minLength": 1 }
+              }
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": { "context_conflict_type": { "const": "skill_inapplicable" } },
+          "required": ["context_conflict_type"]
+        },
+        "then": {
+          "properties": {
+            "injected_context": {
+              "properties": {
+                "role": { "const": "active_skill" },
+                "subtype": {
+                  "enum": [
+                    "missing_precondition",
+                    "domain_or_modality_mismatch",
+                    "heuristic_edge_case"
+                  ]
+                },
+                "content": { "minLength": 1 },
+                "mismatch_anchor": { "minLength": 1 }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

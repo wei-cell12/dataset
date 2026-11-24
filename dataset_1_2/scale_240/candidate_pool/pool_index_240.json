@@ -1,0 +1,2380 @@
+[
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_070.png",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 70,
+    "sha256": "c98ed8457f47094bacff20d6c1857fad8d9962debffe5fa9cad24f94b8cad510",
+    "bytes": 36480,
+    "meta": {
+      "query": "What's the value of largest bar??"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_072.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 72,
+    "sha256": "ec909e42528fe16cb07ae53668f8386ff235c4a2f9c2f0e9f4fd5c5a0a10f12d",
+    "bytes": 113573,
+    "meta": {
+      "query": "Is the value of light green bar 35 in 1989?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_074.png",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 74,
+    "sha256": "5c83bbf7a5a74948a365fab303278ffccb801ae61eb1741efea77b7b098ba559",
+    "bytes": 40874,
+    "meta": {
+      "query": "what is the value of largest bar?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_076.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 76,
+    "sha256": "274ad61ea32b75b91244acf7c2b3930bca78487576f2adb8a8ae19106f9b95cd",
+    "bytes": 23997,
+    "meta": {
+      "query": "What is the total value of the More bar?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_078.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 78,
+    "sha256": "eb71edb8a9bbcffc5f3c0420197a3f8fa4d91b97d5a8222068ba461d713d2422",
+    "bytes": 38754,
+    "meta": {
+      "query": "Which country does the Dark green represent?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_080.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 80,
+    "sha256": "d9cd715d7d10accba8e729bd25136c1ca3cea84fa2da6cffd8a3536b19da58e8",
+    "bytes": 24098,
+    "meta": {
+      "query": "What % of people say that everything possible should be done to make it easy to vote?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_082.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 82,
+    "sha256": "8001ec278a040eb0beeac49656466807b9c9c27e0915f8bf72bef0b37867c745",
+    "bytes": 25502,
+    "meta": {
+      "query": "What's the percentage of people choosing very for their state officials?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_084.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 84,
+    "sha256": "17ef6fd920dd3c950f7eac02e1e85f1377db645f38ff1f45083cd28f22e1a5bc",
+    "bytes": 22764,
+    "meta": {
+      "query": "Find the category from the chart, whose value is 82 and 15?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_086.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 86,
+    "sha256": "0a1fa1d72285b9763841fdd013fe206b7e5e40fc7acfd5a3987e3959653a61a0",
+    "bytes": 17263,
+    "meta": {
+      "query": "Which two values are same in the upper graph?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_088.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 88,
+    "sha256": "3de8ead5c2907b094b4a323977f0884db1b8b1b85bd69a8b65479fe89cbfd6e8",
+    "bytes": 71843,
+    "meta": {
+      "query": "What's the percentage of all adults who say the coronavirus outbreak is a major threat to personal financial situation?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_090.png",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 90,
+    "sha256": "867db6e7f0c78620be48eda7231a109a5c96c8a2fe8c6b719cce5672011ad6f7",
+    "bytes": 34430,
+    "meta": {
+      "query": "Which name is represented by middle bar?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_092.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 92,
+    "sha256": "7d7153f6f2d291d6b3631fda3270433bbaf31292088936927695369627f199f0",
+    "bytes": 99926,
+    "meta": {
+      "query": "How many factors are shown in the chart?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_094.png",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 94,
+    "sha256": "12d50ff8885cc7f5fc0aaa7a13b8e8a41d40220a97f1e37bf03f1462667da689",
+    "bytes": 61678,
+    "meta": {
+      "query": "Which country received the highest� Programmable aid over the years?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_096.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 96,
+    "sha256": "f011de7b1f5bd8bde356d954eab27561f13b8662926599f0ba7726931ddf1c8f",
+    "bytes": 26342,
+    "meta": {
+      "query": "What is the highest value of green graph?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_098.png",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 98,
+    "sha256": "4a13b008d8ddb999852bc5dcf36152cc35bad0a9825c248ffdde3e39dba7cf1a",
+    "bytes": 40533,
+    "meta": {
+      "query": "What is the value of Slovenia?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_100.png",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 100,
+    "sha256": "308c9be98e5f4c6413a10f967e27a0de7c3127ae2102509c5ee882e2c5e8fc1a",
+    "bytes": 30306,
+    "meta": {
+      "query": "How many color bars are there in the graph?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_102.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 102,
+    "sha256": "b9d5c73f888da22d2ff8dd6523e73acf870015a068fdb387f4e1b9985219398e",
+    "bytes": 31515,
+    "meta": {
+      "query": "What was the largest dark red bar value?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_104.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 104,
+    "sha256": "494b9109e5bfe7e4faa7971062e87f826f8e1d5494be73e58eec78c75d58050f",
+    "bytes": 16949,
+    "meta": {
+      "query": "What is the % who regularly watch CNN in 02?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_106.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 106,
+    "sha256": "a3fa38e479ec7c41489137124fbc38b940c5bcd623e75f66c93a61e71ea20563",
+    "bytes": 24635,
+    "meta": {
+      "query": "In the Men category, one data is 70%, What is the next data ??"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_108.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 108,
+    "sha256": "51d55f3f9f7b1f559efd34f87c0a5458a30e37316e1f1861fe3f615f9c42c595",
+    "bytes": 28693,
+    "meta": {
+      "query": "How many colors are used to represent the bar graph?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_110.jpg",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 110,
+    "sha256": "a61e079e19f8b2d9538451f794a566292a3b8a120c49d5efa9b9a0a4452a58bd",
+    "bytes": 15323,
+    "meta": {
+      "query": "Which colored segment is the tiniest?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_112.png",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 112,
+    "sha256": "a4b071f836eda7630be85a22ce426b119f7576293747a90544df89437557a3dc",
+    "bytes": 35274,
+    "meta": {
+      "query": "What is population of Asia including the UN projection until 2100, 1950?"
+    }
+  },
+  {
+    "folder": "chartqa_p2",
+    "file": "chartqa_p2/chartqa_p2_114.png",
+    "dataset": "HuggingFaceM4/ChartQA",
+    "config": "default",
+    "split": "test",
+    "row_idx": 114,
+    "sha256": "e9c1869943a468653e89a66375ca289c73c29069edb762c3a4979d6416e04d2f",
+    "bytes": 30309,
+    "meta": {
+      "query": "What is the value of India Bar?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_060.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 60,
+    "sha256": "5b5c52b70c0e5d17821a1d57fc0f74c322e8f202dc93bac068d14efc9e02c11a",
+    "bytes": 58592,
+    "meta": {
+      "reasoning_q": "On which date and approximate time did the Actual data reach its highest value?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_061.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 61,
+    "sha256": "3a21df3a259a717252a692e0a4a3d8eed2504914f432d361dae9747e7d5df6b3",
+    "bytes": 130625,
+    "meta": {
+      "reasoning_q": "At 44 MB model size, which operation in the emlSGX-PM – Mirroring Step: Restore plot shows the least latency?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_062.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 62,
+    "sha256": "2cf443918e4ec07cb8300a12bfc8b9ef8126013833da71021f379b6c9c678325",
+    "bytes": 63450,
+    "meta": {
+      "reasoning_q": "Which plot has the third highest average value?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_063.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 63,
+    "sha256": "c8490f6e0c4275b8d5cd30648e1097c22b9e3eabde40318ba42de34fb130ff26",
+    "bytes": 89967,
+    "meta": {
+      "reasoning_q": "For how many T values does their curves ever reach an accuracy above 93.8?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_064.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 64,
+    "sha256": "fc87d4f2e96bb3473374bbcc9f6d52ffbdc74db1dafeb6d2213a4619d5d11577",
+    "bytes": 71314,
+    "meta": {
+      "reasoning_q": "On the left chart, how many models have ever reached a Top-1 Accuracy over 80% on the K400 dataset?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_065.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 65,
+    "sha256": "8683d2abe62b53aa755be5606ea646b75f0843421f00b597ecc3a55955cfb2c7",
+    "bytes": 44454,
+    "meta": {
+      "reasoning_q": "Which line has higher Chains value at Av. degree = 40?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_066.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 66,
+    "sha256": "a8736093c95ded056ce584616746f39055b0d37aa31b6d7b3e43446db26bd041",
+    "bytes": 107105,
+    "meta": {
+      "reasoning_q": "In which emotion's plot does the cluster of data points show the highest density at high valence and high dominance simultaneously?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_067.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 67,
+    "sha256": "5290a041b7d97cff1df4841e087b3b8440af1ba53f3d50b13000d3ae3258a308",
+    "bytes": 52869,
+    "meta": {
+      "reasoning_q": "Which curve is the second to reach the steady Bprop. FLOPs per iter. value after 150?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_068.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 68,
+    "sha256": "518eeda75ada6d5687b2db52c69de49c7616506a77d6a16babffd2a6f18c5bdc",
+    "bytes": 175919,
+    "meta": {
+      "reasoning_q": "How many different time slots are represented by the color scheme in the chart, excluding the Unknown timeslot?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_069.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 69,
+    "sha256": "21d350f90856f8a0d68500b4d93b2fa6de567f35d0abac442e5aeeca9bbbf19b",
+    "bytes": 44251,
+    "meta": {
+      "reasoning_q": "What is the name of the method that achieves the highest top-1 accuracy in both subplots?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_070.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 70,
+    "sha256": "0b4a9709abe04ae16873327e453a9e3ccd35cdbd78325c8374f987131b0d2d37",
+    "bytes": 41655,
+    "meta": {
+      "reasoning_q": "In the second (right) subplot, which λ value results in the first peaks (not necessarily the largest) for both HR@20 and NDCG@20?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_071.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 71,
+    "sha256": "a329c8b92f543353968de2e24b8e7e028803e36631eb345f8b7df22faff9bd9d",
+    "bytes": 142016,
+    "meta": {
+      "reasoning_q": "What is the number of clusters which monotonically decrease from x value of 10 to 15?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_072.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 72,
+    "sha256": "2b8f03fe7cfd2e6b5c599fedff7278c96a57ae372a991a02946dada2a21f83b2",
+    "bytes": 81062,
+    "meta": {
+      "reasoning_q": "What allocation type in the RDT Allocation charts has the maximum value of 8 LLC Ways throughout the timeline for Twig+?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_073.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 73,
+    "sha256": "46cb4dcdbd87a051391b6f5d61bab51279ad10f1ab40c984c918ca74ef71ed67",
+    "bytes": 43210,
+    "meta": {
+      "reasoning_q": "Which setting has the greatest spread of data points in terms of Prediction Rate?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_074.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 74,
+    "sha256": "1e619477ce0f9c55bf6128679fc8d3e127c639f6cd2c9f3cff90d99ff74268b0",
+    "bytes": 49339,
+    "meta": {
+      "reasoning_q": "What is the access count for GEM in the 'newcache' benchmark?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_075.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 75,
+    "sha256": "fc9f47c2ca1b2fa43b7f0b1a3575ad47ca3552ce7ef130fc9b4a34b8087eeb00",
+    "bytes": 60598,
+    "meta": {
+      "reasoning_q": "Which word has a more smooth blue curve before the change point?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_076.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 76,
+    "sha256": "7bc74d8cb0e8cae982251fd9cb9c3adb6492f576b01a982b3cf6383931b0168d",
+    "bytes": 75186,
+    "meta": {
+      "reasoning_q": "At an Objectness Threshold of 0.9, how many False Negative Detections are there for IA-Yolo in the ExDark dataset?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_077.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 77,
+    "sha256": "189ea4070dc9ced2a641c8756d12110525f11230ea2c7dda27fbfcb23c8b2ec0",
+    "bytes": 50433,
+    "meta": {
+      "reasoning_q": "At approximately what frequency does the weight value of 0.004 occur?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_078.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 78,
+    "sha256": "0fe1459aee584fb4a83e3b84879f4e2f9a5fb18274b530e16e80404e16dfed46",
+    "bytes": 83298,
+    "meta": {
+      "reasoning_q": "What is the approximate \\( g_m/I_d \\) for the 22nm technology when \\( V_{gs} - V_{th} = -0.4V \\)?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_079.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 79,
+    "sha256": "9eeeb4fd79120300e5ddffad48a36032c18531eb8d88f3756e974158ed69fc7b",
+    "bytes": 107067,
+    "meta": {
+      "reasoning_q": "In which dataset are the red and blue lines in all 3 plots the closest?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_080.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 80,
+    "sha256": "6fafd4f9a8b1edb20f6945b1ca0a3970154997cd3d3b2a05e34aa76bf3b83584",
+    "bytes": 34329,
+    "meta": {
+      "reasoning_q": "What is the value of the negative log-likelihood for CE at a ratio of 1.5 in DailyDialog?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_081.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 81,
+    "sha256": "b2067fbb0808e765d646c886f8626d02d5e025e1f55aa9aeb4c8be935ad7b6b2",
+    "bytes": 43684,
+    "meta": {
+      "reasoning_q": "Among all three subplots, which one shows the smallest range of entropy values on the x-axis?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_082.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 82,
+    "sha256": "77c00195ac25d96b3ca19d1afb52d73d7506dda56a9578d3112f1845086953fe",
+    "bytes": 31099,
+    "meta": {
+      "reasoning_q": "What is the closest epoch number where a peak that reaches higher than 150 Fid values is observed for the baseline method?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_083.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 83,
+    "sha256": "bc7f53ea0721166513467fbf5c863d8ccbee86ea1a6785fb204e2f3d36af82c2",
+    "bytes": 62979,
+    "meta": {
+      "reasoning_q": "What is the name of the line that has the third largest AUC when Number of Input Objects=20"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_084.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 84,
+    "sha256": "4bd7e4c29e1f1a2b715033f06bc8fac975f87322cb113c4e33c370d7b1293908",
+    "bytes": 37186,
+    "meta": {
+      "reasoning_q": "What's the approximate day number that the daily characteristic distance below 1 km according to chart (b)?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_085.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 85,
+    "sha256": "0c771488f915f939379db14ad20138610bec731ae8943228a4303f98eec67413",
+    "bytes": 37807,
+    "meta": {
+      "reasoning_q": "What is the name of the subject for which the Test curve first surpasses both Train and Dev curves?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_086.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 86,
+    "sha256": "59973fae2bb942f1b7ba142965d61aec2789ce33569f4f406007c77d2ea31f94",
+    "bytes": 79138,
+    "meta": {
+      "reasoning_q": "What is the name of the model that has a low Intersection over Union, F1-score and Sensitivity with the smallest P.S.N.R but improves the most rapidly when P.S."
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_087.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 87,
+    "sha256": "6ed34aaa99b94c6a123d512deaa5756526fe1663cc6701d968ed18498f717631",
+    "bytes": 69164,
+    "meta": {
+      "reasoning_q": "How many times does the BitCom have a larger proportion than SemCom?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_088.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 88,
+    "sha256": "dd0d3d4ce5d0db4bc192abbb8e60c73a7f013931db4c6c0303fb000dd71f5b15",
+    "bytes": 140248,
+    "meta": {
+      "reasoning_q": "Which chart shows the steepest increase for the AMPERE++ dataset across training set sizes?"
+    }
+  },
+  {
+    "folder": "charxiv_p2",
+    "file": "charxiv_p2/charxiv_p2_089.jpg",
+    "dataset": "princeton-nlp/CharXiv",
+    "config": "default",
+    "split": "validation",
+    "row_idx": 89,
+    "sha256": "efe6542e2c4969bf52316354ea87efd1821b15bc9a7bd7cbf237921f96c7efcf",
+    "bytes": 67267,
+    "meta": {
+      "reasoning_q": "Does increase the number of radar points close the gap between Fused recall and Camera-only recall?"
+    }
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_000.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 0,
+    "sha256": "4e13b815b540420a4d68229494bd6259768c226a595114609970edae9a620aa9",
+    "bytes": 25639,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_001.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 1,
+    "sha256": "636284664cfc357e05f7b10d67ddb380f828a1be0a20809514f9e7fc0c611a9f",
+    "bytes": 56652,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_002.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 2,
+    "sha256": "bcf0c175181bfc6b2352ab8f452704b8f18e27fa51f2278bc5c41f6765179edb",
+    "bytes": 67501,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_003.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 3,
+    "sha256": "175fdc716afc51e67bcb79954c3dad4b54633299ec124780e5af04a8e8305333",
+    "bytes": 68697,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_004.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 4,
+    "sha256": "b4261949b52af19e53c27526fc8c4230b10eed207101bf51741c428b4c055c01",
+    "bytes": 82517,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_005.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 5,
+    "sha256": "02032d7f74a5b74b2a85bd868b433fa57fe77bb997186a0cf33d182cce42fb84",
+    "bytes": 504070,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_006.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 6,
+    "sha256": "330d2b8d6c44c26f0812f4633cf9429ba17d9f0ea77983d4f954cfeff1b9ea90",
+    "bytes": 118123,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_007.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 7,
+    "sha256": "b3012b04292bc06fd7bd3f8dcc925dafd1958be18400eee06b7f60fb27bf9ea5",
+    "bytes": 67538,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_008.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 8,
+    "sha256": "910372079a2bbafc0857931d252608876e3ba6e3ab1b99947f159192f42c9676",
+    "bytes": 107110,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_009.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 9,
+    "sha256": "f1922943a5c2a4627fbd93ca2551bb7a79038ee9a760e63239b0036482b0238c",
+    "bytes": 42833,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_010.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 10,
+    "sha256": "b815404532dc13595b3722cff86a4c3e76155187f5b289040ca4f9a59d44a546",
+    "bytes": 45024,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_011.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 11,
+    "sha256": "e7865926c68a5282fb28040144000ca796a600887eae5e0c30b1827334408bb1",
+    "bytes": 73683,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_012.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 12,
+    "sha256": "ea0a09f22980cd090a413b2b83103a32cd0a8d2186ae2baa82efe7740e324f9f",
+    "bytes": 36321,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_013.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 13,
+    "sha256": "2f43f90f4470e7a64904c9429c208b73db32e3703bc2660da5eec35eefadd2ac",
+    "bytes": 93557,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_014.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 14,
+    "sha256": "ea8f1c932350e1e2d5182a9dad4ed0fdadf2fe4d88703ee1d4ce20ecf9933067",
+    "bytes": 239196,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_015.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 15,
+    "sha256": "da370c5b0a1d7b6cd7df20e7c7e03e1d2563751e4f664e271899c4d03946aae9",
+    "bytes": 46738,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_016.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 16,
+    "sha256": "413474ee01cc39338be7edd8640addff0c5020aca8c9d49839063b6fe460d15b",
+    "bytes": 111051,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_017.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 17,
+    "sha256": "9b3bf9b87ecec5ad6168a62fa0f0725b7bef7f247de4cdc5de50b2bd2ea1c9c6",
+    "bytes": 74449,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_018.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 18,
+    "sha256": "6f41361934a6a2e69565283b94cabc46b1a175431b2eb6a6f890b8090c402754",
+    "bytes": 50157,
+    "meta": {}
+  },
+  {
+    "folder": "cord_p2",
+    "file": "cord_p2/cord_p2_019.jpg",
+    "dataset": "naver-clova-ix/cord-v2",
+    "config": "default",
+    "split": "test",
+    "row_idx": 19,
+    "sha256": "26d34a136b9c69d6299e98fcf3391729fa3824bdbe968f98a91c9eb7f9c817d0",
+    "bytes": 30537,
+    "meta": {}
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_000.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 0,
+    "sha256": "0b1e0ac580376a55e2fdf647127f700a6b709d939a50ff41f7178822537889ff",
+    "bytes": 70563,
+    "meta": {
+      "question": "Brahma Industries sells vinyl replacement windows to home improvement retailers nationwide. The national sales manager believes that if they invest an additiona"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_001.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 1,
+    "sha256": "70f90d26f6dc817439e7d061d89054ae86c7802d3c5e018da0765e16af3142dc",
+    "bytes": 241153,
+    "meta": {
+      "question": "Let us compute for the missing amounts under work in process inventory, what is the cost of goods manufactured? <image 1>"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_002.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 2,
+    "sha256": "e069ff73a7d9f8139c3fc19c5449a0f744a5c16dbd46129e6bc5f0a77f224248",
+    "bytes": 33745,
+    "meta": {
+      "question": "Tsuji is reviewing the price of a 3-month Japanese yen/U.S. dollar currency futures contract, using the currency and interest rate data shown below. Because the"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_003.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 3,
+    "sha256": "307327b048fd86eec32893654c532b6bd28b46bb2fa8a6197740c1f9a0e78935",
+    "bytes": 85321,
+    "meta": {
+      "question": "<image 1> Ballentine Manufacturing produces and sells lawnmowers through a national dealership network. They purchase raw materials from a variety of suppliers,"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_004.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 4,
+    "sha256": "f1805c658b2d7420fd8602797cfb90b53f250ea32b5e0f6bacecac617acfb76f",
+    "bytes": 51963,
+    "meta": {
+      "question": "Use the image to analyze the effect of the following on the level of real interest rates:<image 1>\na. Businesses become more pessimistic about future demand for"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_005.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 5,
+    "sha256": "882739e6fb9493bbe1df7fdbd1d51540435850b39fb9662e197bd82e4e556282",
+    "bytes": 38280,
+    "meta": {
+      "question": "<image 1> Puzzles, Pranks & Games is a retail business selling children's toys and games as well as a wide selection of jigsaw puzzles and accessories. They pur"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_006.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 6,
+    "sha256": "248869a194ec24931200d16e252223c986f5505bcc675d929afd12eda182944e",
+    "bytes": 36153,
+    "meta": {
+      "question": "Provide the missing amounts of the accounting equation for each of the following companies. <image 1>"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_007.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 7,
+    "sha256": "df4e7caf9f879346ef79dd8da3e75ba10789dd2b983f86c2062a7e0b409488e8",
+    "bytes": 72884,
+    "meta": {
+      "question": "Shonda & Shonda is a company that does land surveys and engineering consulting. They have an opportunity to purchase new computer equipment that will allow them"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_008.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 8,
+    "sha256": "0103729edb4470e6c70b17c6e83eae9dd708074eb731cbe695da7c459622f17c",
+    "bytes": 139072,
+    "meta": {
+      "question": "This cost data from Hickory Furniture is for the year 2017. <image 1> Predict the utility costs if 800 tables are produced."
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_009.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 9,
+    "sha256": "e91e898ff20ad91df232661e0c3576550e1a38beca76d7f0df383b3820ee0f6e",
+    "bytes": 44710,
+    "meta": {
+      "question": "Morris Industries manufactures and sells three products (AA, BB, and CC). The sales price and unit variable cost for the three products are as follows: <image 1"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_010.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 10,
+    "sha256": "ad9477e648461cbfe2376b1a271fd5ce6d26f4692e2fbb9b67ccc01771734554",
+    "bytes": 47360,
+    "meta": {
+      "question": "<image 1> Conner & Scheer, Attorneys at Law, provide a wide range of legal services for their clients. They employ several paralegal and administrative support "
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_011.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 11,
+    "sha256": "578b7c18a2322d431c3d1eac006e45e51bae0157a9a07ca4279c539af5e4c80d",
+    "bytes": 135193,
+    "meta": {
+      "question": "Wellington, Inc., reports the following contribution margin income statement for the month of May. The company has the opportunity to purchase new machinery tha"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_012.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 12,
+    "sha256": "a783c4b092c2cb2eaff9495c9820af826321d8272ec5047741ca1aa3c481816b",
+    "bytes": 98661,
+    "meta": {
+      "question": "Turn to Figure 2.8 and look at the listing for General Dynamics. . What was the firm's closing price on the day before the listing? <image 1>"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_013.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 13,
+    "sha256": "094fcdcd687b8f1496368a1f909bb4aa15ec367efc3db736dcdecfdb9c5281ce",
+    "bytes": 13249,
+    "meta": {
+      "question": "A stock has had the following year-end prices and dividends:<image 1>What are the arithmetic and geometric returns for the stock?"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_014.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 14,
+    "sha256": "b5df463ca41177cd81e26bb3de31e33e49307151f99aada8b5f9fb8daebaf22b",
+    "bytes": 50410,
+    "meta": {
+      "question": "Patrick Wall is considering the purchase of one of the two bonds described in the following table. Wall realizes his decision will depend primarily on effective"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_015.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 15,
+    "sha256": "0b225d6613cceca2bd99d17c60c5ece2c73e5e018942a677061534b931033ab3",
+    "bytes": 17041,
+    "meta": {
+      "question": "Suppose that the prices of zero-coupon bonds with various maturities are given in the following table. The face value of each bond is $1,000. <image 1> Calculat"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_016.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 16,
+    "sha256": "e3d0218e01049630ca3a7c6dcde46c4fde3753c4b67c6552236c04939805d378",
+    "bytes": 69962,
+    "meta": {
+      "question": "Keleher Industries manufactures pet doors and sells them directly to the consumer via their web site. The marketing manager believes that if the company invests"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_017.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 17,
+    "sha256": "6dad176ae876457b0900596c06d66e5fbab5cf9d3217486f2e46fdd69b47081d",
+    "bytes": 90021,
+    "meta": {
+      "question": "Match each term with its description. <image 1>"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_018.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 18,
+    "sha256": "d95a82d640cf2a528c5b6fd5bee34d88aba707ba39ac3d3e0cc876209ba4ae33",
+    "bytes": 12158,
+    "meta": {
+      "question": "Consider the following premerger information about Firm A and Firm B:<image 1> Assume that Firm A acquires Firm B via an exchange of stock at a price of $13 for"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_020.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 20,
+    "sha256": "c566ba1f4f7073dfb14f884ae956ffd57eedd14dc39ed0dd8c0c6a8db2635c57",
+    "bytes": 28279,
+    "meta": {
+      "question": "Assuming the following account balance changes for the period, what is the missing value? <image 1>"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_021.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 21,
+    "sha256": "6a0bd2c6eb0c5728062bd792ff16c5961cc57b79b32908c550cd2cb946ee50d0",
+    "bytes": 19602,
+    "meta": {
+      "question": "Given $100,000 to invest, what is the expected risk premium in dollars of investing in equities versus risk-free T-bills on the basis of the following table? <i"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_023.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 23,
+    "sha256": "c483fcad51e50375765fe736d5510466e166a3a7f8729a50ff7971a78817faca",
+    "bytes": 75669,
+    "meta": {
+      "question": "Assume accounts have normal balances, what is the balance of the account? <image 1> Adjustments needed: Accrued interest revenue on investments at period end, $"
+    }
+  },
+  {
+    "folder": "mmmu_acct_p2",
+    "file": "mmmu_acct_p2/mmmu_acct_p2_024.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Accounting",
+    "split": "test",
+    "row_idx": 24,
+    "sha256": "8b2548f6979bf1b81d14982536659d1f41e314356d21924b2f80c5eebe09830d",
+    "bytes": 19225,
+    "meta": {
+      "question": "West Island distributes a single product. The company's sales and expenses for the month of June are shown. <image 1> What is the total contribution margin at t"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_000.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 0,
+    "sha256": "1e1fa137f010e2edce7494641e9abf3ef16065056d635a0b875f76b69d371ed5",
+    "bytes": 25292,
+    "meta": {
+      "question": "A firm wishing to evaluate interest rate behavior has gathered data on the nominal rate of interest and on inflationary expectations for five U.S. Treasury secu"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_001.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 1,
+    "sha256": "e6f45e2d451cd56bc1c215148e2de6cd4c681ee1ef1fe433bda52495aaae3ada",
+    "bytes": 8302,
+    "meta": {
+      "question": "A newly issued bond has the following characteristics: <image 1> Calculate modified duration using the information above (in years)."
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_002.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 2,
+    "sha256": "69853cff55bff17e88cddfd97764d16e60f787869e3f220061ad5808c0d89787",
+    "bytes": 29656,
+    "meta": {
+      "question": "The Raattama Corporation had sales of $3.5 million last year, and it earned a 5% return (after taxes) on sales. Recently, the company has fallen behind in its a"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_003.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 3,
+    "sha256": "5975521987b3f7a2858dfd70c28cbead3e30a62d2c84bc0a5423460d6529a9ff",
+    "bytes": 15360,
+    "meta": {
+      "question": "Here are returns and standard deviations for four investments. <image 1>. Calculate the standard deviations of the following portfolio: 50% in Treasury bills, 5"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_004.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 4,
+    "sha256": "3f0d898bf99b98f3989344463bb309dd97d910c8671a22465206e9b1aec64968",
+    "bytes": 14241,
+    "meta": {
+      "question": "Greengage, Inc., a successful nursery, is considering several expansion projects. All the alternatives promise to produce an acceptable return. Data on four pos"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_005.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 5,
+    "sha256": "9965d36131d197bc431712f04ca6431ee15f2584fb4c32a0ccbc9d59fd1b2c0d",
+    "bytes": 15305,
+    "meta": {
+      "question": "The world airline system is composed of the routes X and Y, each of which requires 10 aircraft. These routes can be serviced by three types of aircraft-A, B, an"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_007.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 7,
+    "sha256": "fecc2841c6f57bc3ebacdb4c6f1b5c1f57df87d8d69d96248dfba259d236972e",
+    "bytes": 10771,
+    "meta": {
+      "question": "A game of chance offers the following odds and payoffs. Each play of the game costs $100, so the net profit per play is the payoff less $100. <image 1>. Calcula"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_008.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 8,
+    "sha256": "532eb6636d1e5f60be617508dbab138d325bcf3cbd627e03186a12c954b05d73",
+    "bytes": 62253,
+    "meta": {
+      "question": "You are analyzing the performance of two stocks. <image 1> The first, shown in Panel A, is Cyclical Industries Incorporated. Cyclical Industries makes machine t"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_009.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 9,
+    "sha256": "44e0f5df629a4c67646e9e6f03339df2a2ab6c386d458cb15289a79d71b41f01",
+    "bytes": 21477,
+    "meta": {
+      "question": "For case C in the following table: <image 1>. Calculate the present value of the annuity, assuming that it is an ordinary annuity"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_011.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 11,
+    "sha256": "80b9615e45cc985fbf0ef3684c2b903c4cca06339278a2127df26c1e805f8c55",
+    "bytes": 12333,
+    "meta": {
+      "question": "Suppose your expectations regarding the stock price are as follows: <image 1> Compute the mean and standard deviation of the HPR on stocks"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_012.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 12,
+    "sha256": "bbfa84320a9437d0c61beb0fb5073f6373f11a98dfe361e334ced04f3fd015ca",
+    "bytes": 27114,
+    "meta": {
+      "question": "Peter, an intern at Elite Investments, is asked by his supervisor to perform simple analysis of bonds in the bond market. He wants to calculate the theoretical "
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_014.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 14,
+    "sha256": "f274ee6d07d2ab01bfde5590390ac3cd8bb872ca20f8acb381c69cacf93f65d2",
+    "bytes": 17993,
+    "meta": {
+      "question": "The following table shows estimates of the risk of two well-known Canadian stocks: <image 1>. What is the confidence interval on Loblaw's beta? "
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_015.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 15,
+    "sha256": "fd7ce4afbf4530539bb3e42fc5f917b13955d58ddd4442e04dad9500221a0f5f",
+    "bytes": 19767,
+    "meta": {
+      "question": "<image 1> If the opportunity cost of capital is 10%, which projects have positive NPVs?"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_016.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 16,
+    "sha256": "33c405336d43ee46b1931457e707dafdf0a1e93396b455b163ce424da92c0770",
+    "bytes": 18418,
+    "meta": {
+      "question": "For case A in the following table, calculate the future value ($) of the single cash flow deposited today at the end of the deposit period if the interest is co"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_017.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 17,
+    "sha256": "ccbd360d7229c5eea03179b9ee0978d875eea52a1ba5ab974e0bae3ab954747b",
+    "bytes": 17116,
+    "meta": {
+      "question": "For case B shown in the following table, determine the amount of the equal, annual, end-of-year deposits necessary to accumulate the given sum at the end of the"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_021.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 21,
+    "sha256": "350e79efefef80497b4f7f57dac72aeebb9883bb11ae0552cac7744c83f5c92f",
+    "bytes": 12823,
+    "meta": {
+      "question": "Consider the data in the following table: <image 1>. Determine the interest rate and present value of perpetuity B"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_022.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 22,
+    "sha256": "b56361595393eb9eb86b20c649d5b3a7c904b64e18617ac64210f2b8f57c5af8",
+    "bytes": 17634,
+    "meta": {
+      "question": "Valuing a business* Phoenix Corp. faltered in the recent recession but is recovering. Free cash flow has grown rapidly. Forecasts made in 2019 are as follows: <"
+    }
+  },
+  {
+    "folder": "mmmu_fin_p2",
+    "file": "mmmu_fin_p2/mmmu_fin_p2_023.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Finance",
+    "split": "test",
+    "row_idx": 23,
+    "sha256": "d723af4d1105a5c2a1921686feab3e69d5038cb985d3d14f08e0a83cd3e34094",
+    "bytes": 13442,
+    "meta": {
+      "question": "Machines A and B are mutually exclusive and are expected to produce the following real cash flows: <image 1> Calculate the equivalent annual cash flow from each"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_000.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 0,
+    "sha256": "94dd12f10d213ecc9453fd39983a741dde58e18fb949a9c2aeee3df179f7ba54",
+    "bytes": 16358,
+    "meta": {
+      "question": "An outbreak of gastritis occurred on a cruise ship.  The data in the following table were obtained shortly after the outbreak, from a questionnaire completed by"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_001.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 1,
+    "sha256": "3b63ad763a0ef25ff5c9bb8f28d87329a2862861899b05c5bf1669712ff29334",
+    "bytes": 25611,
+    "meta": {
+      "question": "What is the odds ratio for Infection in Hospital A compared to Hospital B (i.e. using Hospital B as the reference group)? Compute the final answer to 2 decimal "
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_002.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 2,
+    "sha256": "40bbbe45258aef1c8425988ed7e80bfd0c412ecad0bdf4501851be9531bb8a6c",
+    "bytes": 109556,
+    "meta": {
+      "question": "In order to explore the value of plasma mSETP9 gene testing in colorectal cancer screening programmes, a researcher used histopathological diagnosis as the \"gol"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_003.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 3,
+    "sha256": "e84d70d0f4fa191a40cf65a63037984202c003982012235ecfff442308f2ecf8",
+    "bytes": 12729,
+    "meta": {
+      "question": "In March 2009, an outbreak of Influenza A (H1N1) occurred somewhere in Mexico and spread rapidly around the world. The first confirmed case of Influenza A (H1N1"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_004.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 4,
+    "sha256": "011b12f81ad9395a4806ec44aedcadb98c1ead2698ad80181694fcdff30dce68",
+    "bytes": 61612,
+    "meta": {
+      "question": "The bar chart illustrates the distribution of variable \"V1\" from this study. Using the data in the table and graph, choose the most suitable measures of dispers"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_005.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 5,
+    "sha256": "fb94c2fa35641d581c9eda8eb4bea49ec3d4c165b480a01c5320f2dd22aa499f",
+    "bytes": 163092,
+    "meta": {
+      "question": "A case-control study on the relationship between oral contraceptives and myocardial infarction was conducted by a person, 100 cases each in the case and control"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_006.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 6,
+    "sha256": "fcb5d1f4579168b6f5bd85fd713e763133096914353d0057eec4e73d5a942cde",
+    "bytes": 219741,
+    "meta": {
+      "question": "Does this patient have a CLABSI? <image 1> "
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_007.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 7,
+    "sha256": "c70164b60240a87280a0993145d35fcffc2b77683570c628f70dfe652198d6ee",
+    "bytes": 277980,
+    "meta": {
+      "question": "What is the best trial design to study the incidence of a disease? <image 1> "
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_011.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 11,
+    "sha256": "43528246b314e65a8b4d4e760137bec30a00d9abd8987c29eb05b4e64bb15e20",
+    "bytes": 4773,
+    "meta": {
+      "question": "In a cohort study, the distribution of the truth of the onset of a disease in the exposed and non-exposed groups is shown in the table below. It is assumed that"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_012.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 12,
+    "sha256": "de6e017d253224ef01b0565ebc297d745a5074c733b0663b765db537e98fa793",
+    "bytes": 148767,
+    "meta": {
+      "question": "Thalassaemia is an inherited progressive haemolytic disorder caused by a deletion or point mutation in the bead protein gene and is a monogenic autosomal recess"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_016.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 16,
+    "sha256": "3e9b887587de4807b32139def28295836c6ae36406ceb6fd3ff320ed6b41149b",
+    "bytes": 31429,
+    "meta": {
+      "question": "An outbreak of gastrointestinal disease occurred 24-36 hours after people had attended a wedding. Of the 203 attendees (including the bride and groom), 200 comp"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_017.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 17,
+    "sha256": "fbb9c1718beee82f07257820993b6a45b34a90397c933e19943cca8779c970e1",
+    "bytes": 4223,
+    "meta": {
+      "question": "A doctor wants to plot the information collected during a study of the therapeutic effects of a new drug (table below) on a statistical chart of the components "
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_022.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 22,
+    "sha256": "eb704f66636dd1650802631317ee31c5f9d92e119c57f1f534881e0aa39eca10",
+    "bytes": 4185,
+    "meta": {
+      "question": "To study the relationship between lactating and breast cancer, retrospective investigations were conducted as follows. <image 1> The OR was calculated to be"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_023.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 23,
+    "sha256": "22741d2f3473eb7818af04ea14732bf2ba162ebce57255feb0a76f156df3371d",
+    "bytes": 300387,
+    "meta": {
+      "question": " If the blood culture grew Enterococcus faecalis, would this still be a PNU2 with secondary BSI? <image 1> "
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_024.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 24,
+    "sha256": "4d3f0f53c92822c343068ce6ad85f5e67fe7d5d1fe06181ad5481dca9eac3f80",
+    "bytes": 3763,
+    "meta": {
+      "question": "A study of the relationship between smoking and lung cancer in one area showed that the annual mortality rate for lung cancer in that population was 0.56‰.<imag"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_026.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 26,
+    "sha256": "30ee0ca45553b0348447867798ab9f93b5721968521a46d6fd206cc358a40d1c",
+    "bytes": 18379,
+    "meta": {
+      "question": "The following table gives the results of a screening test for diabetes compared to a confirmatory evaluation (oral glucose tolerance test). The specificity of t"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_030.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 30,
+    "sha256": "72469af24769a4724620192c9455e6ce85771865c0361e5f008344aa8d2188a7",
+    "bytes": 5773,
+    "meta": {
+      "question": "In order to evaluate the effectiveness of the influenza A (H1N1) subunit vaccine, 377 study subjects were randomly divided into a vaccination group and a contro"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_031.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 31,
+    "sha256": "a55583f52c8dfe63849d59512f1e7134e920e9a69c0cf25c868c1745f1761415",
+    "bytes": 3108,
+    "meta": {
+      "question": "In the study of the relationship between smoking and a disease, the mortality rate was as follows.<image 1>The AR% was"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_032.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 32,
+    "sha256": "c6754d259e3ee296e7dba4a28b33b10ed0b1162b92cebe893120f3c470a5c342",
+    "bytes": 11461,
+    "meta": {
+      "question": "In 2005, Hunan Province monitored the source and incidence of haemorrhagic fever of renal syndrome in five counties (cities) under its jurisdiction. The followi"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_033.jpg",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 33,
+    "sha256": "9e64e68f57de13181300cefa0e3233fba3595b046582d7453cea7fbbea7f7d99",
+    "bytes": 13122,
+    "meta": {
+      "question": "A group of tourists on a weeklong bus tour of a European country experienced an outbreak of norovirus. The group had followed a consistent meal time pattern: ea"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_034.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 34,
+    "sha256": "44e0d4434aba043f9b1128b821e68e2f5268cef8bad7a954497b0c05b853d304",
+    "bytes": 3167,
+    "meta": {
+      "question": "At 21:00 on 10 April 2014, the Centre for Disease Control and Prevention (CDC) in s city received a report that the emergency department of a hospital under its"
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_037.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 37,
+    "sha256": "896e0ae00ac2702cf66b24c3d48a48b81b320dd1996d6db08a6fa682649aa2a6",
+    "bytes": 46257,
+    "meta": {
+      "question": "The objective of a study is to understand the factors that are associated with systolic blood pressure in infants. Systolic blood pressure, weight (ounces) and "
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_039.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 39,
+    "sha256": "99a804826287276ee537b1cf703c58a206314e2cfffc25c192d340b50b4eddee",
+    "bytes": 144654,
+    "meta": {
+      "question": "What type of BSI does this patient have? <image 1> "
+    }
+  },
+  {
+    "folder": "mmmu_ph_p2",
+    "file": "mmmu_ph_p2/mmmu_ph_p2_042.png",
+    "dataset": "MMMU/MMMU",
+    "config": "Public_Health",
+    "split": "test",
+    "row_idx": 42,
+    "sha256": "742ffd0f17ba7939803103b4888c9ed0e2aeeafec8e9dab91ec91bc420c3a8e7",
+    "bytes": 26581,
+    "meta": {
+      "question": "The table below shows the results from looking at the diagnostic accuracy of a new rapid test for HIV in 100,000 subjects, compared to the Reference standard EL"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_090.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 90,
+    "sha256": "86426fb4f1588d52c2f3f6ab4d1cc0a51e3e6fb00e6d42d6e8bcd7ec2233e865",
+    "bytes": 67685,
+    "meta": {
+      "question": "Where the the mitten relative to the rack?\nA. The mitten is directly next to the rack.\nB. The mitten is on top of the rack.\nC. The mitten is at the bottom of th"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_091.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 91,
+    "sha256": "b9566c6fe805605c7c067bd516c420b87335787fc03091698fd2b3d7274352fa",
+    "bytes": 112499,
+    "meta": {
+      "question": "How many cars are moving?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_092.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 92,
+    "sha256": "264482b699dd929d98762ab0b6404e70e2cbaff9bc0390717379822c3abf5e0b",
+    "bytes": 143220,
+    "meta": {
+      "question": "are the vehicles facing left?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_093.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 93,
+    "sha256": "9817715e82c7c0c48c80d6510ae95c88501c82a1f3687316b5ffa8ab72026951",
+    "bytes": 207438,
+    "meta": {
+      "question": "Which wine bottle is the smallest?\nA. The second to the left.\nB. The right most.\nC. The middle.\nPlease answer directly with only the letter of the correct optio"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_094.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 94,
+    "sha256": "ca4ce81bfee07cb81160a18f8e75ffee95569225c451695daa265a4fa00dd6c5",
+    "bytes": 215451,
+    "meta": {
+      "question": "How many trucks are there within 20 meters from us?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_095.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 95,
+    "sha256": "1142c0fb2c0204e06f5b5d1973af2943b742eb164ad8f1bf9aeb07726d803f0b",
+    "bytes": 178405,
+    "meta": {
+      "question": "In which direction is the arrow pointing?\n\nA. Left\nB. Right\nC. Up\nPlease answer directly with only the letter of the correct option and nothing else."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_096.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 96,
+    "sha256": "39b8c40dc0435c77fd0da0f6f1a7013fd2072e16199d6c27394f618ccb968f51",
+    "bytes": 195531,
+    "meta": {
+      "question": "Is there a bus?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_097.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 97,
+    "sha256": "6cbf39782d29b0001f2ca61e06f8d80d5d9c0bfe6f77e3b3606b95a11b913bd5",
+    "bytes": 204846,
+    "meta": {
+      "question": "Which way is the bottom right key symbol facing?\nA. The bottom right key symbol is facing right.\nB. The bottom right key symbol is facing down.\nC. The bottom ri"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_098.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 98,
+    "sha256": "61925960ac96f5ac45ae6782c6d5841c40ed8664dbd3f3636f51f59937f61037",
+    "bytes": 135517,
+    "meta": {
+      "question": "Can we drive straight?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_099.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 99,
+    "sha256": "0de69aed2a3122abbe85a242de662a56cbed54ac6ef561aa34a77d4db936011a",
+    "bytes": 105995,
+    "meta": {
+      "question": "How many cars are on the right hand side?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_100.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 100,
+    "sha256": "3944c8d417e8a89309ae27460caa880c7e4fc88060ab8fcb8a5861e07da4ebf9",
+    "bytes": 144362,
+    "meta": {
+      "question": "In what direction are the pedestrians ahead crossing?\n\nA. Left to right.\nB. Right to left.\nPlease answer directly with only the letter of the correct option and"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_101.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 101,
+    "sha256": "c5b2ab8632a0c62c99466b179436c838305ce3555404f345f11cf80dc5d0f372",
+    "bytes": 202835,
+    "meta": {
+      "question": "Why is the car in front of us breaking?\n\nA. Because of the red light\nB. Because of the stop sign\nC. Because of the speed bump\nPlease answer directly with only t"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_102.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 102,
+    "sha256": "0a26e4c0259ed293838833ab3bbcd653c6d66cc745969adc725329584611faef",
+    "bytes": 125908,
+    "meta": {
+      "question": "Where can we go from the current lane?\nA. Turn left\nB. Go straight\nC. Turn left and go straight\nD. Turn right\nPlease answer directly with only the letter of the"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_103.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 103,
+    "sha256": "56aedce68e4492fbb27136a78416eea30de6834c6735005f47f3626c63900bb5",
+    "bytes": 121474,
+    "meta": {
+      "question": "Is there a pedestrian in front of us?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_104.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 104,
+    "sha256": "7db22831da8811f78feeeff5132f6505d27c91ead4b1546650574a40d53dc9a3",
+    "bytes": 188642,
+    "meta": {
+      "question": "How many pedestrians are there?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_105.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 105,
+    "sha256": "70390eb675668d2006a50a0036f73778ac1671dfe94a13d98a372f70539605a4",
+    "bytes": 204967,
+    "meta": {
+      "question": "Should all vehicles stop at this intersection?\n\nA. Only the one vehicle coming from our right\nB Only cars coming from our trajectory\nC. All cars from all direct"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_106.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 106,
+    "sha256": "919520737de754a290c0e26cbd93dd9bcc53ab664e4c7073173a193d925ddb70",
+    "bytes": 166572,
+    "meta": {
+      "question": "How many pedestrians are there within 10 meters of us?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_107.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 107,
+    "sha256": "5db3b172cc4020196318b945e6a3b49b816de66b4fa0f4f4e81ad51bd97a9a10",
+    "bytes": 165189,
+    "meta": {
+      "question": "If I stay in the current lane, which highway will I end up on?\n\nA. Highway 1\nB. Highway 95\nC. Highway 280\nPlease answer directly with only the letter of the cor"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_108.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 108,
+    "sha256": "f1835ff79573f4c3d070b9984282870f8b5f705cc19a59193cc62e72028669ba",
+    "bytes": 242195,
+    "meta": {
+      "question": "Which book is facing the wrong way?\nA. The first book on the left is facing the wrong way.\nB. The red book is facing the wrong way.\nC. All of the books pictured"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_109.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 109,
+    "sha256": "5f53537bd3409c27af70b6448881d0508d9fb3fc57f47ea293bcd827daf2318e",
+    "bytes": 211548,
+    "meta": {
+      "question": "Is this a one way street?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_110.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 110,
+    "sha256": "e5726cdfaeba1bb758c6cf487f050ba560c16eee12ce6c0028fc6e302202e3f1",
+    "bytes": 139177,
+    "meta": {
+      "question": "How many lanes of traffic are going in my direction?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_111.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 111,
+    "sha256": "7f352f8063420b0d4ff62326a5e961a6eada4d657e27cc41e3e24cc31d805d1a",
+    "bytes": 181082,
+    "meta": {
+      "question": "From the location of all the vehicles in this image, can we assume that at least one is traveling?\n\nA. Yes\nB. No\nC. Not enough information\nPlease answer directl"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_112.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 112,
+    "sha256": "ede08891470f2f2fb6f6e75f951c923649266b9dc8401e879f521ebb68d669dc",
+    "bytes": 24579,
+    "meta": {
+      "question": "Where is this computer cable relative to the computer?\nA. The cable is laying beside the computer.\nB. The cable is on top of the computer.\nC. The cable is plugg"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_113.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 113,
+    "sha256": "be15f1b741f2916977174ba7320d32a418213700e2a793f8539a878880f863b4",
+    "bytes": 109004,
+    "meta": {
+      "question": "Which vehicle is closer to us, the school bus or the black SUV?\nA. School bus\nB. Black SUV\nC. They are at the same distance\nPlease answer directly with only the"
+    }
+  },
+  {
+    "folder": "rwqa_p2",
+    "file": "rwqa_p2/rwqa_p2_114.jpg",
+    "dataset": "visheratin/realworldqa",
+    "config": "default",
+    "split": "test",
+    "row_idx": 114,
+    "sha256": "9fe01b4569f969b02f8d6fd274ffc3f3a227d8ac4a0e1431fe58feb2f4a1b569",
+    "bytes": 203529,
+    "meta": {
+      "question": "Is the camera further from the pickup truck nearest to us than the truck that's closest to us?\nPlease answer directly with a single word or number."
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_060.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 60,
+    "sha256": "edf65a00840e1b92c364f455d795fb252ab6e3a08c4b29061e74f867229db42c",
+    "bytes": 20047,
+    "meta": {
+      "question": "is mass effect present?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_062.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 62,
+    "sha256": "7de5998df6dedb664a023e6fe68b3911b662139c90c428c52bd509e05c538c84",
+    "bytes": 20627,
+    "meta": {
+      "question": "how was this image taken"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_063.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 63,
+    "sha256": "7cee1d9eeaa9b281334445520d375d59ac01f7213ea8e33d2c26f73f9a66b5c8",
+    "bytes": 88551,
+    "meta": {
+      "question": "is there a mass"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_065.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 65,
+    "sha256": "13c8ae0a69211894de988c009a79f4b6e8797516926f5d7d33f9c16bcb666f86",
+    "bytes": 49931,
+    "meta": {
+      "question": "describe the pathology"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_068.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 68,
+    "sha256": "0a2c406be628c95a48fc27e9ee16cc8f76ebaebb335709ed84a7f942fdca4c99",
+    "bytes": 33261,
+    "meta": {
+      "question": "is there a small bowel obstruction?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_069.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 69,
+    "sha256": "ab24fda5d084ea6e0faa502cfa49ad03de66511e26e6bcbb3cf761130038c2f9",
+    "bytes": 36389,
+    "meta": {
+      "question": "is there brain edema"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_071.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 71,
+    "sha256": "ac5285682a2c3437eae1065139a1edc72da9d954e56b6d9f206b3c8694614253",
+    "bytes": 121855,
+    "meta": {
+      "question": "what is the location of the cavitary lesion"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_073.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 73,
+    "sha256": "5aa877f738865eb0fb8d0f538448a89a94cf88f075a900f958e8a5b7971728f2",
+    "bytes": 85163,
+    "meta": {
+      "question": "are there increased vascular markings"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_075.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 75,
+    "sha256": "dcae934ec44e4be15d9c6fdb8399a0d1a1f2454e9b3b57249a9cc97ba8bbdc6b",
+    "bytes": 43304,
+    "meta": {
+      "question": "what plane is this film"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_076.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 76,
+    "sha256": "b2561d4b3e8adc36fe767dc4c478b3632d4997b17ea07ddcdfdae2a739169c34",
+    "bytes": 64957,
+    "meta": {
+      "question": "what is the location of the mass?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_078.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 78,
+    "sha256": "363cc832f39562fe9bda337ef698310b4fe3ca051b1a52eca25c2b0da1a5168d",
+    "bytes": 28510,
+    "meta": {
+      "question": "the mass is found in which part of the pancreas?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_079.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 79,
+    "sha256": "a51edb9878d7811049eb50cd02a3007530c230bc2be0fcfae129c48be8453508",
+    "bytes": 74459,
+    "meta": {
+      "question": "are there hyper attenuating material along the aortic walls?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_080.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 80,
+    "sha256": "f0cc6a985224c802e0d6c5008fd2ee0986b6b13a3103925e5369873eb11b6f16",
+    "bytes": 44909,
+    "meta": {
+      "question": "what type of mri sequence is displayed in this image?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_081.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 81,
+    "sha256": "a0b7f8a30641f152aa3f058a7c764d5566aa0ad28b84a967eeb69410181c8c12",
+    "bytes": 118445,
+    "meta": {
+      "question": "from what structure is the large hypodense mass emanating from?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_082.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 82,
+    "sha256": "8af329289c4d5ca8d7015af5cca4517fefa8f91a52594c3860e63cd83157e2ae",
+    "bytes": 52065,
+    "meta": {
+      "question": "what lobe of the brain is the lesion located in?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_083.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 83,
+    "sha256": "fd6297d2e1894611d1f82ed492d2ecd81b47999eabd918bbd7cf01c0e40aa28d",
+    "bytes": 38421,
+    "meta": {
+      "question": "is this an mri?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_084.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 84,
+    "sha256": "2241957d317f8172af786fb089a7e186fa69fa3c4e1e3a5b71c25f1cb84a8f03",
+    "bytes": 63577,
+    "meta": {
+      "question": "does this patient have a pneumothorax?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_086.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 86,
+    "sha256": "91a724132807b552ac2529f56004eaa3ddcd261b7f86e60fff4f3f456348fbb6",
+    "bytes": 33734,
+    "meta": {
+      "question": "is this an mri or a ct scan?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_088.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 88,
+    "sha256": "f05a28527187991b903e0423d7a31adda8859bb2ab593fd05bc69ebf2ed77fc6",
+    "bytes": 27567,
+    "meta": {
+      "question": "in which two ventricles can calcifications be seen on this ct scan?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_089.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 89,
+    "sha256": "abaf9fffce9587b783229f173cb64dea6eadf6b216a3d9af90e2d1dbbb7ed60c",
+    "bytes": 32184,
+    "meta": {
+      "question": "what part of the body is being imaged here?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_091.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 91,
+    "sha256": "a908f7e3963f18e254772637c7328fc5c50c1bba0e4937e231657fab8c970a81",
+    "bytes": 66239,
+    "meta": {
+      "question": "does this patient have pneumomediastinum?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_093.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 93,
+    "sha256": "845fc0a4b7edfcd26185b75a1bee952325e376dc5fd6b94ef507174ccf201cd9",
+    "bytes": 90174,
+    "meta": {
+      "question": "is this a coronal view?"
+    }
+  },
+  {
+    "folder": "vqarad_p2",
+    "file": "vqarad_p2/vqarad_p2_094.jpg",
+    "dataset": "flaviagiammarino/vqa-rad",
+    "config": "default",
+    "split": "test",
+    "row_idx": 94,
+    "sha256": "cd4a717ffba35ba605a1eef8af5bbfbdf831a82755f67a11d5f19c0616085bde",
+    "bytes": 25788,
+    "meta": {
+      "question": "are these normal kidney findings?"
+    }
+  }
+]

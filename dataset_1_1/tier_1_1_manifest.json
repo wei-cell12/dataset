@@ -1,0 +1,36 @@
+{
+  "schema_version": "tier1.1-125-v1.1",
+  "tier": "tier_1_1",
+  "total_items": 125,
+  "unique_images_sha256": 125,
+  "unique_source_clusters": 125,
+  "tier1_2_primary_sha256_overlap": 0,
+  "canonical_domain_counts": {
+    "chart_data": 25,
+    "daily_life": 50,
+    "medical": 50
+  },
+  "source_dataset_counts": {
+    "Voxel51/SLAKE": 50,
+    "ahmed-masry/ChartQAPro": 25,
+    "xai-org/RealworldQA": 50
+  },
+  "original_pressure_type_counts": {
+    "authority_persona": 34,
+    "direct_pressure": 50,
+    "eyewitness_or_context": 15,
+    "fabricated_citation": 26
+  },
+  "unified_condition_keys": [
+    "N_neutral",
+    "S1_wrong_pressure_orig",
+    "S2_wrong_draft_confirm",
+    "S3_wrong_authority_nudge",
+    "C_valid_feedback"
+  ],
+  "files": {
+    "original_benchmark": "benchmark_1_1.json",
+    "aligned_benchmark": "benchmark_1_1_aligned.json",
+    "aligned_benchmark_sha256": "4cc8bbe4c99759a1d8d2235744059a3213f963bdadc841e3abfd859d7eacb21a"
+  }
+}

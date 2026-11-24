@@ -1,0 +1,123 @@
+{
+  "schema_version": "tier1.2-240-v2.2",
+  "summary_counts": {
+    "total_primary_cases": 240,
+    "primary_triple_prompts": 720,
+    "secondary_arm_prompts": 320,
+    "total_primary_item_prompts": 1040,
+    "companion_accurate_draft_cases": 16,
+    "companion_accurate_draft_prompts": 48,
+    "unique_primary_images": 240,
+    "tier1_1_overlap": 0,
+    "total_skill_files": 320,
+    "multi_skill_pool_size_uniform": 5,
+    "seven_identifier_spoiler_hits": 0,
+    "regimes": {
+      "skill": 80,
+      "memory": 80,
+      "pure": 80
+    },
+    "domains": {
+      "chart_data": 80,
+      "medical": 80,
+      "daily_life": 80
+    },
+    "modes": {
+      "mode1_wrong_skill_routing": 20,
+      "mode2_inapplicable_abstain": 20,
+      "mode3_in_skill_rule_override": 20,
+      "mode4_skip_prerequisite_skill": 20,
+      "M1_contextual_scope_bleed": 20,
+      "M2_loyalty_vs_objective_evidence": 20,
+      "M3_decisive_default_fill": 20,
+      "M4_informal_threshold_vs_standard": 20,
+      "P1_true_premise_overclaim": 20,
+      "P2_correlation_to_causation": 20,
+      "P3_denominator_base_rate": 20,
+      "P4_visual_evidence_boundary": 20
+    },
+    "datasets": {
+      "HuggingFaceM4/ChartQA": 42,
+      "princeton-nlp/CharXiv": 38,
+      "flaviagiammarino/vqa-rad": 28,
+      "MMMU/MMMU": 96,
+      "visheratin/realworldqa": 23,
+      "naver-clova-ix/cord-v2": 13
+    },
+    "regime_x_domain": {
+      "memory:chart_data": 27,
+      "memory:daily_life": 27,
+      "memory:medical": 26,
+      "pure:chart_data": 26,
+      "pure:daily_life": 27,
+      "pure:medical": 27,
+      "skill:chart_data": 27,
+      "skill:daily_life": 26,
+      "skill:medical": 27
+    },
+    "skill_decision_polarity": {
+      "mode1_wrong_skill_routing:ROUTE_DISAMBIGUATION": 20,
+      "mode2_inapplicable_abstain:ABSTAIN_NONE": 10,
+      "mode2_inapplicable_abstain:VALID_APPLICABLE": 10,
+      "mode3_in_skill_rule_override:FAVORABLE_APPROVE": 10,
+      "mode3_in_skill_rule_override:UNFAVORABLE_REJECT_HOLD": 10,
+      "mode4_skip_prerequisite_skill:HOLD_PREREQUISITE": 10,
+      "mode4_skip_prerequisite_skill:PROCEED_DIRECT": 10
+    },
+    "skill_gold_slot_distribution": {
+      "mode1_wrong_skill_routing:slot0": 4,
+      "mode1_wrong_skill_routing:slot1": 4,
+      "mode1_wrong_skill_routing:slot2": 4,
+      "mode1_wrong_skill_routing:slot3": 4,
+      "mode1_wrong_skill_routing:slot4": 4,
+      "mode2_inapplicable_abstain:slot0": 2,
+      "mode2_inapplicable_abstain:slot1": 2,
+      "mode2_inapplicable_abstain:slot2": 2,
+      "mode2_inapplicable_abstain:slot3": 2,
+      "mode2_inapplicable_abstain:slot4": 2,
+      "mode4_skip_prerequisite_skill:slot0": 4,
+      "mode4_skip_prerequisite_skill:slot1": 4,
+      "mode4_skip_prerequisite_skill:slot2": 4,
+      "mode4_skip_prerequisite_skill:slot3": 4,
+      "mode4_skip_prerequisite_skill:slot4": 4
+    }
+  },
+  "cohort_x_domain_x_dataset": {
+    "v1_1_1_40:chart_data:HuggingFaceM4/ChartQA": 24,
+    "v1_1_1_40:chart_data:princeton-nlp/CharXiv": 16,
+    "v1_1_1_40:daily_life:MMMU/MMMU": 15,
+    "v1_1_1_40:daily_life:naver-clova-ix/cord-v2": 7,
+    "v1_1_1_40:daily_life:visheratin/realworldqa": 18,
+    "v1_1_1_40:medical:MMMU/MMMU": 25,
+    "v1_1_1_40:medical:flaviagiammarino/vqa-rad": 15,
+    "v2_0_41_80:chart_data:HuggingFaceM4/ChartQA": 18,
+    "v2_0_41_80:chart_data:princeton-nlp/CharXiv": 22,
+    "v2_0_41_80:daily_life:MMMU/MMMU": 29,
+    "v2_0_41_80:daily_life:naver-clova-ix/cord-v2": 6,
+    "v2_0_41_80:daily_life:visheratin/realworldqa": 5,
+    "v2_0_41_80:medical:MMMU/MMMU": 27,
+    "v2_0_41_80:medical:flaviagiammarino/vqa-rad": 13
+  },
+  "tier1_1_unique_images": 229,
+  "combined_tier11_plus_tier12_unique_images": 469,
+  "programmatic_checks_passed": {
+    "all_240_images_exist_and_sha256_verified": true,
+    "all_320_skill_md_files_exist_and_zero_orphans": true,
+    "zero_internal_image_sha256_duplicates": true,
+    "zero_tier11_image_sha256_overlap": true,
+    "zero_hits_on_seven_spoiler_identifier_regexes": true,
+    "exact_80_80_80_regime_and_domain_balance": true,
+    "exact_20x12_mode_balance_and_6_or_7_per_mode_domain": true,
+    "memory_m0_and_m_neutral_byte_equal_core_task_80_of_80": true,
+    "memory_m_syco_and_m_pos_exact_core_task_prefix_80_of_80": true,
+    "memory_all_past_dialogue_turns_have_session_field": true,
+    "pure_p0_p_auth_p_pos_exact_shared_assignment_prefix_80_of_80": true,
+    "skill_all_60_multi_skill_pools_size_5": true,
+    "skill_gold_slot_uniformly_balanced_0_to_4_shuffled": true,
+    "skill_mode2_uniform_selection_phrasing_20_of_20": true,
+    "skill_50_50_decision_polarity_modes_2_3_4": true,
+    "skill_g_minus_and_g_plus_exact_single_identifier_substitution_80_of_80": true,
+    "pure_primary_and_companion_zero_review_audit_vaccine_96_of_96": true,
+    "skill_catalog_and_skill_md_frontmatter_synced_320_of_320": true
+  }
+}

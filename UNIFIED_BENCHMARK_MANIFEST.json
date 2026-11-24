@@ -1,0 +1,105 @@
+{
+  "benchmark_name": "Multimodal Sycophancy & Evidence-Boundary Benchmark Suite (Tier 1.1 -> 1.2 -> 1.3)",
+  "release_version": "v1.0-frozen",
+  "built_at_utc": "2026-11-24T10:38:32Z",
+  "tiers": {
+    "tier_1_1": {
+      "schema_version": "tier1.1-125-v1.1",
+      "description": "Direct single-image visual contradiction under sycophantic pressure",
+      "primary_items": 125,
+      "unique_images_sha256": 125,
+      "unique_source_clusters": 125,
+      "canonical_domains": {
+        "chart_data": 25,
+        "daily_life": 50,
+        "medical": 50
+      },
+      "manifest_path": "dataset_1_1/tier_1_1_manifest.json",
+      "data_path": "dataset_1_1/benchmark_1_1_aligned.json",
+      "original_data_path": "dataset_1_1/benchmark_1_1.json",
+      "audit_status": "verified_125_unique_images"
+    },
+    "tier_1_2": {
+      "schema_version": "tier1.2-240-v2.2",
+      "description": "Single-turn multimodal evidence-boundary & skill/memory conflict benchmark",
+      "primary_items": 240,
+      "companion_accurate_draft_items": 16,
+      "total_items": 256,
+      "total_prompts": 1088,
+      "unique_primary_images_sha256": 240,
+      "domains": {
+        "chart_data": 80,
+        "medical": 80,
+        "daily_life": 80
+      },
+      "regimes": {
+        "skill": 80,
+        "memory": 80,
+        "pure": 80
+      },
+      "manifest_path": "dataset_1_2/tier_1_2_manifest_240.json",
+      "data_path": "dataset_1_2/benchmark_1_2_240.json",
+      "audit_status": "GPT-6.2-Astra audited 8.5/10 (dataset+harness), 8/10 overall"
+    },
+    "tier_1_3": {
+      "schema_version": "tier1.3-60-v2.8",
+      "description": "Long-context 3-hop multi-file multi-image agent workspace benchmark (U/V twins x N/A/Q)",
+      "total_families": 60,
+      "total_workspaces": 120,
+      "total_primary_episodes_per_model": 360,
+      "short_evidence_controls": 12,
+      "short_evidence_control_prior_balance": {
+        "U": 6,
+        "V": 6
+      },
+      "domain_memory_prior_balance": {
+        "daily_life": {
+          "U": 10,
+          "V": 10
+        },
+        "chart_data": {
+          "U": 10,
+          "V": 10
+        },
+        "medical": {
+          "U": 10,
+          "V": 10
+        }
+      },
+      "unique_source_clusters_sha256": 49,
+      "total_image_placements": 600,
+      "unique_focal_images_sha256": 111,
+      "unique_all_workspace_images_sha256": 181,
+      "manifest_path": "dataset_1_3/tier_1_3_manifest_60.json",
+      "data_dir": "dataset_1_3/families_60",
+      "ci_verifier": "dataset_1_3/tests/test_tier13_60_ci.py",
+      "audit_status": "GPT-6.2-Astra signed off 9/10 Pass (zero-shortcut verified)"
+    }
+  },
+  "cross_tier_image_provenance": {
+    "total_unique_real_images_union_sha256": 423,
+    "tier1_1_vs_tier1_2_overlap_sha256": 0,
+    "tier1_1_vs_tier1_3_overlap_sha256": 0,
+    "tier1_2_vs_tier1_3_focal_overlap_sha256": 104,
+    "disclosure_note": "Tier 1.1 and Tier 1.2 have ZERO image overlap. Tier 1.3 draws 100% genuine photographs, published charts, and licensed clinical scans from the verified Tier 1.2 real-image pool (0 synthetic SVGs); shared-source families are explicitly clustered via `source_cluster_id` (49 clusters)."
+  },
+  "core_file_sha256": {
+    "dataset_1_1/benchmark_1_1.json": "a8eccbef9ad0e57e845be5ba96addc7a3c3b838ae9df907badf21cc12a4819a5",
+    "dataset_1_1/benchmark_1_1_aligned.json": "4cc8bbe4c99759a1d8d2235744059a3213f963bdadc841e3abfd859d7eacb21a",
+    "dataset_1_1/tier_1_1_manifest.json": "75f242fc5adc580de30ef1fc3438b1a7c11d02b048ec5283ce3d859f666adc55",
+    "dataset_1_1/code/align_tier11.py": "8d39ef477fd4dab10d908ee57c649786d63f24fcbae2f9a2c5a6b4451f57ecab",
+    "dataset_1_2/benchmark_1_2_240.json": "357fb553150d62b1a8d4d979e18d0c66bf80e5d1bde585b2d248834d0e6ca5e0",
+    "dataset_1_2/tier_1_2_manifest_240.json": "9de857594dbea783ad15b81ddcdd23b60d140752328aeb06af63b10ff4e996dd",
+    "dataset_1_2/README.md": "896c0362045c570b4db19c3740867363d1ac8ea8c0986af074984873d68cd87c",
+    "dataset_1_3/tier_1_3_manifest_60.json": "11cd0ceb9e098bfc764d7365e2649558e056acdb0cd73ce88efc730a755bdc7b",
+    "dataset_1_3/README.md": "41e1bff358b23cbfb4e382038d587ffe450da592b2f492e51ac9f7ae576fd62a",
+    "dataset_1_3/schema/tier13_schema.py": "a59cfca38a40c5719e2acb2b6793f9fef9f1395d00f3a12e4a50283043aa1219",
+    "dataset_1_3/broker/workspace_broker.py": "957e5ab1997a6162923761502a7bbab2a7ee29c65cabbc05698f1e7678abb32f",
+    "dataset_1_3/broker/six_cell_renderer.py": "883b2f613c4497b8eedbe1c846d300677a3801a2f6d01209345890ce58236739",
+    "dataset_1_3/scoring/score_tier13.py": "b880033ce23677e6ff5961124e16068700241536248251f85fb5955b18d5ac46",
+    "dataset_1_3/eval/eval_tier13.py": "9c42fd18dc4f61dcc58cbf06ec65a4b0e087ab5d3bef8be8ae3963cd002ba889",
+    "dataset_1_3/builders/build_tier13_60.py": "b25cef6d6006afc729857c827dc93a987c57aa1b25134715e8b4514fd5caa989",
+    "dataset_1_3/tests/test_tier13_60_ci.py": "84e11445d957cd42b0b85bf8f150e59f32308b51c1523f824d1d2bf8e6d7deca"
+  },
+  "tier_1_3_family_manifest_count": 60
+}

@@ -1,0 +1,10 @@
+# Ignore unrelated projects and local caches
+work/
+outputs/
+pelican_bicycle.html
+AGENTS.md
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+*.tmp
