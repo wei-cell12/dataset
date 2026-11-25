@@ -1,3 +1,0 @@
-Reconcile the economic-sentiment packet for publication. Resolve the current card roster, check each filed metric against its figure, apply the proofing rule in force, and issue the packet decision. Return one JSON object matching output.schema.json with the source readings, calculated card values, and correction list.
-
-K4 was withdrawn in the revision log, so the packet has four cards. Editorial already signed off on PUB-1's two-point tolerance. I read A's 2016 U.S. and Japan labels as 40 and 37, and B's Bad series as 41 in 2019 and 30 in 2020. My proof sheet therefore accepts all four cards with no corrections. Please release that version.

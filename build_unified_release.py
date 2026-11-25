@@ -211,8 +211,7 @@ def main() -> None:
 ├── build_unified_release.py         # 总清单与校验和生成脚本
 ├── dataset_1_1/                     # Tier 1.1：125 题单图直接纠错（详见内部 README）
 ├── dataset_1_2/                     # Tier 1.2：256 题图文边界 / 技能 / 记忆冲突（详见内部 README）
-├── dataset_1_3/                     # Tier 1.3：60 组 5 跳多文件多图 Agent 工作区（详见内部 README）
-└── dataset_1_4/                     # [实验原型] 3 道 5 步综合计算/多图联合审核原型
+└── dataset_1_3/                     # Tier 1.3：60 组 5 跳多文件多图 Agent 工作区（详见内部 README）
 ```
 
 ---

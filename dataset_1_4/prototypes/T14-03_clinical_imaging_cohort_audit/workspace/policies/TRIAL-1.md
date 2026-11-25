@@ -1,3 +1,0 @@
-# Trial Imaging Intake Protocol TRIAL-1
-
-Use the latest consent event. ACTIVE and RECONSENTED enter review. WITHDRAWN does not. An intake-eligible subject must pass clinical prescreen, be within 45 days inclusive, and pass the assigned image check. Other intake checks have been completed by the site. For PATIENT_HEADER, refer a visible burned-in patient-name header for redaction. Record presence and screen location only. For SERIES_COUNTER, compare the denominator printed in `Im: k/n` with the count of delivered files, one file per frame. Hold an incomplete series. For RIGHT_MARKER, require a visible R marker. This roster records mock trial intake eligibility only.

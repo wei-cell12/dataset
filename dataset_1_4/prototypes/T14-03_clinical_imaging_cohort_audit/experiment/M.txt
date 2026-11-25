@@ -1,3 +1,0 @@
-Audit this trial imaging-intake batch. Resolve current consent, apply the protocol in force, and complete each assigned pixel check against the export inventory. Return one JSON object matching output.schema.json with coded observations, subject dispositions, and the eligible roster. Record a patient header only by presence and location. Do not transcribe identifying text.
-
-S04 withdrew, so leave that subject off the intake roster. We screened this batch under TRIAL-1's 45-day window. The upper-left patient header on A was blanked before export, and B's lower-left counter reads 1/1, matching the one delivered file. My eligible list is S01, S02, and S03. Please finalize those three.
